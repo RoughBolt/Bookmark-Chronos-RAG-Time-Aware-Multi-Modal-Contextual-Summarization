@@ -1,0 +1,30 @@
+Cognitive offloading and externalized memory systems.
+Episodic memory modeling.
+Narrative time and temporal indexing.
+Event segmentation theory.
+Situation model construction.
+Atomic memory representation.
+Semantic encoding in high-dimensional vector space.
+Distributed representations.
+Vector similarity and distance geometry.
+Latent semantic memory.
+Memory decay and temporal weighting.
+Recency vs salience trade-off.
+Context-dependent recall.
+Cue-based retrieval.
+Hierarchical memory abstraction.
+Narrative compression and expansion.
+Schema-driven recall.
+Causal chain modeling.
+Event importance weighting.
+Temporal coherence preservation.
+Memory stitching and reconstruction.
+Forgetting curves and spaced recall.
+Hybrid symbolic-semantic systems.
+Knowledge graph grounding.
+Entity persistence across time.
+Relational reasoning.
+Long-gap narrative reconstruction.
+Working memory vs long-term memory separation.
+Retrieval-augmented cognition (not RAG as QA).
+Human rereading and reorientation theory.

@@ -1,0 +1,31 @@
+Step 1: Event Extraction ✔︎
+
+[{'text': '"We should start back," Gared urged as the woods began to grow dark around them.', 'type': 'dialogue', 'importance': 1, 'position': 0}, {'text': '"The wildlings are dead." "Do the dead frighten you?" Ser Waymar Royce asked with just the hint of a smile.', 'type': 'dialogue', 'importance': 1, 'position': 1}, {'text': 'Gared did not rise to the bait.', 'type': 'description', 'importance': 1, 'position': 2}, {'text': 'He was an old man, past fifty, and he had seen the lordlings come and go.', 'type': 'description', 'importance': 1, 'position': 3}, {'text': '"Dead is dead," he said.', 'type': 'dialogue', 'importance': 1, 'position': 4}]
+
+Step 2: Narrative Chaining ✔︎
+
+--- Narrative Events ---
+
+[DISCOVERY] He saw it clear enough, now that the lordling had pointed it out.
+[DISCOVERY] Will threaded their way through a thicket, then started up the slope to the low ridge where he had found his vantage point under a sentinel tree.
+[COMBAT] A sword slashed at a branch as Ser Waymar Royce gained the ridge.
+[COMBAT] He turned his head, glimpsed a white shadow in the darkness.
+[COMBAT] Its armor seemed to change color as it moved; here it was white as new-fallen snow, there black as shadow, everywhere dappled with the deep grey-green of the trees.
+
+Step 3: Scene Construction ✔︎
+
+Length of scene (no. of events): 7
+Length of events: [1, 1, 1, 1, 1, 2, 1]
+
+Step 4: Scene Abstarction ✔︎
+
+{'type': 'discovery', 'text': 'Signs of something unnatural appeared nearby.'}
+{'type': 'discovery', 'text': 'Signs of something unnatural appeared nearby.'}
+{'type': 'combat', 'text': 'A sudden confrontation erupted.'}
+{'type': 'combat', 'text': 'A sudden confrontation erupted.'}
+{'type': 'combat', 'text': 'A sudden confrontation erupted.'}
+{'type': 'combat', 'text': 'A sudden confrontation erupted.'}
+{'type': 'death', 'text': "Royce's body lay facedown in the snow, one arm outflung."}
+
+Step 5: Salience & Memory Flags 
+
