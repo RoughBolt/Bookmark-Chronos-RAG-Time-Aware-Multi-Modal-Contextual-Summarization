@@ -1,75 +1,161 @@
-# Stitching rules (VERY IMPORTANT)
+import re
 
-# Rule 1: Preserve Order
-# Rule 2: Collapse Weak Events
-# Rule 3: Cause -> Effect LINKING
-# Rule 4: Death always stands alone
-
+# Legacy Stitching logic used by memory_render
 def stitch_events(events, flags, mode="full"):
     # Rule: Death always stands alone
     for e in events:
-        if e["type"] == "DEATH":
+        if e.get("type", "").upper() == "DEATH":
             return f"{e['text']}"
 
     texts = [e["text"] for e in events]
 
     if mode == "summary":
-        return texts[0]
+        return texts[0] if texts else ""
 
     return " ".join(texts)
 
-def stitch_memory_timeline(memories):
-    if not memories:
-        return ""
+# ---------------------------------------------------------
+# ALGORITHM A: Template Transition Stitcher (Rule-based)
+# ---------------------------------------------------------
+class TemplateTransitionStitcher:
+    """Uses a transition matrix based on event type shifts to form narratives."""
+    
+    def __init__(self):
+        self.transitions = {
+            ("EVENT", "COMBAT"): "Suddenly, tension flared causing a confrontation:",
+            ("EVENT", "DISCOVERY"): "Following this, an important detail emerged:",
+            ("DISCOVERY", "COMBAT"): "This realization quickly escalated into violence.",
+            ("COMBAT", "DEATH"): "The brutal struggle culminated in a tragic loss.",
+            ("COMBAT", "EVENT"): "After the clash, the dust settled.",
+        }
 
-    stitched = []
-    buffer = []
-    last_type = None
+    def stitch(self, memories):
+        if not memories: return ""
+        
+        stitched = []
+        last_tag = None
+        
+        for m in memories:
+            # Handle if old code sends strings instead of dicts
+            if isinstance(m, str):
+                tag = re.search(r"\[(.*?)\]", m)
+                tag = tag.group(1).upper() if tag else "EVENT"
+                text = re.sub(r"\[.*?\]\s*", "", m).strip()
+            else:
+                tag = (m.get("tag") or "EVENT").upper()
+                text = m.get("text", "")
+                text = re.sub(r"\[.*?\]\s*", "", text).strip()
+            
+            if not text:
+                continue
+                
+            if last_tag and last_tag != tag:
+                transition = self.transitions.get((last_tag, tag), "")
+                if transition:
+                    stitched.append(transition)
+            
+            stitched.append(text)
+            last_tag = tag
+            
+        return " ".join(stitched)
 
-    def flush_buffer(buf, event_type):
-        if not buf:
-            return
-        text_block = " ".join(buf)
-        if event_type == "EVENT":
-            stitched.append(f"Several minor events occurred during this time: {text_block}")
-        elif event_type == "DISCOVERY":
-            stitched.append(f"Something strange was noticed, which raised concern: {text_block}")
-        elif event_type == "COMBAT":
-            stitched.append(f"This escalated into a violent confrontation: {text_block}")
-        elif event_type == "DEATH":
-            stitched.append(f"A life was lost: {text_block}")
-        elif event_type == "CRITICAL":
-            stitched.append(f"A major irreversible event occurred: {text_block}")
-        buf.clear()
+# ---------------------------------------------------------
+# ALGORITHM B: Syntactic Fusion Stitcher (NLP Custom Heuristic)
+# ---------------------------------------------------------
+class SyntaxFusionStitcher:
+    """Fuses sentences that share the same starting subject (naive pronoun/name merge)."""
+    
+    def stitch(self, memories):
+        if not memories: return ""
+        
+        fused_sentences = []
+        last_subject = None
+        current_sentence = ""
+        
+        for m in memories:
+            if isinstance(m, str):
+                text = re.sub(r"\[.*?\]\s*", "", m).strip()
+            else:
+                text = m.get("text", "")
+                text = re.sub(r"\[.*?\]\s*", "", text).strip()
+                
+            if not text: continue
+            
+            words = text.split()
+            if not words: continue
+            
+            # Very naive subject extraction (first word, e.g. "He", "Jon", "The")
+            subject = words[0]
+            if len(words) > 1 and subject.lower() in ["the", "a", "an"]:
+                subject = words[0] + " " + words[1]
+                
+            if current_sentence:
+                if last_subject and subject.lower() == last_subject.lower() and len(words) > 1:
+                    # Fuse
+                    predicate = " ".join(words[1:]) if subject == words[0] else " ".join(words[2:])
+                    # drop the capital letter of sequence
+                    predicate = predicate[0].lower() + predicate[1:] if predicate else ""
+                    # strip trailing punctuation from previous
+                    if current_sentence[-1] in [".", "!", "?"]:
+                        current_sentence = current_sentence[:-1]
+                    current_sentence += f" and {predicate}"
+                    if not current_sentence.endswith("."): current_sentence += "."
+                else:
+                    fused_sentences.append(current_sentence)
+                    current_sentence = text
+                    last_subject = subject
+            else:
+                current_sentence = text
+                last_subject = subject
+                
+        if current_sentence:
+            fused_sentences.append(current_sentence)
+            
+        return " ".join(fused_sentences)
 
-    for m in memories:
-        if m.startswith("[EVENT]"):
-            curr_type = "EVENT"
-            content = m.replace("[EVENT]", "").strip()
-        elif m.startswith("[DISCOVERY]"):
-            curr_type = "DISCOVERY"
-            content = m.replace("[DISCOVERY]", "").strip()
-        elif m.startswith("[COMBAT]"):
-            curr_type = "COMBAT"
-            content = m.replace("[COMBAT]", "").strip()
-        elif m.startswith("[DEATH]"):
-            curr_type = "DEATH"
-            content = m.replace("[DEATH]", "").strip()
-        elif m.startswith("[CRITICAL]"):
-            curr_type = "CRITICAL"
-            content = m.replace("[CRITICAL]", "").strip()
-        else:
-            curr_type = "EVENT"
-            content = m.strip()
+# ---------------------------------------------------------
+# ALGORITHM C: Lexical Pacing Stitcher (Metadata Driven)
+# ---------------------------------------------------------
+class LexicalPacingStitcher:
+    """Uses chronological index gaps to insert temporal pacing words."""
+    
+    def stitch(self, memories):
+        if not memories: return ""
+        
+        stitched = []
+        last_index = None
+        
+        for m in memories:
+            if isinstance(m, str):
+                text = re.sub(r"\[.*?\]\s*", "", m).strip()
+                idx = 0
+                tag = "EVENT"
+            else:
+                text = m.get("text", "")
+                text = re.sub(r"\[.*?\]\s*", "", text).strip()
+                idx = m.get("index", 0)
+                tag = (m.get("tag") or "EVENT").upper()
+            
+            if not text: continue
+            
+            if last_index is not None and idx is not None and last_index is not None:
+                gap = idx - last_index
+                if gap > 20:
+                    stitched.append("Much later,")
+                elif gap > 5:
+                    stitched.append("Sometime after,")
+                elif gap <= 1 and tag == "COMBAT":
+                    stitched.append("Immediately,")
+            
+            stitched.append(text)
+            last_index = idx
+            
+        return " ".join(stitched)
 
-        # If the type changes, flush previous buffer
-        if curr_type != last_type and buffer:
-            flush_buffer(buffer, last_type)
+def test_stitchers(memories):
+    """Utility to run all 3 stitchers and return their outputs."""
+    a = TemplateTransitionStitcher().stitch(memories)
+    b = SyntaxFusionStitcher().stitch(memories)
+    c = LexicalPacingStitcher().stitch(memories)
+    return {"A_Template": a, "B_Syntax": b, "C_Pacing": c}
 
-        buffer.append(content)
-        last_type = curr_type
-
-    if buffer:
-        flush_buffer(buffer, last_type)
-
-    return " ".join(stitched)

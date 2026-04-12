@@ -23,7 +23,7 @@ from src.scene_abstraction import summarize_scene
 from src.scene_abstraction import old_summarize_scene
 from src.scene_consolidation import consolidate_scene
 from src.memory_orchestrator import generate_memory_recall
-from src.narrative_stitch import stitch_memory_timeline
+from src.narrative_stitch import test_stitchers
 from src.embeddings import embed_memories
 from src.embeddings import embed_text
 from src.vector_store import create_chroma_collection, store_memories
@@ -147,17 +147,31 @@ store_memories(
 # print("✅ Memories stored in ChromaDB")
 
 query = "important fight or death in the story"
-query_embedding = embed_text(query)   # MUST be same Ollama model
+query_vector = embed_text(query) 
 
-results = recall_memories(
-    collection,
-    query_embeddings=query_embedding,
-    k=5
-)
+test_gaps = [1, 7, 90]
 
-for doc, meta, dist in results:
-    print(f"[{meta['tag']}] ({dist:.3f}) {doc}")
+for gap in test_gaps:
+    print(f"\n===============================================")
+    print(f"       TESTING TIME-AWARE RECALL: GAP = {gap} DAYS")
+    print(f"===============================================\n")
 
-print("\n===== FILTERED RECALL =====\n")
-for r in results:
-    print(f"[{r['tag']}] ({round(r['distance'],3)}) {r['text']}")
+    results = recall_memories(
+        collection,
+        query_embedding=query_vector,
+        days_gap=gap
+    )
+    
+    print(f"--- FILTERED RECALL RAW (Vectors = {len(results)}) ---")
+    for r in results:
+        print(f"[{r['tag']}] ({round(r['distance'],3)}) {r['text']}")
+
+    stitched_results = test_stitchers(results)
+
+    print("\n--- ALGORITHM A (Template/Rule-Based Matrix) ---")
+    print(stitched_results["A_Template"])
+    print("\n--- ALGORITHM B (Syntactic Fusion / SVO Merging) ---")
+    print(stitched_results["B_Syntax"])
+    print("\n--- ALGORITHM C (Lexical / Metadata Pacing) ---")
+    print(stitched_results["C_Pacing"])
+    print("\n")
