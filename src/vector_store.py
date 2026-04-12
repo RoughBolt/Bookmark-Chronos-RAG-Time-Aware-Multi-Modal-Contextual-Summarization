@@ -2,12 +2,8 @@ import chromadb
 from chromadb.config import Settings
 
 def get_chroma_client(persist_dir="chroma_store"):
-    return chromadb.Client(
-        Settings(
-            persist_directory=persist_dir,
-            anonymized_telemetry=False
-        )
-    )
+    # Fix: chromadb.Client() is strictly in-memory. PersistentClient is required to save to disk.
+    return chromadb.PersistentClient(path=persist_dir)
 
 def create_chroma_collection(
     collection_name="bookmark_memory",

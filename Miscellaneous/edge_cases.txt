@@ -1,0 +1,43 @@
+=============================================================
+COGNITIVE MEMORY SYSTEM: EDGE CASES & ARCHITECTURAL BLINDSPOTS
+=============================================================
+
+1. THE "JON SNOW" EDGE CASE (Resurrection / Status Reversion)
+- Issue: The Factual Knowledge Graph (`facts.py`) is binary and rigid. Once a `[DEATH]` event tags a character, their global state locks to `[DEAD]`. 
+- Implication: If a character's death is faked, or they are resurrected later in the text, the system has no mechanism to revert their status back to `[ALIVE]`.
+- Fix: Implement an explicit `[RESURRECTION]` event tag or temporal validation of rumors.
+
+2. THE "FLASHBACK" EDGE CASE (Temporal Disruption)
+- Issue: Algorithm C (Lexical Pacing) measures chronological metadata indices (`index 45` vs `index 44`) to dynamically inject words like "Immediately".
+- Implication: If the author writes a flashback, Index 44 might be a memory from 10 years ago, and Index 45 is the present. Algorithm C will fail to recognize the decade gap and inappropriately bridge them with "Immediately".
+- Fix: A dedicated NLP Sequence-Time parser that detects past-perfect tense shifts to identify flashbacks.
+
+3. THE PRONOUN DISCONNECT (Coreference Resolution)
+- Issue: "He turned his head, glimpsed a white shadow."
+- Implication: Vector DB captures semantic meaning, but the Entity Extractor physically scans for names ("Royce", "Will"). Pronouns ("He", "She") bypass the Knowledge Graph extractor entirely.
+- Fix: Implement an NLP pipeline like `NeuralCoref` or `Spacy` to mathematically map and resolve pronouns back to their original nouns before ingesting sentences into ChromaDB.
+
+4. THE UNRELIABLE NARRATOR (Vector Hallucination)
+- Issue: Vector databases capture semantic truth mathematically. If a starving character hallucinated an oasis, it is stored as a `[DISCOVERY]` event.
+- Implication: The system treats subjective character hallucinations, dreams, or deliberate lies as objective story facts.
+- Fix: A secondary tagging layer for `[DREAM]` or `[LIE]`, forcing the recall engine to prepend warnings to those memories.
+
+5. GAP = 1 DISTANCE DROPOFF (Hyper-Strict Recall)
+- Issue: A gap of 1 day forces `max_distance` to 0.45.
+- Implication: The database may return 0 vectors if the query isn't an exact, perfect match to the memories indexed, resulting in a blank output despite the user knowing something happened.
+- Fix: Dynamically shifting base thresholds, or returning a fallback "default latest event" regardless of strict distance when the array evaluates to 0.
+
+6. IDENTITY ALIASING (The "Eddard/Ned" Problem)
+- Issue: Characters often go by multiple names (Ned Stark vs Eddard Stark).
+- Implication: The Entity matrix will track them as two completely separate isolated nodes in the Factual Graph, severing their interconnected relationships.
+- Fix: A centralized Alias Dictionary (e.g., `"Ned": "Eddard Stark"`) evaluated during the `extract_characters()` phase.
+
+7. CONCEPT DRIFT (Static Relationship Weights)
+- Issue: `relations.py` tracks character interaction by maintaining a pure mathematical count (e.g., `Waymar <--> Will: 5`). 
+- Implication: It does not decay old relationships. If two characters are best friends in Chapter 1 (count: 50) and mortal enemies in Chapter 5 (count: 10), the graph still registers them as primarily "friends" because the highest weight is 50. 
+- Fix: Time-weighted relationship nodes (decaying the value of old interactions over long temporal gaps).
+
+8. LOCATION TELEPORTATION (Missing Travel Events)
+- Issue: The Semantic recall pulls discrete, disjointed action items based on highest vector match. 
+- Implication: A character might be fighting in the North in one vector, and fighting in the South in the subsequent vector. If the "Travel" vector wasn't recalled because its distance didn't match the query, the Narrative Stitcher bridges the two fights instantly, making the character seemingly teleport across the world.
+- Fix: Forcing a `[TRAVEL]` fallback search if the Location Metadata between two chronological vectors doesn't match.

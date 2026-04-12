@@ -1,0 +1,21 @@
+{
+    "statuses": {
+        "Waymar Royce": "DEAD",
+        "Will": "ALIVE",
+        "Gared": "ALIVE"
+    },
+    "interactions": {
+        "Will": {
+            "Gared": 6,
+            "Waymar Royce": 2
+        },
+        "Gared": {
+            "Will": 6,
+            "Waymar Royce": 1
+        },
+        "Waymar Royce": {
+            "Will": 2,
+            "Gared": 1
+        }
+    }
+}

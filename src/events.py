@@ -41,6 +41,11 @@ def classify_event(sentence):
     ):
         return "death", 4
 
+    # The Jon Snow Edge Case (Resurrection detection)
+    if any(word in s for word in ["rose", "stirred", "stood up", "awoke"]) and \
+       any(word in s for word in ["dead", "body", "corpse", "pale", "eyes"]):
+        return "resurrection", 4
+
     # Talking ABOUT death ≠ death
     if "dead" in s and not any(word in s for word in ["fell", "killed", "slain"]):
         return "dialogue", 1

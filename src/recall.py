@@ -26,46 +26,58 @@ def recall_memories(collection, query_embedding, days_gap=7, intensity="auto"):
     
     params = get_recall_parameters(days_gap, intensity)
     target_k = params["k"]
-    max_dist = params["max_distance"]
+    base_max_dist = params["max_distance"]
     mode = params["mode"]
 
-    results = collection.query(
-        query_embeddings=[query_embedding],  # Pass the vector array directly!
-        n_results=target_k,
-        include=["documents", "metadatas", "distances"]
-    )
-
+    current_dist_threshold = base_max_dist
     recalled = []
 
-    for doc, meta, dist in zip(
-        results["documents"][0],
-        results["metadatas"][0],
-        results["distances"][0]
-    ):
-        # Hard relevance filter
-        if dist > max_dist:
-            continue
+    # Dynamic Distance Back-off (Edge Case #5 Fix)
+    while current_dist_threshold <= 0.8:
+        results = collection.query(
+            query_embeddings=[query_embedding],  # Pass the vector array directly!
+            n_results=target_k,
+            include=["documents", "metadatas", "distances"]
+        )
 
-        raw_text = doc.split("]", 1)[-1].strip() if "]" in doc else doc
+        recalled = []
 
-        # Narrative Meaningfulness: Skip very short segments
-        if len(raw_text.split()) < 4:
-            continue
+        for doc, meta, dist in zip(
+            results["documents"][0],
+            results["metadatas"][0],
+            results["distances"][0]
+        ):
+            # Hard relevance filter
+            if dist > current_dist_threshold:
+                continue
 
-        # Dialogue Filter: Skip quote-heavy generic events
-        if meta.get("tag") == "EVENT":
-            quote_count = doc.count('"') + doc.count("'")
-            if quote_count >= 2:
-                # If it's mostly dialogue, require a much stricter distance
-                if dist > 0.45:
-                    continue
+            raw_text = doc.split("]", 1)[-1].strip() if "]" in doc else doc
 
-        recalled.append({
-            "text": doc,
-            "tag": meta.get("tag"),
-            "index": meta.get("index"),
-            "distance": dist
-        })
+            # Narrative Meaningfulness: Skip very short segments
+            if len(raw_text.split()) < 4:
+                continue
+
+            # Dialogue Filter: Skip quote-heavy generic events
+            if meta.get("tag") == "EVENT":
+                quote_count = doc.count('"') + doc.count("'")
+                if quote_count >= 2:
+                    # If it's mostly dialogue, require a much stricter distance
+                    if dist > 0.45:
+                        continue
+
+            recalled.append({
+                "text": doc,
+                "tag": meta.get("tag"),
+                "index": meta.get("index"),
+                "distance": dist
+            })
+
+        if recalled:
+            break
+            
+        # Relax threshold slightly if 0 vectors returned
+        current_dist_threshold += 0.02
+        current_dist_threshold = round(current_dist_threshold, 3)
 
     if not recalled:
         return []

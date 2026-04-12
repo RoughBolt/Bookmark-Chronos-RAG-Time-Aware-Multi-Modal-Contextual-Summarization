@@ -48,12 +48,24 @@ text = clean_text(text)
 
 summary = summarize_text(text, level)                           # Generate summary based on level
 
-# print("Days gap:", days_gap)
-# print("Summary level:", level)
-# print("\n===== SUMMARY =====\n")
-# print(summary)
+print("\n=======================================================")
+print(f"   🧠 MEMORY CORE ONLINE: {days_gap} DAYS SINCE LAST READ")
+print(f"=======================================================\n")
+
+print("===== STORY RECAP =====")
+print(summary)
+print("=======================\n")
+
+from src.knowledge.graph_builder import build_global_knowledge_graph
 
 events = extract_events(text)                                   # Extract key events
+
+# 🔥 NEW: Offline Factual Knowledge Graph Generation
+knowledge_graph = build_global_knowledge_graph(events)
+print("\n===== FACTUAL KNOWLEDGE GRAPH (OFFLINE) =====\n")
+print(f"Characters Tracked: {len(knowledge_graph['statuses'])}")
+for char, status in knowledge_graph['statuses'].items():
+    print(f" - {char}: {status}")
 
 # if level in ["medium", "long"]:
 #     print("\n===== KEY EVENTS =====\n")
@@ -146,32 +158,46 @@ store_memories(
 
 # print("✅ Memories stored in ChromaDB")
 
-query = "important fight or death in the story"
-query_vector = embed_text(query) 
+from src.hybrid_recall import generate_hybrid_context
 
-test_gaps = [1, 7, 90]
+while True:
+    try:
+        query = input("\n[Search] What do you want to recall? (or 'quit'): ")
+        if query.strip().lower() in ['quit', 'exit', 'q']:
+            print("\nEntering Standby... Goodbye!\n")
+            break
+            
+        if not query.strip():
+            continue
+            
+        query_vector = embed_text(query)
 
-for gap in test_gaps:
-    print(f"\n===============================================")
-    print(f"       TESTING TIME-AWARE RECALL: GAP = {gap} DAYS")
-    print(f"===============================================\n")
+        results = recall_memories(
+            collection,
+            query_embedding=query_vector,
+            days_gap=days_gap
+        )
+        
+        if not results:
+            print("\n[System] Memory threshold too strict. No exact matches found for that query.")
+            continue
+            
+        stitched_results = test_stitchers(results)
+        
+        # 🔥 Generate Hybrid Preamble
+        preamble = ""
+        if days_gap > 3:
+            preamble = generate_hybrid_context(results) + "\n\n"
 
-    results = recall_memories(
-        collection,
-        query_embedding=query_vector,
-        days_gap=gap
-    )
-    
-    print(f"--- FILTERED RECALL RAW (Vectors = {len(results)}) ---")
-    for r in results:
-        print(f"[{r['tag']}] ({round(r['distance'],3)}) {r['text']}")
+        print(f"\n===== RECONSTRUCTED NARRATIVE ({len(results)} Fragments Fetched) =====")
+        print("\n--- ALGORITHM A (Template/Rule-Based Matrix) ---")
+        print(preamble + stitched_results["A_Template"])
+        print("\n--- ALGORITHM B (Syntactic Fusion / SVO Merging) ---")
+        print(preamble + stitched_results["B_Syntax"])
+        print("\n--- ALGORITHM C (Lexical / Metadata Pacing) ---")
+        print(preamble + stitched_results["C_Pacing"])
+        print("\n===============================================================")
 
-    stitched_results = test_stitchers(results)
-
-    print("\n--- ALGORITHM A (Template/Rule-Based Matrix) ---")
-    print(stitched_results["A_Template"])
-    print("\n--- ALGORITHM B (Syntactic Fusion / SVO Merging) ---")
-    print(stitched_results["B_Syntax"])
-    print("\n--- ALGORITHM C (Lexical / Metadata Pacing) ---")
-    print(stitched_results["C_Pacing"])
-    print("\n")
+    except KeyboardInterrupt:
+        print("\nEntering Standby... Goodbye!\n")
+        break
