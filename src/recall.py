@@ -1,3 +1,5 @@
+# Cognitive Control Unit 👇🏼
+
 def get_recall_parameters(days_gap, intensity="auto"):
     """
     Returns time-aware recall parameters: target k, dist threshold, and mode.
@@ -17,6 +19,8 @@ def get_recall_parameters(days_gap, intensity="auto"):
         return {"k": 7, "max_distance": 0.55, "mode": "few_events"}
     else:  # high
         return {"k": 15, "max_distance": 0.65, "mode": "full_narrative"}
+
+# Cognitive Control Unit 👆🏼
 
 def recall_memories(collection, query_embedding, days_gap=7, intensity="auto"):
     
