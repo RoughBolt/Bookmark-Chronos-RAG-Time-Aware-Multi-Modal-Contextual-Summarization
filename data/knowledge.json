@@ -7,15 +7,15 @@
     "interactions": {
         "Will": {
             "Gared": 6,
-            "Waymar Royce": 2
+            "Waymar Royce": 6
         },
         "Gared": {
             "Will": 6,
-            "Waymar Royce": 1
+            "Waymar Royce": 6
         },
         "Waymar Royce": {
-            "Will": 2,
-            "Gared": 1
+            "Will": 6,
+            "Gared": 6
         }
     }
 }

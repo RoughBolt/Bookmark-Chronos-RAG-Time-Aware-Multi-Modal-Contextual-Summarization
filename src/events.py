@@ -26,6 +26,31 @@
 # ===========================VERSION 2===========================
 
 import re
+import math
+
+# ── Temporal Decay Constants (λ) — Ebbinghaus Forgetting Curve calibrated ───
+#
+# Formula: S = S_semantic · e^(−λ · Δt)
+#   S_semantic = base importance score from classify_event() [1–4]
+#   Δt         = normalized positional distance from bookmark [0.0 → 1.0]
+#   λ          = decay constant tuned per event type
+#
+# Justification:
+#   - Deaths/resurrections are long-term memory anchors → low λ (slow decay)
+#   - Combat/discovery are vivid but fade at medium rate → mid λ
+#   - Dialogue/atmosphere have near-zero recall value after hours → high λ
+#   This mirrors the differential retention rates studied by Ebbinghaus (1885).
+#
+DECAY_LAMBDA = {
+    "death":        0.1,
+    "resurrection": 0.1,
+    "combat":       0.5,
+    "discovery":    0.4,
+    "dialogue":     1.2,
+    "atmosphere":   2.0,
+    "description":  2.0,
+}
+DECAY_LAMBDA_DEFAULT = 1.0
 
 def classify_event(sentence):
     s = sentence.lower()
@@ -115,7 +140,8 @@ def get_event_threshold(days_gap):
         return 2
     else:
         return 1      # everything
-    
+
+
 def get_event_limit(days_gap):
     if days_gap > 90:
         return 3
@@ -125,3 +151,35 @@ def get_event_limit(days_gap):
         return 8
     else:
         return 15
+
+
+def apply_temporal_decay(events: list) -> list:
+    """
+    Applies exponential temporal decay to each event's importance score.
+
+    S = S_semantic · e^(−λ · Δt)
+
+    Where:
+      S_semantic = base importance score (1–4) from classify_event()
+      Δt         = normalized distance from bookmark position [0.0, 1.0]
+                   0.0 = at the bookmark (most recent) → full score
+                   1.0 = very start of text → maximally decayed
+      λ          = DECAY_LAMBDA[event_type], calibrated per Ebbinghaus curve
+
+    Returns the same list with `decay_score` populated on each event.
+    """
+    if not events:
+        return events
+
+    bookmark_position = max(e["position"] for e in events)
+    max_position = bookmark_position if bookmark_position > 0 else 1
+
+    for e in events:
+        distance = abs(e["position"] - bookmark_position)
+        delta_t = distance / max_position          # Normalize to [0.0, 1.0]
+        lam = DECAY_LAMBDA.get(e["type"], DECAY_LAMBDA_DEFAULT)
+
+        # Exponential decay: recent events retain full score, old ones decay fast
+        e["decay_score"] = e["importance"] * math.exp(-lam * delta_t)
+
+    return events

@@ -1,0 +1,42 @@
+[
+  {
+    "question": "Who was killed in the prologue and how did they die?",
+    "ground_truth": "Ser Waymar Royce was killed by a White Walker during a ranging beyond the Wall. He was struck down after bravely drawing his sword and fighting the creature."
+  },
+  {
+    "question": "What were Will, Gared, and Ser Waymar Royce doing beyond the Wall?",
+    "ground_truth": "They were members of the Night's Watch on a ranging mission beyond the Wall. They were investigating wildlings and encountered signs of something unnatural."
+  },
+  {
+    "question": "What did Will discover when he climbed the tree?",
+    "ground_truth": "Will discovered eight wildling corpses arranged in a pattern in the forest, which appeared to have been killed in an unnatural way."
+  },
+  {
+    "question": "What happened to the bodies the rangers found?",
+    "ground_truth": "The bodies had disappeared from where Will had seen them when Ser Waymar Royce went to investigate. Only later did the White Walkers appear."
+  },
+  {
+    "question": "Who survived the encounter with the White Walkers in the prologue?",
+    "ground_truth": "Gared survived the encounter with the White Walkers, though Will was ultimately killed by the reanimated corpse of Ser Waymar Royce after Waymar rose again as a wight."
+  },
+  {
+    "question": "What was Ser Waymar Royce's attitude toward the danger beyond the Wall?",
+    "ground_truth": "Ser Waymar Royce was proud and dismissive of the danger, refusing to retreat even when Will and Gared urged caution. He drew his sword and faced the White Walker directly."
+  },
+  {
+    "question": "What is the Night's Watch and what is their role?",
+    "ground_truth": "The Night's Watch is a military order that guards the Wall separating the Seven Kingdoms from the dangers beyond it, including wildlings and supernatural threats like White Walkers."
+  },
+  {
+    "question": "Describe what the White Walkers looked like.",
+    "ground_truth": "The White Walkers were described as cold, pale, and inhuman. They carried crystal swords and moved silently through the darkness. Their eyes shone with a piercing blue light."
+  },
+  {
+    "question": "What was significant about Waymar Royce's wound before he rose again?",
+    "ground_truth": "Waymar Royce died from wounds inflicted by the White Walker, but he rose again as a wight — a reanimated corpse — with his eyes glowing blue, and then killed Will."
+  },
+  {
+    "question": "Where does the prologue of A Game of Thrones take place?",
+    "ground_truth": "The prologue takes place in the haunted forest beyond the Wall, in the far north of Westeros, during a cold night with deep snow."
+  }
+]
