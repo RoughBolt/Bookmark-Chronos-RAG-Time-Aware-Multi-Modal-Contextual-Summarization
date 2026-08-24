@@ -1,0 +1,13 @@
+{
+  "model": "memgpt-gpt4",
+  "local": {
+    "relevance": 0.520,
+    "faithfulness": 0.480,
+    "samples": 20
+  },
+  "narrativeqa": {
+    "relevance": 2.8,
+    "faithfulness": 2.4,
+    "samples": 5
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "samples": 5,
+  "model": "qwen2:0.5b",
+  "Chronos-RAG": {
+    "relevance": 4.0,
+    "faithfulness": 4.0
+  },
+  "Vanilla RAG": {
+    "relevance": 2.4,
+    "faithfulness": 1.8
+  }
+}

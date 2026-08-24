@@ -1,0 +1,7031 @@
+[
+  {
+    "config_id": "C0",
+    "config_name": "Vanilla RAG",
+    "memory_count": 1164,
+    "build_time_sec": 0.0,
+    "keyword_recall": 0.1404,
+    "precision_at_5": 0.7055,
+    "semantic_recall": 0.7019,
+    "per_question": [
+      {
+        "id": "P01",
+        "question_type": "factual",
+        "recall": 0.1875,
+        "precision": 0.4,
+        "semantic_recall": 0.7004
+      },
+      {
+        "id": "P02",
+        "question_type": "factual",
+        "recall": 0.1538,
+        "precision": 0.2,
+        "semantic_recall": 0.6198
+      },
+      {
+        "id": "P03",
+        "question_type": "factual",
+        "recall": 0.0909,
+        "precision": 0.2,
+        "semantic_recall": 0.6248
+      },
+      {
+        "id": "P04",
+        "question_type": "temporal",
+        "recall": 0.0769,
+        "precision": 0.2,
+        "semantic_recall": 0.6906
+      },
+      {
+        "id": "P05",
+        "question_type": "character_state",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6673
+      },
+      {
+        "id": "P06",
+        "question_type": "character_state",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.7902
+      },
+      {
+        "id": "P07",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.74
+      },
+      {
+        "id": "P08",
+        "question_type": "factual",
+        "recall": 0.2941,
+        "precision": 0.6,
+        "semantic_recall": 0.6891
+      },
+      {
+        "id": "P09",
+        "question_type": "causal",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.6969
+      },
+      {
+        "id": "P10",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.4,
+        "semantic_recall": 0.5986
+      },
+      {
+        "id": "P11",
+        "question_type": "causal",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6686
+      },
+      {
+        "id": "P12",
+        "question_type": "factual",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6862
+      },
+      {
+        "id": "P13",
+        "question_type": "character_state",
+        "recall": 0.2727,
+        "precision": 1.0,
+        "semantic_recall": 0.7845
+      },
+      {
+        "id": "P14",
+        "question_type": "factual",
+        "recall": 0.1765,
+        "precision": 1.0,
+        "semantic_recall": 0.7103
+      },
+      {
+        "id": "P15",
+        "question_type": "factual",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.7104
+      },
+      {
+        "id": "P16",
+        "question_type": "factual",
+        "recall": 0.1875,
+        "precision": 0.6,
+        "semantic_recall": 0.7096
+      },
+      {
+        "id": "P17",
+        "question_type": "temporal",
+        "recall": 0.1176,
+        "precision": 0.8,
+        "semantic_recall": 0.7127
+      },
+      {
+        "id": "P18",
+        "question_type": "causal",
+        "recall": 0.04,
+        "precision": 0.2,
+        "semantic_recall": 0.5915
+      },
+      {
+        "id": "P19",
+        "question_type": "factual",
+        "recall": 0.1154,
+        "precision": 0.4,
+        "semantic_recall": 0.5817
+      },
+      {
+        "id": "P20",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 0.4,
+        "semantic_recall": 0.668
+      },
+      {
+        "id": "B01",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 0.4,
+        "semantic_recall": 0.6672
+      },
+      {
+        "id": "B02",
+        "question_type": "factual",
+        "recall": 0.3333,
+        "precision": 1.0,
+        "semantic_recall": 0.7491
+      },
+      {
+        "id": "B03",
+        "question_type": "causal",
+        "recall": 0.32,
+        "precision": 0.4,
+        "semantic_recall": 0.8097
+      },
+      {
+        "id": "B04",
+        "question_type": "causal",
+        "recall": 0.4286,
+        "precision": 0.8,
+        "semantic_recall": 0.8052
+      },
+      {
+        "id": "B05",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.8038
+      },
+      {
+        "id": "B06",
+        "question_type": "factual",
+        "recall": 0.3333,
+        "precision": 1.0,
+        "semantic_recall": 0.7948
+      },
+      {
+        "id": "B07",
+        "question_type": "character_state",
+        "recall": 0.0952,
+        "precision": 1.0,
+        "semantic_recall": 0.7073
+      },
+      {
+        "id": "B08",
+        "question_type": "factual",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.7507
+      },
+      {
+        "id": "B09",
+        "question_type": "multi_hop",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7718
+      },
+      {
+        "id": "B10",
+        "question_type": "factual",
+        "recall": 0.2308,
+        "precision": 0.6,
+        "semantic_recall": 0.7271
+      },
+      {
+        "id": "C01",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 0.6,
+        "semantic_recall": 0.7204
+      },
+      {
+        "id": "C02",
+        "question_type": "character_state",
+        "recall": 0.1304,
+        "precision": 1.0,
+        "semantic_recall": 0.7086
+      },
+      {
+        "id": "C03",
+        "question_type": "causal",
+        "recall": 0.1429,
+        "precision": 0.8,
+        "semantic_recall": 0.6823
+      },
+      {
+        "id": "C04",
+        "question_type": "factual",
+        "recall": 0.4211,
+        "precision": 1.0,
+        "semantic_recall": 0.775
+      },
+      {
+        "id": "D01",
+        "question_type": "character_state",
+        "recall": 0.15,
+        "precision": 1.0,
+        "semantic_recall": 0.7641
+      },
+      {
+        "id": "D02",
+        "question_type": "causal",
+        "recall": 0.1579,
+        "precision": 1.0,
+        "semantic_recall": 0.7503
+      },
+      {
+        "id": "D03",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7652
+      },
+      {
+        "id": "D04",
+        "question_type": "factual",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7176
+      },
+      {
+        "id": "D05",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.6,
+        "semantic_recall": 0.6672
+      },
+      {
+        "id": "D06",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 1.0,
+        "semantic_recall": 0.7595
+      },
+      {
+        "id": "E01",
+        "question_type": "causal",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7039
+      },
+      {
+        "id": "E02",
+        "question_type": "character_state",
+        "recall": 0.4286,
+        "precision": 1.0,
+        "semantic_recall": 0.8009
+      },
+      {
+        "id": "E03",
+        "question_type": "factual",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.8358
+      },
+      {
+        "id": "E04",
+        "question_type": "factual",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7376
+      },
+      {
+        "id": "E05",
+        "question_type": "causal",
+        "recall": 0.1579,
+        "precision": 1.0,
+        "semantic_recall": 0.8097
+      },
+      {
+        "id": "J01",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 0.6,
+        "semantic_recall": 0.6782
+      },
+      {
+        "id": "J02",
+        "question_type": "factual",
+        "recall": 0.15,
+        "precision": 0.4,
+        "semantic_recall": 0.6427
+      },
+      {
+        "id": "J03",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 0.6,
+        "semantic_recall": 0.6263
+      },
+      {
+        "id": "J04",
+        "question_type": "causal",
+        "recall": 0.1905,
+        "precision": 0.8,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "J05",
+        "question_type": "character_state",
+        "recall": 0.1579,
+        "precision": 0.8,
+        "semantic_recall": 0.7115
+      },
+      {
+        "id": "C05",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 1.0,
+        "semantic_recall": 0.7102
+      },
+      {
+        "id": "C06",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.7034
+      },
+      {
+        "id": "C07",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 1.0,
+        "semantic_recall": 0.7377
+      },
+      {
+        "id": "C08",
+        "question_type": "factual",
+        "recall": 0.08,
+        "precision": 1.0,
+        "semantic_recall": 0.7175
+      },
+      {
+        "id": "C09",
+        "question_type": "causal",
+        "recall": 0.1818,
+        "precision": 0.4,
+        "semantic_recall": 0.7535
+      },
+      {
+        "id": "A01",
+        "question_type": "factual",
+        "recall": 0.087,
+        "precision": 0.2,
+        "semantic_recall": 0.6551
+      },
+      {
+        "id": "A02",
+        "question_type": "causal",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6529
+      },
+      {
+        "id": "A03",
+        "question_type": "causal",
+        "recall": 0.087,
+        "precision": 0.6,
+        "semantic_recall": 0.7098
+      },
+      {
+        "id": "A04",
+        "question_type": "character_state",
+        "recall": 0.05,
+        "precision": 0.2,
+        "semantic_recall": 0.6387
+      },
+      {
+        "id": "B11",
+        "question_type": "character_state",
+        "recall": 0.0476,
+        "precision": 1.0,
+        "semantic_recall": 0.7035
+      },
+      {
+        "id": "B12",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 1.0,
+        "semantic_recall": 0.7141
+      },
+      {
+        "id": "B13",
+        "question_type": "causal",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.6787
+      },
+      {
+        "id": "T01",
+        "question_type": "causal",
+        "recall": 0.12,
+        "precision": 0.6,
+        "semantic_recall": 0.6947
+      },
+      {
+        "id": "T02",
+        "question_type": "factual",
+        "recall": 0.1364,
+        "precision": 0.2,
+        "semantic_recall": 0.7653
+      },
+      {
+        "id": "T03",
+        "question_type": "character_state",
+        "recall": 0.0909,
+        "precision": 0.4,
+        "semantic_recall": 0.6578
+      },
+      {
+        "id": "S01",
+        "question_type": "character_state",
+        "recall": 0.1818,
+        "precision": 0.8,
+        "semantic_recall": 0.6847
+      },
+      {
+        "id": "S02",
+        "question_type": "character_state",
+        "recall": 0.05,
+        "precision": 0.6,
+        "semantic_recall": 0.659
+      },
+      {
+        "id": "M01",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 0.4,
+        "semantic_recall": 0.5694
+      },
+      {
+        "id": "M02",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 1.0,
+        "semantic_recall": 0.7326
+      },
+      {
+        "id": "M03",
+        "question_type": "character_state",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7497
+      },
+      {
+        "id": "M04",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.6,
+        "semantic_recall": 0.7805
+      },
+      {
+        "id": "M05",
+        "question_type": "factual",
+        "recall": 0.3182,
+        "precision": 1.0,
+        "semantic_recall": 0.7388
+      },
+      {
+        "id": "T04",
+        "question_type": "multi_hop",
+        "recall": 0.0909,
+        "precision": 0.6,
+        "semantic_recall": 0.6715
+      },
+      {
+        "id": "T05",
+        "question_type": "factual",
+        "recall": 0.2308,
+        "precision": 1.0,
+        "semantic_recall": 0.7002
+      },
+      {
+        "id": "E06",
+        "question_type": "causal",
+        "recall": 0.087,
+        "precision": 0.6,
+        "semantic_recall": 0.6305
+      },
+      {
+        "id": "E07",
+        "question_type": "multi_hop",
+        "recall": 0.0417,
+        "precision": 1.0,
+        "semantic_recall": 0.704
+      },
+      {
+        "id": "J06",
+        "question_type": "character_state",
+        "recall": 0.0333,
+        "precision": 0.4,
+        "semantic_recall": 0.5861
+      },
+      {
+        "id": "J07",
+        "question_type": "character_state",
+        "recall": 0.087,
+        "precision": 0.8,
+        "semantic_recall": 0.6349
+      },
+      {
+        "id": "J08",
+        "question_type": "character_state",
+        "recall": 0.087,
+        "precision": 0.4,
+        "semantic_recall": 0.6366
+      },
+      {
+        "id": "D07",
+        "question_type": "temporal",
+        "recall": 0.2083,
+        "precision": 1.0,
+        "semantic_recall": 0.7576
+      },
+      {
+        "id": "D08",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7403
+      },
+      {
+        "id": "E08",
+        "question_type": "multi_hop",
+        "recall": 0.1481,
+        "precision": 0.8,
+        "semantic_recall": 0.7604
+      },
+      {
+        "id": "E09",
+        "question_type": "multi_hop",
+        "recall": 0.087,
+        "precision": 1.0,
+        "semantic_recall": 0.7335
+      },
+      {
+        "id": "E10",
+        "question_type": "causal",
+        "recall": 0.0476,
+        "precision": 1.0,
+        "semantic_recall": 0.6896
+      },
+      {
+        "id": "E11",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.8,
+        "semantic_recall": 0.6975
+      },
+      {
+        "id": "E12",
+        "question_type": "temporal",
+        "recall": 0.1154,
+        "precision": 1.0,
+        "semantic_recall": 0.732
+      },
+      {
+        "id": "E13",
+        "question_type": "multi_hop",
+        "recall": 0.1,
+        "precision": 1.0,
+        "semantic_recall": 0.7211
+      },
+      {
+        "id": "A05",
+        "question_type": "factual",
+        "recall": 0.1154,
+        "precision": 0.4,
+        "semantic_recall": 0.6085
+      },
+      {
+        "id": "A06",
+        "question_type": "factual",
+        "recall": 0.0417,
+        "precision": 0.4,
+        "semantic_recall": 0.7298
+      },
+      {
+        "id": "A07",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.8,
+        "semantic_recall": 0.687
+      },
+      {
+        "id": "S03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.4,
+        "semantic_recall": 0.6514
+      },
+      {
+        "id": "S04",
+        "question_type": "temporal",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6795
+      },
+      {
+        "id": "R01",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.8,
+        "semantic_recall": 0.6814
+      },
+      {
+        "id": "R02",
+        "question_type": "causal",
+        "recall": 0.0833,
+        "precision": 0.2,
+        "semantic_recall": 0.719
+      },
+      {
+        "id": "R03",
+        "question_type": "factual",
+        "recall": 0.2083,
+        "precision": 0.8,
+        "semantic_recall": 0.7323
+      },
+      {
+        "id": "D09",
+        "question_type": "temporal",
+        "recall": 0.0345,
+        "precision": 1.0,
+        "semantic_recall": 0.6286
+      },
+      {
+        "id": "D10",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 0.8,
+        "semantic_recall": 0.7
+      },
+      {
+        "id": "D11",
+        "question_type": "causal",
+        "recall": 0.0769,
+        "precision": 0.2,
+        "semantic_recall": 0.6886
+      },
+      {
+        "id": "MH01",
+        "question_type": "multi_hop",
+        "recall": 0.0417,
+        "precision": 0.8,
+        "semantic_recall": 0.6911
+      },
+      {
+        "id": "MH02",
+        "question_type": "multi_hop",
+        "recall": 0.1538,
+        "precision": 0.8,
+        "semantic_recall": 0.6836
+      },
+      {
+        "id": "MH03",
+        "question_type": "multi_hop",
+        "recall": 0.1481,
+        "precision": 1.0,
+        "semantic_recall": 0.6717
+      },
+      {
+        "id": "MH04",
+        "question_type": "multi_hop",
+        "recall": 0.04,
+        "precision": 0.4,
+        "semantic_recall": 0.6815
+      },
+      {
+        "id": "MH05",
+        "question_type": "multi_hop",
+        "recall": 0.0882,
+        "precision": 0.8,
+        "semantic_recall": 0.6506
+      },
+      {
+        "id": "T06",
+        "question_type": "factual",
+        "recall": 0.087,
+        "precision": 0.6,
+        "semantic_recall": 0.6685
+      },
+      {
+        "id": "T07",
+        "question_type": "character_state",
+        "recall": 0.0435,
+        "precision": 0.2,
+        "semantic_recall": 0.6648
+      },
+      {
+        "id": "T08",
+        "question_type": "character_state",
+        "recall": 0.1538,
+        "precision": 1.0,
+        "semantic_recall": 0.7193
+      },
+      {
+        "id": "TM01",
+        "question_type": "temporal",
+        "recall": 0.0833,
+        "precision": 0.4,
+        "semantic_recall": 0.6934
+      },
+      {
+        "id": "TM02",
+        "question_type": "temporal",
+        "recall": 0.0909,
+        "precision": 1.0,
+        "semantic_recall": 0.6804
+      },
+      {
+        "id": "TM03",
+        "question_type": "temporal",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.6543
+      },
+      {
+        "id": "TM04",
+        "question_type": "character_state",
+        "recall": 0.16,
+        "precision": 0.8,
+        "semantic_recall": 0.6661
+      }
+    ]
+  },
+  {
+    "config_id": "C1",
+    "config_name": "+ Semantic Chunking",
+    "memory_count": 387,
+    "build_time_sec": 0.05,
+    "keyword_recall": 0.208,
+    "precision_at_5": 0.7891,
+    "semantic_recall": 0.7117,
+    "per_question": [
+      {
+        "id": "P01",
+        "question_type": "factual",
+        "recall": 0.3125,
+        "precision": 0.6,
+        "semantic_recall": 0.6809
+      },
+      {
+        "id": "P02",
+        "question_type": "factual",
+        "recall": 0.1538,
+        "precision": 0.4,
+        "semantic_recall": 0.6385
+      },
+      {
+        "id": "P03",
+        "question_type": "factual",
+        "recall": 0.0909,
+        "precision": 0.2,
+        "semantic_recall": 0.5987
+      },
+      {
+        "id": "P04",
+        "question_type": "temporal",
+        "recall": 0.1538,
+        "precision": 0.4,
+        "semantic_recall": 0.6503
+      },
+      {
+        "id": "P05",
+        "question_type": "character_state",
+        "recall": 0.0625,
+        "precision": 0.4,
+        "semantic_recall": 0.6542
+      },
+      {
+        "id": "P06",
+        "question_type": "character_state",
+        "recall": 0.2778,
+        "precision": 0.8,
+        "semantic_recall": 0.7826
+      },
+      {
+        "id": "P07",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.7027
+      },
+      {
+        "id": "P08",
+        "question_type": "factual",
+        "recall": 0.2353,
+        "precision": 1.0,
+        "semantic_recall": 0.6596
+      },
+      {
+        "id": "P09",
+        "question_type": "causal",
+        "recall": 0.1875,
+        "precision": 1.0,
+        "semantic_recall": 0.7455
+      },
+      {
+        "id": "P10",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.4,
+        "semantic_recall": 0.6444
+      },
+      {
+        "id": "P11",
+        "question_type": "causal",
+        "recall": 0.2222,
+        "precision": 0.4,
+        "semantic_recall": 0.7153
+      },
+      {
+        "id": "P12",
+        "question_type": "factual",
+        "recall": 0.0667,
+        "precision": 0.2,
+        "semantic_recall": 0.6835
+      },
+      {
+        "id": "P13",
+        "question_type": "character_state",
+        "recall": 0.4091,
+        "precision": 1.0,
+        "semantic_recall": 0.7602
+      },
+      {
+        "id": "P14",
+        "question_type": "factual",
+        "recall": 0.5294,
+        "precision": 1.0,
+        "semantic_recall": 0.793
+      },
+      {
+        "id": "P15",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.4,
+        "semantic_recall": 0.7172
+      },
+      {
+        "id": "P16",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 0.6,
+        "semantic_recall": 0.7427
+      },
+      {
+        "id": "P17",
+        "question_type": "temporal",
+        "recall": 0.1765,
+        "precision": 0.8,
+        "semantic_recall": 0.7251
+      },
+      {
+        "id": "P18",
+        "question_type": "causal",
+        "recall": 0.16,
+        "precision": 0.6,
+        "semantic_recall": 0.6251
+      },
+      {
+        "id": "P19",
+        "question_type": "factual",
+        "recall": 0.0385,
+        "precision": 0.2,
+        "semantic_recall": 0.6008
+      },
+      {
+        "id": "P20",
+        "question_type": "multi_hop",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.692
+      },
+      {
+        "id": "B01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.8,
+        "semantic_recall": 0.772
+      },
+      {
+        "id": "B02",
+        "question_type": "factual",
+        "recall": 0.2917,
+        "precision": 1.0,
+        "semantic_recall": 0.7462
+      },
+      {
+        "id": "B03",
+        "question_type": "causal",
+        "recall": 0.48,
+        "precision": 1.0,
+        "semantic_recall": 0.8362
+      },
+      {
+        "id": "B04",
+        "question_type": "causal",
+        "recall": 0.3571,
+        "precision": 0.8,
+        "semantic_recall": 0.7636
+      },
+      {
+        "id": "B05",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.8155
+      },
+      {
+        "id": "B06",
+        "question_type": "factual",
+        "recall": 0.6667,
+        "precision": 1.0,
+        "semantic_recall": 0.8448
+      },
+      {
+        "id": "B07",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7287
+      },
+      {
+        "id": "B08",
+        "question_type": "factual",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.7755
+      },
+      {
+        "id": "B09",
+        "question_type": "multi_hop",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.8132
+      },
+      {
+        "id": "B10",
+        "question_type": "factual",
+        "recall": 0.3077,
+        "precision": 0.8,
+        "semantic_recall": 0.7109
+      },
+      {
+        "id": "C01",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 0.8,
+        "semantic_recall": 0.7252
+      },
+      {
+        "id": "C02",
+        "question_type": "character_state",
+        "recall": 0.3043,
+        "precision": 1.0,
+        "semantic_recall": 0.7659
+      },
+      {
+        "id": "C03",
+        "question_type": "causal",
+        "recall": 0.2381,
+        "precision": 1.0,
+        "semantic_recall": 0.7236
+      },
+      {
+        "id": "C04",
+        "question_type": "factual",
+        "recall": 0.4737,
+        "precision": 1.0,
+        "semantic_recall": 0.7555
+      },
+      {
+        "id": "D01",
+        "question_type": "character_state",
+        "recall": 0.35,
+        "precision": 0.8,
+        "semantic_recall": 0.7544
+      },
+      {
+        "id": "D02",
+        "question_type": "causal",
+        "recall": 0.3684,
+        "precision": 1.0,
+        "semantic_recall": 0.7542
+      },
+      {
+        "id": "D03",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7455
+      },
+      {
+        "id": "D04",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7196
+      },
+      {
+        "id": "D05",
+        "question_type": "factual",
+        "recall": 0.1071,
+        "precision": 0.6,
+        "semantic_recall": 0.6923
+      },
+      {
+        "id": "D06",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7238
+      },
+      {
+        "id": "E01",
+        "question_type": "causal",
+        "recall": 0.36,
+        "precision": 1.0,
+        "semantic_recall": 0.7609
+      },
+      {
+        "id": "E02",
+        "question_type": "character_state",
+        "recall": 0.6667,
+        "precision": 1.0,
+        "semantic_recall": 0.8304
+      },
+      {
+        "id": "E03",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 1.0,
+        "semantic_recall": 0.7971
+      },
+      {
+        "id": "E04",
+        "question_type": "factual",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7595
+      },
+      {
+        "id": "E05",
+        "question_type": "causal",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.75
+      },
+      {
+        "id": "J01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.6,
+        "semantic_recall": 0.6536
+      },
+      {
+        "id": "J02",
+        "question_type": "factual",
+        "recall": 0.15,
+        "precision": 0.8,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "J03",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6396
+      },
+      {
+        "id": "J04",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.6905
+      },
+      {
+        "id": "J05",
+        "question_type": "character_state",
+        "recall": 0.3158,
+        "precision": 1.0,
+        "semantic_recall": 0.7227
+      },
+      {
+        "id": "C05",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 1.0,
+        "semantic_recall": 0.7171
+      },
+      {
+        "id": "C06",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.7087
+      },
+      {
+        "id": "C07",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 0.8,
+        "semantic_recall": 0.7167
+      },
+      {
+        "id": "C08",
+        "question_type": "factual",
+        "recall": 0.12,
+        "precision": 1.0,
+        "semantic_recall": 0.7107
+      },
+      {
+        "id": "C09",
+        "question_type": "causal",
+        "recall": 0.1818,
+        "precision": 0.4,
+        "semantic_recall": 0.7522
+      },
+      {
+        "id": "A01",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.6,
+        "semantic_recall": 0.677
+      },
+      {
+        "id": "A02",
+        "question_type": "causal",
+        "recall": 0.15,
+        "precision": 0.4,
+        "semantic_recall": 0.6857
+      },
+      {
+        "id": "A03",
+        "question_type": "causal",
+        "recall": 0.1739,
+        "precision": 0.8,
+        "semantic_recall": 0.7304
+      },
+      {
+        "id": "A04",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.6864
+      },
+      {
+        "id": "B11",
+        "question_type": "character_state",
+        "recall": 0.0952,
+        "precision": 1.0,
+        "semantic_recall": 0.7263
+      },
+      {
+        "id": "B12",
+        "question_type": "multi_hop",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.6789
+      },
+      {
+        "id": "B13",
+        "question_type": "causal",
+        "recall": 0.0833,
+        "precision": 1.0,
+        "semantic_recall": 0.71
+      },
+      {
+        "id": "T01",
+        "question_type": "causal",
+        "recall": 0.24,
+        "precision": 1.0,
+        "semantic_recall": 0.7042
+      },
+      {
+        "id": "T02",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 0.6,
+        "semantic_recall": 0.7067
+      },
+      {
+        "id": "T03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.646
+      },
+      {
+        "id": "S01",
+        "question_type": "character_state",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.6951
+      },
+      {
+        "id": "S02",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.6,
+        "semantic_recall": 0.6862
+      },
+      {
+        "id": "M01",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.6495
+      },
+      {
+        "id": "M02",
+        "question_type": "factual",
+        "recall": 0.4091,
+        "precision": 1.0,
+        "semantic_recall": 0.7136
+      },
+      {
+        "id": "M03",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7816
+      },
+      {
+        "id": "M04",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.4,
+        "semantic_recall": 0.694
+      },
+      {
+        "id": "M05",
+        "question_type": "factual",
+        "recall": 0.3636,
+        "precision": 0.8,
+        "semantic_recall": 0.7191
+      },
+      {
+        "id": "T04",
+        "question_type": "multi_hop",
+        "recall": 0.1364,
+        "precision": 1.0,
+        "semantic_recall": 0.67
+      },
+      {
+        "id": "T05",
+        "question_type": "factual",
+        "recall": 0.2308,
+        "precision": 0.6,
+        "semantic_recall": 0.7086
+      },
+      {
+        "id": "E06",
+        "question_type": "causal",
+        "recall": 0.2609,
+        "precision": 0.6,
+        "semantic_recall": 0.8113
+      },
+      {
+        "id": "E07",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 0.8,
+        "semantic_recall": 0.7144
+      },
+      {
+        "id": "J06",
+        "question_type": "character_state",
+        "recall": 0.0333,
+        "precision": 0.6,
+        "semantic_recall": 0.6571
+      },
+      {
+        "id": "J07",
+        "question_type": "character_state",
+        "recall": 0.1739,
+        "precision": 1.0,
+        "semantic_recall": 0.6501
+      },
+      {
+        "id": "J08",
+        "question_type": "character_state",
+        "recall": 0.0435,
+        "precision": 0.2,
+        "semantic_recall": 0.6393
+      },
+      {
+        "id": "D07",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7449
+      },
+      {
+        "id": "D08",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7273
+      },
+      {
+        "id": "E08",
+        "question_type": "multi_hop",
+        "recall": 0.2593,
+        "precision": 1.0,
+        "semantic_recall": 0.6661
+      },
+      {
+        "id": "E09",
+        "question_type": "multi_hop",
+        "recall": 0.2609,
+        "precision": 1.0,
+        "semantic_recall": 0.7373
+      },
+      {
+        "id": "E10",
+        "question_type": "causal",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7336
+      },
+      {
+        "id": "E11",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.8,
+        "semantic_recall": 0.7269
+      },
+      {
+        "id": "E12",
+        "question_type": "temporal",
+        "recall": 0.1154,
+        "precision": 1.0,
+        "semantic_recall": 0.766
+      },
+      {
+        "id": "E13",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 1.0,
+        "semantic_recall": 0.688
+      },
+      {
+        "id": "A05",
+        "question_type": "factual",
+        "recall": 0.1154,
+        "precision": 0.4,
+        "semantic_recall": 0.6478
+      },
+      {
+        "id": "A06",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 0.6,
+        "semantic_recall": 0.6697
+      },
+      {
+        "id": "A07",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6767
+      },
+      {
+        "id": "S03",
+        "question_type": "character_state",
+        "recall": 0.0909,
+        "precision": 1.0,
+        "semantic_recall": 0.6711
+      },
+      {
+        "id": "S04",
+        "question_type": "temporal",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.7018
+      },
+      {
+        "id": "R01",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 1.0,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "R02",
+        "question_type": "causal",
+        "recall": 0.0417,
+        "precision": 0.2,
+        "semantic_recall": 0.7122
+      },
+      {
+        "id": "R03",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.7282
+      },
+      {
+        "id": "D09",
+        "question_type": "temporal",
+        "recall": 0.1034,
+        "precision": 1.0,
+        "semantic_recall": 0.6974
+      },
+      {
+        "id": "D10",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.7118
+      },
+      {
+        "id": "D11",
+        "question_type": "causal",
+        "recall": 0.1538,
+        "precision": 0.6,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "MH01",
+        "question_type": "multi_hop",
+        "recall": 0.0417,
+        "precision": 1.0,
+        "semantic_recall": 0.6876
+      },
+      {
+        "id": "MH02",
+        "question_type": "multi_hop",
+        "recall": 0.3077,
+        "precision": 1.0,
+        "semantic_recall": 0.7191
+      },
+      {
+        "id": "MH03",
+        "question_type": "multi_hop",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.6832
+      },
+      {
+        "id": "MH04",
+        "question_type": "multi_hop",
+        "recall": 0.08,
+        "precision": 0.6,
+        "semantic_recall": 0.6748
+      },
+      {
+        "id": "MH05",
+        "question_type": "multi_hop",
+        "recall": 0.0588,
+        "precision": 0.4,
+        "semantic_recall": 0.6424
+      },
+      {
+        "id": "T06",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.4,
+        "semantic_recall": 0.6588
+      },
+      {
+        "id": "T07",
+        "question_type": "character_state",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6697
+      },
+      {
+        "id": "T08",
+        "question_type": "character_state",
+        "recall": 0.4231,
+        "precision": 1.0,
+        "semantic_recall": 0.7487
+      },
+      {
+        "id": "TM01",
+        "question_type": "temporal",
+        "recall": 0.1667,
+        "precision": 0.4,
+        "semantic_recall": 0.6447
+      },
+      {
+        "id": "TM02",
+        "question_type": "temporal",
+        "recall": 0.2424,
+        "precision": 1.0,
+        "semantic_recall": 0.7482
+      },
+      {
+        "id": "TM03",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "TM04",
+        "question_type": "character_state",
+        "recall": 0.36,
+        "precision": 0.8,
+        "semantic_recall": 0.6974
+      }
+    ]
+  },
+  {
+    "config_id": "C2",
+    "config_name": "+ Event Classification",
+    "memory_count": 387,
+    "build_time_sec": 1.54,
+    "keyword_recall": 0.208,
+    "precision_at_5": 0.7891,
+    "semantic_recall": 0.7117,
+    "per_question": [
+      {
+        "id": "P01",
+        "question_type": "factual",
+        "recall": 0.3125,
+        "precision": 0.6,
+        "semantic_recall": 0.6809
+      },
+      {
+        "id": "P02",
+        "question_type": "factual",
+        "recall": 0.1538,
+        "precision": 0.4,
+        "semantic_recall": 0.6385
+      },
+      {
+        "id": "P03",
+        "question_type": "factual",
+        "recall": 0.0909,
+        "precision": 0.2,
+        "semantic_recall": 0.5987
+      },
+      {
+        "id": "P04",
+        "question_type": "temporal",
+        "recall": 0.1538,
+        "precision": 0.4,
+        "semantic_recall": 0.6503
+      },
+      {
+        "id": "P05",
+        "question_type": "character_state",
+        "recall": 0.0625,
+        "precision": 0.4,
+        "semantic_recall": 0.6542
+      },
+      {
+        "id": "P06",
+        "question_type": "character_state",
+        "recall": 0.2778,
+        "precision": 0.8,
+        "semantic_recall": 0.7826
+      },
+      {
+        "id": "P07",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.7027
+      },
+      {
+        "id": "P08",
+        "question_type": "factual",
+        "recall": 0.2353,
+        "precision": 1.0,
+        "semantic_recall": 0.6596
+      },
+      {
+        "id": "P09",
+        "question_type": "causal",
+        "recall": 0.1875,
+        "precision": 1.0,
+        "semantic_recall": 0.7455
+      },
+      {
+        "id": "P10",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.4,
+        "semantic_recall": 0.6444
+      },
+      {
+        "id": "P11",
+        "question_type": "causal",
+        "recall": 0.2222,
+        "precision": 0.4,
+        "semantic_recall": 0.7153
+      },
+      {
+        "id": "P12",
+        "question_type": "factual",
+        "recall": 0.0667,
+        "precision": 0.2,
+        "semantic_recall": 0.6835
+      },
+      {
+        "id": "P13",
+        "question_type": "character_state",
+        "recall": 0.4091,
+        "precision": 1.0,
+        "semantic_recall": 0.7602
+      },
+      {
+        "id": "P14",
+        "question_type": "factual",
+        "recall": 0.5294,
+        "precision": 1.0,
+        "semantic_recall": 0.793
+      },
+      {
+        "id": "P15",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.4,
+        "semantic_recall": 0.7172
+      },
+      {
+        "id": "P16",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 0.6,
+        "semantic_recall": 0.7427
+      },
+      {
+        "id": "P17",
+        "question_type": "temporal",
+        "recall": 0.1765,
+        "precision": 0.8,
+        "semantic_recall": 0.7251
+      },
+      {
+        "id": "P18",
+        "question_type": "causal",
+        "recall": 0.16,
+        "precision": 0.6,
+        "semantic_recall": 0.6251
+      },
+      {
+        "id": "P19",
+        "question_type": "factual",
+        "recall": 0.0385,
+        "precision": 0.2,
+        "semantic_recall": 0.6008
+      },
+      {
+        "id": "P20",
+        "question_type": "multi_hop",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.692
+      },
+      {
+        "id": "B01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.8,
+        "semantic_recall": 0.772
+      },
+      {
+        "id": "B02",
+        "question_type": "factual",
+        "recall": 0.2917,
+        "precision": 1.0,
+        "semantic_recall": 0.7462
+      },
+      {
+        "id": "B03",
+        "question_type": "causal",
+        "recall": 0.48,
+        "precision": 1.0,
+        "semantic_recall": 0.8362
+      },
+      {
+        "id": "B04",
+        "question_type": "causal",
+        "recall": 0.3571,
+        "precision": 0.8,
+        "semantic_recall": 0.7636
+      },
+      {
+        "id": "B05",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.8155
+      },
+      {
+        "id": "B06",
+        "question_type": "factual",
+        "recall": 0.6667,
+        "precision": 1.0,
+        "semantic_recall": 0.8448
+      },
+      {
+        "id": "B07",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7287
+      },
+      {
+        "id": "B08",
+        "question_type": "factual",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.7755
+      },
+      {
+        "id": "B09",
+        "question_type": "multi_hop",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.8132
+      },
+      {
+        "id": "B10",
+        "question_type": "factual",
+        "recall": 0.3077,
+        "precision": 0.8,
+        "semantic_recall": 0.7109
+      },
+      {
+        "id": "C01",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 0.8,
+        "semantic_recall": 0.7252
+      },
+      {
+        "id": "C02",
+        "question_type": "character_state",
+        "recall": 0.3043,
+        "precision": 1.0,
+        "semantic_recall": 0.7659
+      },
+      {
+        "id": "C03",
+        "question_type": "causal",
+        "recall": 0.2381,
+        "precision": 1.0,
+        "semantic_recall": 0.7236
+      },
+      {
+        "id": "C04",
+        "question_type": "factual",
+        "recall": 0.4737,
+        "precision": 1.0,
+        "semantic_recall": 0.7555
+      },
+      {
+        "id": "D01",
+        "question_type": "character_state",
+        "recall": 0.35,
+        "precision": 0.8,
+        "semantic_recall": 0.7544
+      },
+      {
+        "id": "D02",
+        "question_type": "causal",
+        "recall": 0.3684,
+        "precision": 1.0,
+        "semantic_recall": 0.7542
+      },
+      {
+        "id": "D03",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7455
+      },
+      {
+        "id": "D04",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7196
+      },
+      {
+        "id": "D05",
+        "question_type": "factual",
+        "recall": 0.1071,
+        "precision": 0.6,
+        "semantic_recall": 0.6923
+      },
+      {
+        "id": "D06",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7238
+      },
+      {
+        "id": "E01",
+        "question_type": "causal",
+        "recall": 0.36,
+        "precision": 1.0,
+        "semantic_recall": 0.7609
+      },
+      {
+        "id": "E02",
+        "question_type": "character_state",
+        "recall": 0.6667,
+        "precision": 1.0,
+        "semantic_recall": 0.8304
+      },
+      {
+        "id": "E03",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 1.0,
+        "semantic_recall": 0.7971
+      },
+      {
+        "id": "E04",
+        "question_type": "factual",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7595
+      },
+      {
+        "id": "E05",
+        "question_type": "causal",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.75
+      },
+      {
+        "id": "J01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.6,
+        "semantic_recall": 0.6536
+      },
+      {
+        "id": "J02",
+        "question_type": "factual",
+        "recall": 0.15,
+        "precision": 0.8,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "J03",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6396
+      },
+      {
+        "id": "J04",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.6905
+      },
+      {
+        "id": "J05",
+        "question_type": "character_state",
+        "recall": 0.3158,
+        "precision": 1.0,
+        "semantic_recall": 0.7227
+      },
+      {
+        "id": "C05",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 1.0,
+        "semantic_recall": 0.7171
+      },
+      {
+        "id": "C06",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.7087
+      },
+      {
+        "id": "C07",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 0.8,
+        "semantic_recall": 0.7167
+      },
+      {
+        "id": "C08",
+        "question_type": "factual",
+        "recall": 0.12,
+        "precision": 1.0,
+        "semantic_recall": 0.7107
+      },
+      {
+        "id": "C09",
+        "question_type": "causal",
+        "recall": 0.1818,
+        "precision": 0.4,
+        "semantic_recall": 0.7522
+      },
+      {
+        "id": "A01",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.6,
+        "semantic_recall": 0.677
+      },
+      {
+        "id": "A02",
+        "question_type": "causal",
+        "recall": 0.15,
+        "precision": 0.4,
+        "semantic_recall": 0.6857
+      },
+      {
+        "id": "A03",
+        "question_type": "causal",
+        "recall": 0.1739,
+        "precision": 0.8,
+        "semantic_recall": 0.7304
+      },
+      {
+        "id": "A04",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.6864
+      },
+      {
+        "id": "B11",
+        "question_type": "character_state",
+        "recall": 0.0952,
+        "precision": 1.0,
+        "semantic_recall": 0.7263
+      },
+      {
+        "id": "B12",
+        "question_type": "multi_hop",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.6789
+      },
+      {
+        "id": "B13",
+        "question_type": "causal",
+        "recall": 0.0833,
+        "precision": 1.0,
+        "semantic_recall": 0.71
+      },
+      {
+        "id": "T01",
+        "question_type": "causal",
+        "recall": 0.24,
+        "precision": 1.0,
+        "semantic_recall": 0.7042
+      },
+      {
+        "id": "T02",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 0.6,
+        "semantic_recall": 0.7067
+      },
+      {
+        "id": "T03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.646
+      },
+      {
+        "id": "S01",
+        "question_type": "character_state",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.6951
+      },
+      {
+        "id": "S02",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.6,
+        "semantic_recall": 0.6862
+      },
+      {
+        "id": "M01",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.6495
+      },
+      {
+        "id": "M02",
+        "question_type": "factual",
+        "recall": 0.4091,
+        "precision": 1.0,
+        "semantic_recall": 0.7136
+      },
+      {
+        "id": "M03",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7816
+      },
+      {
+        "id": "M04",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.4,
+        "semantic_recall": 0.694
+      },
+      {
+        "id": "M05",
+        "question_type": "factual",
+        "recall": 0.3636,
+        "precision": 0.8,
+        "semantic_recall": 0.7191
+      },
+      {
+        "id": "T04",
+        "question_type": "multi_hop",
+        "recall": 0.1364,
+        "precision": 1.0,
+        "semantic_recall": 0.67
+      },
+      {
+        "id": "T05",
+        "question_type": "factual",
+        "recall": 0.2308,
+        "precision": 0.6,
+        "semantic_recall": 0.7086
+      },
+      {
+        "id": "E06",
+        "question_type": "causal",
+        "recall": 0.2609,
+        "precision": 0.6,
+        "semantic_recall": 0.8113
+      },
+      {
+        "id": "E07",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 0.8,
+        "semantic_recall": 0.7144
+      },
+      {
+        "id": "J06",
+        "question_type": "character_state",
+        "recall": 0.0333,
+        "precision": 0.6,
+        "semantic_recall": 0.6571
+      },
+      {
+        "id": "J07",
+        "question_type": "character_state",
+        "recall": 0.1739,
+        "precision": 1.0,
+        "semantic_recall": 0.6501
+      },
+      {
+        "id": "J08",
+        "question_type": "character_state",
+        "recall": 0.0435,
+        "precision": 0.2,
+        "semantic_recall": 0.6393
+      },
+      {
+        "id": "D07",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7449
+      },
+      {
+        "id": "D08",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7273
+      },
+      {
+        "id": "E08",
+        "question_type": "multi_hop",
+        "recall": 0.2593,
+        "precision": 1.0,
+        "semantic_recall": 0.6661
+      },
+      {
+        "id": "E09",
+        "question_type": "multi_hop",
+        "recall": 0.2609,
+        "precision": 1.0,
+        "semantic_recall": 0.7373
+      },
+      {
+        "id": "E10",
+        "question_type": "causal",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7336
+      },
+      {
+        "id": "E11",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.8,
+        "semantic_recall": 0.7269
+      },
+      {
+        "id": "E12",
+        "question_type": "temporal",
+        "recall": 0.1154,
+        "precision": 1.0,
+        "semantic_recall": 0.766
+      },
+      {
+        "id": "E13",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 1.0,
+        "semantic_recall": 0.688
+      },
+      {
+        "id": "A05",
+        "question_type": "factual",
+        "recall": 0.1154,
+        "precision": 0.4,
+        "semantic_recall": 0.6478
+      },
+      {
+        "id": "A06",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 0.6,
+        "semantic_recall": 0.6697
+      },
+      {
+        "id": "A07",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6767
+      },
+      {
+        "id": "S03",
+        "question_type": "character_state",
+        "recall": 0.0909,
+        "precision": 1.0,
+        "semantic_recall": 0.6711
+      },
+      {
+        "id": "S04",
+        "question_type": "temporal",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.7018
+      },
+      {
+        "id": "R01",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 1.0,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "R02",
+        "question_type": "causal",
+        "recall": 0.0417,
+        "precision": 0.2,
+        "semantic_recall": 0.7122
+      },
+      {
+        "id": "R03",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.7282
+      },
+      {
+        "id": "D09",
+        "question_type": "temporal",
+        "recall": 0.1034,
+        "precision": 1.0,
+        "semantic_recall": 0.6974
+      },
+      {
+        "id": "D10",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.7118
+      },
+      {
+        "id": "D11",
+        "question_type": "causal",
+        "recall": 0.1538,
+        "precision": 0.6,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "MH01",
+        "question_type": "multi_hop",
+        "recall": 0.0417,
+        "precision": 1.0,
+        "semantic_recall": 0.6876
+      },
+      {
+        "id": "MH02",
+        "question_type": "multi_hop",
+        "recall": 0.3077,
+        "precision": 1.0,
+        "semantic_recall": 0.7191
+      },
+      {
+        "id": "MH03",
+        "question_type": "multi_hop",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.6832
+      },
+      {
+        "id": "MH04",
+        "question_type": "multi_hop",
+        "recall": 0.08,
+        "precision": 0.6,
+        "semantic_recall": 0.6748
+      },
+      {
+        "id": "MH05",
+        "question_type": "multi_hop",
+        "recall": 0.0588,
+        "precision": 0.4,
+        "semantic_recall": 0.6424
+      },
+      {
+        "id": "T06",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.4,
+        "semantic_recall": 0.6588
+      },
+      {
+        "id": "T07",
+        "question_type": "character_state",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6697
+      },
+      {
+        "id": "T08",
+        "question_type": "character_state",
+        "recall": 0.4231,
+        "precision": 1.0,
+        "semantic_recall": 0.7487
+      },
+      {
+        "id": "TM01",
+        "question_type": "temporal",
+        "recall": 0.1667,
+        "precision": 0.4,
+        "semantic_recall": 0.6447
+      },
+      {
+        "id": "TM02",
+        "question_type": "temporal",
+        "recall": 0.2424,
+        "precision": 1.0,
+        "semantic_recall": 0.7482
+      },
+      {
+        "id": "TM03",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "TM04",
+        "question_type": "character_state",
+        "recall": 0.36,
+        "precision": 0.8,
+        "semantic_recall": 0.6974
+      }
+    ]
+  },
+  {
+    "config_id": "C3",
+    "config_name": "+ Single-Scale Decay (hand-tuned)",
+    "memory_count": 387,
+    "build_time_sec": 0.16,
+    "keyword_recall": 0.208,
+    "precision_at_5": 0.7891,
+    "semantic_recall": 0.7117,
+    "per_question": [
+      {
+        "id": "P01",
+        "question_type": "factual",
+        "recall": 0.3125,
+        "precision": 0.6,
+        "semantic_recall": 0.6809
+      },
+      {
+        "id": "P02",
+        "question_type": "factual",
+        "recall": 0.1538,
+        "precision": 0.4,
+        "semantic_recall": 0.6385
+      },
+      {
+        "id": "P03",
+        "question_type": "factual",
+        "recall": 0.0909,
+        "precision": 0.2,
+        "semantic_recall": 0.5987
+      },
+      {
+        "id": "P04",
+        "question_type": "temporal",
+        "recall": 0.1538,
+        "precision": 0.4,
+        "semantic_recall": 0.6503
+      },
+      {
+        "id": "P05",
+        "question_type": "character_state",
+        "recall": 0.0625,
+        "precision": 0.4,
+        "semantic_recall": 0.6542
+      },
+      {
+        "id": "P06",
+        "question_type": "character_state",
+        "recall": 0.2778,
+        "precision": 0.8,
+        "semantic_recall": 0.7826
+      },
+      {
+        "id": "P07",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.7027
+      },
+      {
+        "id": "P08",
+        "question_type": "factual",
+        "recall": 0.2353,
+        "precision": 1.0,
+        "semantic_recall": 0.6596
+      },
+      {
+        "id": "P09",
+        "question_type": "causal",
+        "recall": 0.1875,
+        "precision": 1.0,
+        "semantic_recall": 0.7455
+      },
+      {
+        "id": "P10",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.4,
+        "semantic_recall": 0.6444
+      },
+      {
+        "id": "P11",
+        "question_type": "causal",
+        "recall": 0.2222,
+        "precision": 0.4,
+        "semantic_recall": 0.7153
+      },
+      {
+        "id": "P12",
+        "question_type": "factual",
+        "recall": 0.0667,
+        "precision": 0.2,
+        "semantic_recall": 0.6835
+      },
+      {
+        "id": "P13",
+        "question_type": "character_state",
+        "recall": 0.4091,
+        "precision": 1.0,
+        "semantic_recall": 0.7602
+      },
+      {
+        "id": "P14",
+        "question_type": "factual",
+        "recall": 0.5294,
+        "precision": 1.0,
+        "semantic_recall": 0.793
+      },
+      {
+        "id": "P15",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.4,
+        "semantic_recall": 0.7172
+      },
+      {
+        "id": "P16",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 0.6,
+        "semantic_recall": 0.7427
+      },
+      {
+        "id": "P17",
+        "question_type": "temporal",
+        "recall": 0.1765,
+        "precision": 0.8,
+        "semantic_recall": 0.7251
+      },
+      {
+        "id": "P18",
+        "question_type": "causal",
+        "recall": 0.16,
+        "precision": 0.6,
+        "semantic_recall": 0.6251
+      },
+      {
+        "id": "P19",
+        "question_type": "factual",
+        "recall": 0.0385,
+        "precision": 0.2,
+        "semantic_recall": 0.6008
+      },
+      {
+        "id": "P20",
+        "question_type": "multi_hop",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.692
+      },
+      {
+        "id": "B01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.8,
+        "semantic_recall": 0.772
+      },
+      {
+        "id": "B02",
+        "question_type": "factual",
+        "recall": 0.2917,
+        "precision": 1.0,
+        "semantic_recall": 0.7462
+      },
+      {
+        "id": "B03",
+        "question_type": "causal",
+        "recall": 0.48,
+        "precision": 1.0,
+        "semantic_recall": 0.8362
+      },
+      {
+        "id": "B04",
+        "question_type": "causal",
+        "recall": 0.3571,
+        "precision": 0.8,
+        "semantic_recall": 0.7636
+      },
+      {
+        "id": "B05",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.8155
+      },
+      {
+        "id": "B06",
+        "question_type": "factual",
+        "recall": 0.6667,
+        "precision": 1.0,
+        "semantic_recall": 0.8448
+      },
+      {
+        "id": "B07",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7287
+      },
+      {
+        "id": "B08",
+        "question_type": "factual",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.7755
+      },
+      {
+        "id": "B09",
+        "question_type": "multi_hop",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.8132
+      },
+      {
+        "id": "B10",
+        "question_type": "factual",
+        "recall": 0.3077,
+        "precision": 0.8,
+        "semantic_recall": 0.7109
+      },
+      {
+        "id": "C01",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 0.8,
+        "semantic_recall": 0.7252
+      },
+      {
+        "id": "C02",
+        "question_type": "character_state",
+        "recall": 0.3043,
+        "precision": 1.0,
+        "semantic_recall": 0.7659
+      },
+      {
+        "id": "C03",
+        "question_type": "causal",
+        "recall": 0.2381,
+        "precision": 1.0,
+        "semantic_recall": 0.7236
+      },
+      {
+        "id": "C04",
+        "question_type": "factual",
+        "recall": 0.4737,
+        "precision": 1.0,
+        "semantic_recall": 0.7555
+      },
+      {
+        "id": "D01",
+        "question_type": "character_state",
+        "recall": 0.35,
+        "precision": 0.8,
+        "semantic_recall": 0.7544
+      },
+      {
+        "id": "D02",
+        "question_type": "causal",
+        "recall": 0.3684,
+        "precision": 1.0,
+        "semantic_recall": 0.7542
+      },
+      {
+        "id": "D03",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7455
+      },
+      {
+        "id": "D04",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7196
+      },
+      {
+        "id": "D05",
+        "question_type": "factual",
+        "recall": 0.1071,
+        "precision": 0.6,
+        "semantic_recall": 0.6923
+      },
+      {
+        "id": "D06",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7238
+      },
+      {
+        "id": "E01",
+        "question_type": "causal",
+        "recall": 0.36,
+        "precision": 1.0,
+        "semantic_recall": 0.7609
+      },
+      {
+        "id": "E02",
+        "question_type": "character_state",
+        "recall": 0.6667,
+        "precision": 1.0,
+        "semantic_recall": 0.8304
+      },
+      {
+        "id": "E03",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 1.0,
+        "semantic_recall": 0.7971
+      },
+      {
+        "id": "E04",
+        "question_type": "factual",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7595
+      },
+      {
+        "id": "E05",
+        "question_type": "causal",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.75
+      },
+      {
+        "id": "J01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.6,
+        "semantic_recall": 0.6536
+      },
+      {
+        "id": "J02",
+        "question_type": "factual",
+        "recall": 0.15,
+        "precision": 0.8,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "J03",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6396
+      },
+      {
+        "id": "J04",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.6905
+      },
+      {
+        "id": "J05",
+        "question_type": "character_state",
+        "recall": 0.3158,
+        "precision": 1.0,
+        "semantic_recall": 0.7227
+      },
+      {
+        "id": "C05",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 1.0,
+        "semantic_recall": 0.7171
+      },
+      {
+        "id": "C06",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.7087
+      },
+      {
+        "id": "C07",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 0.8,
+        "semantic_recall": 0.7167
+      },
+      {
+        "id": "C08",
+        "question_type": "factual",
+        "recall": 0.12,
+        "precision": 1.0,
+        "semantic_recall": 0.7107
+      },
+      {
+        "id": "C09",
+        "question_type": "causal",
+        "recall": 0.1818,
+        "precision": 0.4,
+        "semantic_recall": 0.7522
+      },
+      {
+        "id": "A01",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.6,
+        "semantic_recall": 0.677
+      },
+      {
+        "id": "A02",
+        "question_type": "causal",
+        "recall": 0.15,
+        "precision": 0.4,
+        "semantic_recall": 0.6857
+      },
+      {
+        "id": "A03",
+        "question_type": "causal",
+        "recall": 0.1739,
+        "precision": 0.8,
+        "semantic_recall": 0.7304
+      },
+      {
+        "id": "A04",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.6864
+      },
+      {
+        "id": "B11",
+        "question_type": "character_state",
+        "recall": 0.0952,
+        "precision": 1.0,
+        "semantic_recall": 0.7263
+      },
+      {
+        "id": "B12",
+        "question_type": "multi_hop",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.6789
+      },
+      {
+        "id": "B13",
+        "question_type": "causal",
+        "recall": 0.0833,
+        "precision": 1.0,
+        "semantic_recall": 0.71
+      },
+      {
+        "id": "T01",
+        "question_type": "causal",
+        "recall": 0.24,
+        "precision": 1.0,
+        "semantic_recall": 0.7042
+      },
+      {
+        "id": "T02",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 0.6,
+        "semantic_recall": 0.7067
+      },
+      {
+        "id": "T03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.646
+      },
+      {
+        "id": "S01",
+        "question_type": "character_state",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.6951
+      },
+      {
+        "id": "S02",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.6,
+        "semantic_recall": 0.6862
+      },
+      {
+        "id": "M01",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.6495
+      },
+      {
+        "id": "M02",
+        "question_type": "factual",
+        "recall": 0.4091,
+        "precision": 1.0,
+        "semantic_recall": 0.7136
+      },
+      {
+        "id": "M03",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7816
+      },
+      {
+        "id": "M04",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.4,
+        "semantic_recall": 0.694
+      },
+      {
+        "id": "M05",
+        "question_type": "factual",
+        "recall": 0.3636,
+        "precision": 0.8,
+        "semantic_recall": 0.7191
+      },
+      {
+        "id": "T04",
+        "question_type": "multi_hop",
+        "recall": 0.1364,
+        "precision": 1.0,
+        "semantic_recall": 0.67
+      },
+      {
+        "id": "T05",
+        "question_type": "factual",
+        "recall": 0.2308,
+        "precision": 0.6,
+        "semantic_recall": 0.7086
+      },
+      {
+        "id": "E06",
+        "question_type": "causal",
+        "recall": 0.2609,
+        "precision": 0.6,
+        "semantic_recall": 0.8113
+      },
+      {
+        "id": "E07",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 0.8,
+        "semantic_recall": 0.7144
+      },
+      {
+        "id": "J06",
+        "question_type": "character_state",
+        "recall": 0.0333,
+        "precision": 0.6,
+        "semantic_recall": 0.6571
+      },
+      {
+        "id": "J07",
+        "question_type": "character_state",
+        "recall": 0.1739,
+        "precision": 1.0,
+        "semantic_recall": 0.6501
+      },
+      {
+        "id": "J08",
+        "question_type": "character_state",
+        "recall": 0.0435,
+        "precision": 0.2,
+        "semantic_recall": 0.6393
+      },
+      {
+        "id": "D07",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7449
+      },
+      {
+        "id": "D08",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7273
+      },
+      {
+        "id": "E08",
+        "question_type": "multi_hop",
+        "recall": 0.2593,
+        "precision": 1.0,
+        "semantic_recall": 0.6661
+      },
+      {
+        "id": "E09",
+        "question_type": "multi_hop",
+        "recall": 0.2609,
+        "precision": 1.0,
+        "semantic_recall": 0.7373
+      },
+      {
+        "id": "E10",
+        "question_type": "causal",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7336
+      },
+      {
+        "id": "E11",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.8,
+        "semantic_recall": 0.7269
+      },
+      {
+        "id": "E12",
+        "question_type": "temporal",
+        "recall": 0.1154,
+        "precision": 1.0,
+        "semantic_recall": 0.766
+      },
+      {
+        "id": "E13",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 1.0,
+        "semantic_recall": 0.688
+      },
+      {
+        "id": "A05",
+        "question_type": "factual",
+        "recall": 0.1154,
+        "precision": 0.4,
+        "semantic_recall": 0.6478
+      },
+      {
+        "id": "A06",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 0.6,
+        "semantic_recall": 0.6697
+      },
+      {
+        "id": "A07",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6767
+      },
+      {
+        "id": "S03",
+        "question_type": "character_state",
+        "recall": 0.0909,
+        "precision": 1.0,
+        "semantic_recall": 0.6711
+      },
+      {
+        "id": "S04",
+        "question_type": "temporal",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.7018
+      },
+      {
+        "id": "R01",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 1.0,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "R02",
+        "question_type": "causal",
+        "recall": 0.0417,
+        "precision": 0.2,
+        "semantic_recall": 0.7122
+      },
+      {
+        "id": "R03",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.7282
+      },
+      {
+        "id": "D09",
+        "question_type": "temporal",
+        "recall": 0.1034,
+        "precision": 1.0,
+        "semantic_recall": 0.6974
+      },
+      {
+        "id": "D10",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.7118
+      },
+      {
+        "id": "D11",
+        "question_type": "causal",
+        "recall": 0.1538,
+        "precision": 0.6,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "MH01",
+        "question_type": "multi_hop",
+        "recall": 0.0417,
+        "precision": 1.0,
+        "semantic_recall": 0.6876
+      },
+      {
+        "id": "MH02",
+        "question_type": "multi_hop",
+        "recall": 0.3077,
+        "precision": 1.0,
+        "semantic_recall": 0.7191
+      },
+      {
+        "id": "MH03",
+        "question_type": "multi_hop",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.6832
+      },
+      {
+        "id": "MH04",
+        "question_type": "multi_hop",
+        "recall": 0.08,
+        "precision": 0.6,
+        "semantic_recall": 0.6748
+      },
+      {
+        "id": "MH05",
+        "question_type": "multi_hop",
+        "recall": 0.0588,
+        "precision": 0.4,
+        "semantic_recall": 0.6424
+      },
+      {
+        "id": "T06",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.4,
+        "semantic_recall": 0.6588
+      },
+      {
+        "id": "T07",
+        "question_type": "character_state",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6697
+      },
+      {
+        "id": "T08",
+        "question_type": "character_state",
+        "recall": 0.4231,
+        "precision": 1.0,
+        "semantic_recall": 0.7487
+      },
+      {
+        "id": "TM01",
+        "question_type": "temporal",
+        "recall": 0.1667,
+        "precision": 0.4,
+        "semantic_recall": 0.6447
+      },
+      {
+        "id": "TM02",
+        "question_type": "temporal",
+        "recall": 0.2424,
+        "precision": 1.0,
+        "semantic_recall": 0.7482
+      },
+      {
+        "id": "TM03",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "TM04",
+        "question_type": "character_state",
+        "recall": 0.36,
+        "precision": 0.8,
+        "semantic_recall": 0.6974
+      }
+    ]
+  },
+  {
+    "config_id": "C4",
+    "config_name": "+ Multi-Scale Decay (Atkinson-Shiffrin)",
+    "memory_count": 387,
+    "build_time_sec": 0.16,
+    "keyword_recall": 0.208,
+    "precision_at_5": 0.7891,
+    "semantic_recall": 0.7117,
+    "per_question": [
+      {
+        "id": "P01",
+        "question_type": "factual",
+        "recall": 0.3125,
+        "precision": 0.6,
+        "semantic_recall": 0.6809
+      },
+      {
+        "id": "P02",
+        "question_type": "factual",
+        "recall": 0.1538,
+        "precision": 0.4,
+        "semantic_recall": 0.6385
+      },
+      {
+        "id": "P03",
+        "question_type": "factual",
+        "recall": 0.0909,
+        "precision": 0.2,
+        "semantic_recall": 0.5987
+      },
+      {
+        "id": "P04",
+        "question_type": "temporal",
+        "recall": 0.1538,
+        "precision": 0.4,
+        "semantic_recall": 0.6503
+      },
+      {
+        "id": "P05",
+        "question_type": "character_state",
+        "recall": 0.0625,
+        "precision": 0.4,
+        "semantic_recall": 0.6542
+      },
+      {
+        "id": "P06",
+        "question_type": "character_state",
+        "recall": 0.2778,
+        "precision": 0.8,
+        "semantic_recall": 0.7826
+      },
+      {
+        "id": "P07",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.7027
+      },
+      {
+        "id": "P08",
+        "question_type": "factual",
+        "recall": 0.2353,
+        "precision": 1.0,
+        "semantic_recall": 0.6596
+      },
+      {
+        "id": "P09",
+        "question_type": "causal",
+        "recall": 0.1875,
+        "precision": 1.0,
+        "semantic_recall": 0.7455
+      },
+      {
+        "id": "P10",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.4,
+        "semantic_recall": 0.6444
+      },
+      {
+        "id": "P11",
+        "question_type": "causal",
+        "recall": 0.2222,
+        "precision": 0.4,
+        "semantic_recall": 0.7153
+      },
+      {
+        "id": "P12",
+        "question_type": "factual",
+        "recall": 0.0667,
+        "precision": 0.2,
+        "semantic_recall": 0.6835
+      },
+      {
+        "id": "P13",
+        "question_type": "character_state",
+        "recall": 0.4091,
+        "precision": 1.0,
+        "semantic_recall": 0.7602
+      },
+      {
+        "id": "P14",
+        "question_type": "factual",
+        "recall": 0.5294,
+        "precision": 1.0,
+        "semantic_recall": 0.793
+      },
+      {
+        "id": "P15",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.4,
+        "semantic_recall": 0.7172
+      },
+      {
+        "id": "P16",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 0.6,
+        "semantic_recall": 0.7427
+      },
+      {
+        "id": "P17",
+        "question_type": "temporal",
+        "recall": 0.1765,
+        "precision": 0.8,
+        "semantic_recall": 0.7251
+      },
+      {
+        "id": "P18",
+        "question_type": "causal",
+        "recall": 0.16,
+        "precision": 0.6,
+        "semantic_recall": 0.6251
+      },
+      {
+        "id": "P19",
+        "question_type": "factual",
+        "recall": 0.0385,
+        "precision": 0.2,
+        "semantic_recall": 0.6008
+      },
+      {
+        "id": "P20",
+        "question_type": "multi_hop",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.692
+      },
+      {
+        "id": "B01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.8,
+        "semantic_recall": 0.772
+      },
+      {
+        "id": "B02",
+        "question_type": "factual",
+        "recall": 0.2917,
+        "precision": 1.0,
+        "semantic_recall": 0.7462
+      },
+      {
+        "id": "B03",
+        "question_type": "causal",
+        "recall": 0.48,
+        "precision": 1.0,
+        "semantic_recall": 0.8362
+      },
+      {
+        "id": "B04",
+        "question_type": "causal",
+        "recall": 0.3571,
+        "precision": 0.8,
+        "semantic_recall": 0.7636
+      },
+      {
+        "id": "B05",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.8155
+      },
+      {
+        "id": "B06",
+        "question_type": "factual",
+        "recall": 0.6667,
+        "precision": 1.0,
+        "semantic_recall": 0.8448
+      },
+      {
+        "id": "B07",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7287
+      },
+      {
+        "id": "B08",
+        "question_type": "factual",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.7755
+      },
+      {
+        "id": "B09",
+        "question_type": "multi_hop",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.8132
+      },
+      {
+        "id": "B10",
+        "question_type": "factual",
+        "recall": 0.3077,
+        "precision": 0.8,
+        "semantic_recall": 0.7109
+      },
+      {
+        "id": "C01",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 0.8,
+        "semantic_recall": 0.7252
+      },
+      {
+        "id": "C02",
+        "question_type": "character_state",
+        "recall": 0.3043,
+        "precision": 1.0,
+        "semantic_recall": 0.7659
+      },
+      {
+        "id": "C03",
+        "question_type": "causal",
+        "recall": 0.2381,
+        "precision": 1.0,
+        "semantic_recall": 0.7236
+      },
+      {
+        "id": "C04",
+        "question_type": "factual",
+        "recall": 0.4737,
+        "precision": 1.0,
+        "semantic_recall": 0.7555
+      },
+      {
+        "id": "D01",
+        "question_type": "character_state",
+        "recall": 0.35,
+        "precision": 0.8,
+        "semantic_recall": 0.7544
+      },
+      {
+        "id": "D02",
+        "question_type": "causal",
+        "recall": 0.3684,
+        "precision": 1.0,
+        "semantic_recall": 0.7542
+      },
+      {
+        "id": "D03",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7455
+      },
+      {
+        "id": "D04",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7196
+      },
+      {
+        "id": "D05",
+        "question_type": "factual",
+        "recall": 0.1071,
+        "precision": 0.6,
+        "semantic_recall": 0.6923
+      },
+      {
+        "id": "D06",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7238
+      },
+      {
+        "id": "E01",
+        "question_type": "causal",
+        "recall": 0.36,
+        "precision": 1.0,
+        "semantic_recall": 0.7609
+      },
+      {
+        "id": "E02",
+        "question_type": "character_state",
+        "recall": 0.6667,
+        "precision": 1.0,
+        "semantic_recall": 0.8304
+      },
+      {
+        "id": "E03",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 1.0,
+        "semantic_recall": 0.7971
+      },
+      {
+        "id": "E04",
+        "question_type": "factual",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7595
+      },
+      {
+        "id": "E05",
+        "question_type": "causal",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.75
+      },
+      {
+        "id": "J01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.6,
+        "semantic_recall": 0.6536
+      },
+      {
+        "id": "J02",
+        "question_type": "factual",
+        "recall": 0.15,
+        "precision": 0.8,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "J03",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6396
+      },
+      {
+        "id": "J04",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.6905
+      },
+      {
+        "id": "J05",
+        "question_type": "character_state",
+        "recall": 0.3158,
+        "precision": 1.0,
+        "semantic_recall": 0.7227
+      },
+      {
+        "id": "C05",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 1.0,
+        "semantic_recall": 0.7171
+      },
+      {
+        "id": "C06",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.7087
+      },
+      {
+        "id": "C07",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 0.8,
+        "semantic_recall": 0.7167
+      },
+      {
+        "id": "C08",
+        "question_type": "factual",
+        "recall": 0.12,
+        "precision": 1.0,
+        "semantic_recall": 0.7107
+      },
+      {
+        "id": "C09",
+        "question_type": "causal",
+        "recall": 0.1818,
+        "precision": 0.4,
+        "semantic_recall": 0.7522
+      },
+      {
+        "id": "A01",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.6,
+        "semantic_recall": 0.677
+      },
+      {
+        "id": "A02",
+        "question_type": "causal",
+        "recall": 0.15,
+        "precision": 0.4,
+        "semantic_recall": 0.6857
+      },
+      {
+        "id": "A03",
+        "question_type": "causal",
+        "recall": 0.1739,
+        "precision": 0.8,
+        "semantic_recall": 0.7304
+      },
+      {
+        "id": "A04",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.6864
+      },
+      {
+        "id": "B11",
+        "question_type": "character_state",
+        "recall": 0.0952,
+        "precision": 1.0,
+        "semantic_recall": 0.7263
+      },
+      {
+        "id": "B12",
+        "question_type": "multi_hop",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.6789
+      },
+      {
+        "id": "B13",
+        "question_type": "causal",
+        "recall": 0.0833,
+        "precision": 1.0,
+        "semantic_recall": 0.71
+      },
+      {
+        "id": "T01",
+        "question_type": "causal",
+        "recall": 0.24,
+        "precision": 1.0,
+        "semantic_recall": 0.7042
+      },
+      {
+        "id": "T02",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 0.6,
+        "semantic_recall": 0.7067
+      },
+      {
+        "id": "T03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.646
+      },
+      {
+        "id": "S01",
+        "question_type": "character_state",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.6951
+      },
+      {
+        "id": "S02",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.6,
+        "semantic_recall": 0.6862
+      },
+      {
+        "id": "M01",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.6495
+      },
+      {
+        "id": "M02",
+        "question_type": "factual",
+        "recall": 0.4091,
+        "precision": 1.0,
+        "semantic_recall": 0.7136
+      },
+      {
+        "id": "M03",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7816
+      },
+      {
+        "id": "M04",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.4,
+        "semantic_recall": 0.694
+      },
+      {
+        "id": "M05",
+        "question_type": "factual",
+        "recall": 0.3636,
+        "precision": 0.8,
+        "semantic_recall": 0.7191
+      },
+      {
+        "id": "T04",
+        "question_type": "multi_hop",
+        "recall": 0.1364,
+        "precision": 1.0,
+        "semantic_recall": 0.67
+      },
+      {
+        "id": "T05",
+        "question_type": "factual",
+        "recall": 0.2308,
+        "precision": 0.6,
+        "semantic_recall": 0.7086
+      },
+      {
+        "id": "E06",
+        "question_type": "causal",
+        "recall": 0.2609,
+        "precision": 0.6,
+        "semantic_recall": 0.8113
+      },
+      {
+        "id": "E07",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 0.8,
+        "semantic_recall": 0.7144
+      },
+      {
+        "id": "J06",
+        "question_type": "character_state",
+        "recall": 0.0333,
+        "precision": 0.6,
+        "semantic_recall": 0.6571
+      },
+      {
+        "id": "J07",
+        "question_type": "character_state",
+        "recall": 0.1739,
+        "precision": 1.0,
+        "semantic_recall": 0.6501
+      },
+      {
+        "id": "J08",
+        "question_type": "character_state",
+        "recall": 0.0435,
+        "precision": 0.2,
+        "semantic_recall": 0.6393
+      },
+      {
+        "id": "D07",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7449
+      },
+      {
+        "id": "D08",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7273
+      },
+      {
+        "id": "E08",
+        "question_type": "multi_hop",
+        "recall": 0.2593,
+        "precision": 1.0,
+        "semantic_recall": 0.6661
+      },
+      {
+        "id": "E09",
+        "question_type": "multi_hop",
+        "recall": 0.2609,
+        "precision": 1.0,
+        "semantic_recall": 0.7373
+      },
+      {
+        "id": "E10",
+        "question_type": "causal",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7336
+      },
+      {
+        "id": "E11",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.8,
+        "semantic_recall": 0.7269
+      },
+      {
+        "id": "E12",
+        "question_type": "temporal",
+        "recall": 0.1154,
+        "precision": 1.0,
+        "semantic_recall": 0.766
+      },
+      {
+        "id": "E13",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 1.0,
+        "semantic_recall": 0.688
+      },
+      {
+        "id": "A05",
+        "question_type": "factual",
+        "recall": 0.1154,
+        "precision": 0.4,
+        "semantic_recall": 0.6478
+      },
+      {
+        "id": "A06",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 0.6,
+        "semantic_recall": 0.6697
+      },
+      {
+        "id": "A07",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6767
+      },
+      {
+        "id": "S03",
+        "question_type": "character_state",
+        "recall": 0.0909,
+        "precision": 1.0,
+        "semantic_recall": 0.6711
+      },
+      {
+        "id": "S04",
+        "question_type": "temporal",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.7018
+      },
+      {
+        "id": "R01",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 1.0,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "R02",
+        "question_type": "causal",
+        "recall": 0.0417,
+        "precision": 0.2,
+        "semantic_recall": 0.7122
+      },
+      {
+        "id": "R03",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.7282
+      },
+      {
+        "id": "D09",
+        "question_type": "temporal",
+        "recall": 0.1034,
+        "precision": 1.0,
+        "semantic_recall": 0.6974
+      },
+      {
+        "id": "D10",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.7118
+      },
+      {
+        "id": "D11",
+        "question_type": "causal",
+        "recall": 0.1538,
+        "precision": 0.6,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "MH01",
+        "question_type": "multi_hop",
+        "recall": 0.0417,
+        "precision": 1.0,
+        "semantic_recall": 0.6876
+      },
+      {
+        "id": "MH02",
+        "question_type": "multi_hop",
+        "recall": 0.3077,
+        "precision": 1.0,
+        "semantic_recall": 0.7191
+      },
+      {
+        "id": "MH03",
+        "question_type": "multi_hop",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.6832
+      },
+      {
+        "id": "MH04",
+        "question_type": "multi_hop",
+        "recall": 0.08,
+        "precision": 0.6,
+        "semantic_recall": 0.6748
+      },
+      {
+        "id": "MH05",
+        "question_type": "multi_hop",
+        "recall": 0.0588,
+        "precision": 0.4,
+        "semantic_recall": 0.6424
+      },
+      {
+        "id": "T06",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.4,
+        "semantic_recall": 0.6588
+      },
+      {
+        "id": "T07",
+        "question_type": "character_state",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6697
+      },
+      {
+        "id": "T08",
+        "question_type": "character_state",
+        "recall": 0.4231,
+        "precision": 1.0,
+        "semantic_recall": 0.7487
+      },
+      {
+        "id": "TM01",
+        "question_type": "temporal",
+        "recall": 0.1667,
+        "precision": 0.4,
+        "semantic_recall": 0.6447
+      },
+      {
+        "id": "TM02",
+        "question_type": "temporal",
+        "recall": 0.2424,
+        "precision": 1.0,
+        "semantic_recall": 0.7482
+      },
+      {
+        "id": "TM03",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "TM04",
+        "question_type": "character_state",
+        "recall": 0.36,
+        "precision": 0.8,
+        "semantic_recall": 0.6974
+      }
+    ]
+  },
+  {
+    "config_id": "C5",
+    "config_name": "+ Knowledge Graph (G-RAG)",
+    "memory_count": 387,
+    "build_time_sec": 0.16,
+    "keyword_recall": 0.2029,
+    "precision_at_5": 0.7764,
+    "semantic_recall": 0.6982,
+    "per_question": [
+      {
+        "id": "P01",
+        "question_type": "factual",
+        "recall": 0.1875,
+        "precision": 0.6,
+        "semantic_recall": 0.6388
+      },
+      {
+        "id": "P02",
+        "question_type": "factual",
+        "recall": 0.2308,
+        "precision": 0.4,
+        "semantic_recall": 0.5811
+      },
+      {
+        "id": "P03",
+        "question_type": "factual",
+        "recall": 0.0909,
+        "precision": 0.2,
+        "semantic_recall": 0.6645
+      },
+      {
+        "id": "P04",
+        "question_type": "temporal",
+        "recall": 0.3846,
+        "precision": 0.6,
+        "semantic_recall": 0.699
+      },
+      {
+        "id": "P05",
+        "question_type": "character_state",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.732
+      },
+      {
+        "id": "P06",
+        "question_type": "character_state",
+        "recall": 0.2778,
+        "precision": 0.8,
+        "semantic_recall": 0.7668
+      },
+      {
+        "id": "P07",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.6694
+      },
+      {
+        "id": "P08",
+        "question_type": "factual",
+        "recall": 0.2941,
+        "precision": 1.0,
+        "semantic_recall": 0.6757
+      },
+      {
+        "id": "P09",
+        "question_type": "causal",
+        "recall": 0.1875,
+        "precision": 1.0,
+        "semantic_recall": 0.7472
+      },
+      {
+        "id": "P10",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.6,
+        "semantic_recall": 0.6808
+      },
+      {
+        "id": "P11",
+        "question_type": "causal",
+        "recall": 0.1667,
+        "precision": 0.6,
+        "semantic_recall": 0.7103
+      },
+      {
+        "id": "P12",
+        "question_type": "factual",
+        "recall": 0.0667,
+        "precision": 0.2,
+        "semantic_recall": 0.6823
+      },
+      {
+        "id": "P13",
+        "question_type": "character_state",
+        "recall": 0.3636,
+        "precision": 1.0,
+        "semantic_recall": 0.7657
+      },
+      {
+        "id": "P14",
+        "question_type": "factual",
+        "recall": 0.4118,
+        "precision": 1.0,
+        "semantic_recall": 0.7742
+      },
+      {
+        "id": "P15",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.4,
+        "semantic_recall": 0.6837
+      },
+      {
+        "id": "P16",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 0.6,
+        "semantic_recall": 0.7371
+      },
+      {
+        "id": "P17",
+        "question_type": "temporal",
+        "recall": 0.1176,
+        "precision": 0.4,
+        "semantic_recall": 0.6954
+      },
+      {
+        "id": "P18",
+        "question_type": "causal",
+        "recall": 0.16,
+        "precision": 0.6,
+        "semantic_recall": 0.6818
+      },
+      {
+        "id": "P19",
+        "question_type": "factual",
+        "recall": 0.1538,
+        "precision": 0.6,
+        "semantic_recall": 0.6677
+      },
+      {
+        "id": "P20",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 0.2,
+        "semantic_recall": 0.6799
+      },
+      {
+        "id": "B01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.6,
+        "semantic_recall": 0.7235
+      },
+      {
+        "id": "B02",
+        "question_type": "factual",
+        "recall": 0.2917,
+        "precision": 1.0,
+        "semantic_recall": 0.7267
+      },
+      {
+        "id": "B03",
+        "question_type": "causal",
+        "recall": 0.48,
+        "precision": 1.0,
+        "semantic_recall": 0.821
+      },
+      {
+        "id": "B04",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 0.4,
+        "semantic_recall": 0.7596
+      },
+      {
+        "id": "B05",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.7903
+      },
+      {
+        "id": "B06",
+        "question_type": "factual",
+        "recall": 0.3333,
+        "precision": 1.0,
+        "semantic_recall": 0.6892
+      },
+      {
+        "id": "B07",
+        "question_type": "character_state",
+        "recall": 0.381,
+        "precision": 1.0,
+        "semantic_recall": 0.7609
+      },
+      {
+        "id": "B08",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 1.0,
+        "semantic_recall": 0.7292
+      },
+      {
+        "id": "B09",
+        "question_type": "multi_hop",
+        "recall": 0.1429,
+        "precision": 0.8,
+        "semantic_recall": 0.7425
+      },
+      {
+        "id": "B10",
+        "question_type": "factual",
+        "recall": 0.2692,
+        "precision": 0.8,
+        "semantic_recall": 0.7482
+      },
+      {
+        "id": "C01",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 0.8,
+        "semantic_recall": 0.6799
+      },
+      {
+        "id": "C02",
+        "question_type": "character_state",
+        "recall": 0.3043,
+        "precision": 1.0,
+        "semantic_recall": 0.7384
+      },
+      {
+        "id": "C03",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.6941
+      },
+      {
+        "id": "C04",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.7309
+      },
+      {
+        "id": "D01",
+        "question_type": "character_state",
+        "recall": 0.35,
+        "precision": 0.8,
+        "semantic_recall": 0.7433
+      },
+      {
+        "id": "D02",
+        "question_type": "causal",
+        "recall": 0.4211,
+        "precision": 1.0,
+        "semantic_recall": 0.7242
+      },
+      {
+        "id": "D03",
+        "question_type": "character_state",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7436
+      },
+      {
+        "id": "D04",
+        "question_type": "factual",
+        "recall": 0.2381,
+        "precision": 1.0,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "D05",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.8,
+        "semantic_recall": 0.681
+      },
+      {
+        "id": "D06",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7077
+      },
+      {
+        "id": "E01",
+        "question_type": "causal",
+        "recall": 0.4,
+        "precision": 0.8,
+        "semantic_recall": 0.7227
+      },
+      {
+        "id": "E02",
+        "question_type": "character_state",
+        "recall": 0.619,
+        "precision": 1.0,
+        "semantic_recall": 0.7783
+      },
+      {
+        "id": "E03",
+        "question_type": "factual",
+        "recall": 0.1053,
+        "precision": 0.6,
+        "semantic_recall": 0.6475
+      },
+      {
+        "id": "E04",
+        "question_type": "factual",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7089
+      },
+      {
+        "id": "E05",
+        "question_type": "causal",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.7083
+      },
+      {
+        "id": "J01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.8,
+        "semantic_recall": 0.6553
+      },
+      {
+        "id": "J02",
+        "question_type": "factual",
+        "recall": 0.15,
+        "precision": 0.8,
+        "semantic_recall": 0.6882
+      },
+      {
+        "id": "J03",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6268
+      },
+      {
+        "id": "J04",
+        "question_type": "causal",
+        "recall": 0.381,
+        "precision": 1.0,
+        "semantic_recall": 0.6728
+      },
+      {
+        "id": "J05",
+        "question_type": "character_state",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.6939
+      },
+      {
+        "id": "C05",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 1.0,
+        "semantic_recall": 0.725
+      },
+      {
+        "id": "C06",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.7161
+      },
+      {
+        "id": "C07",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 0.8,
+        "semantic_recall": 0.7234
+      },
+      {
+        "id": "C08",
+        "question_type": "factual",
+        "recall": 0.08,
+        "precision": 1.0,
+        "semantic_recall": 0.6854
+      },
+      {
+        "id": "C09",
+        "question_type": "causal",
+        "recall": 0.1364,
+        "precision": 0.2,
+        "semantic_recall": 0.748
+      },
+      {
+        "id": "A01",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.6,
+        "semantic_recall": 0.6709
+      },
+      {
+        "id": "A02",
+        "question_type": "causal",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.6203
+      },
+      {
+        "id": "A03",
+        "question_type": "causal",
+        "recall": 0.1304,
+        "precision": 0.8,
+        "semantic_recall": 0.6829
+      },
+      {
+        "id": "A04",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.6398
+      },
+      {
+        "id": "B11",
+        "question_type": "character_state",
+        "recall": 0.1905,
+        "precision": 1.0,
+        "semantic_recall": 0.7136
+      },
+      {
+        "id": "B12",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 1.0,
+        "semantic_recall": 0.6789
+      },
+      {
+        "id": "B13",
+        "question_type": "causal",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7235
+      },
+      {
+        "id": "T01",
+        "question_type": "causal",
+        "recall": 0.28,
+        "precision": 1.0,
+        "semantic_recall": 0.6783
+      },
+      {
+        "id": "T02",
+        "question_type": "factual",
+        "recall": 0.2273,
+        "precision": 0.6,
+        "semantic_recall": 0.7008
+      },
+      {
+        "id": "T03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.6326
+      },
+      {
+        "id": "S01",
+        "question_type": "character_state",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.6756
+      },
+      {
+        "id": "S02",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.6,
+        "semantic_recall": 0.6831
+      },
+      {
+        "id": "M01",
+        "question_type": "factual",
+        "recall": 0.2083,
+        "precision": 0.6,
+        "semantic_recall": 0.6258
+      },
+      {
+        "id": "M02",
+        "question_type": "factual",
+        "recall": 0.4545,
+        "precision": 1.0,
+        "semantic_recall": 0.6885
+      },
+      {
+        "id": "M03",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7337
+      },
+      {
+        "id": "M04",
+        "question_type": "factual",
+        "recall": 0.1852,
+        "precision": 0.4,
+        "semantic_recall": 0.6668
+      },
+      {
+        "id": "M05",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 0.8,
+        "semantic_recall": 0.6895
+      },
+      {
+        "id": "T04",
+        "question_type": "multi_hop",
+        "recall": 0.1364,
+        "precision": 0.6,
+        "semantic_recall": 0.6938
+      },
+      {
+        "id": "T05",
+        "question_type": "factual",
+        "recall": 0.1923,
+        "precision": 0.6,
+        "semantic_recall": 0.6717
+      },
+      {
+        "id": "E06",
+        "question_type": "causal",
+        "recall": 0.2609,
+        "precision": 0.6,
+        "semantic_recall": 0.757
+      },
+      {
+        "id": "E07",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 0.8,
+        "semantic_recall": 0.7049
+      },
+      {
+        "id": "J06",
+        "question_type": "character_state",
+        "recall": 0.0333,
+        "precision": 0.6,
+        "semantic_recall": 0.6225
+      },
+      {
+        "id": "J07",
+        "question_type": "character_state",
+        "recall": 0.2174,
+        "precision": 1.0,
+        "semantic_recall": 0.6455
+      },
+      {
+        "id": "J08",
+        "question_type": "character_state",
+        "recall": 0.1739,
+        "precision": 0.4,
+        "semantic_recall": 0.6449
+      },
+      {
+        "id": "D07",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7364
+      },
+      {
+        "id": "D08",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7207
+      },
+      {
+        "id": "E08",
+        "question_type": "multi_hop",
+        "recall": 0.1852,
+        "precision": 1.0,
+        "semantic_recall": 0.6908
+      },
+      {
+        "id": "E09",
+        "question_type": "multi_hop",
+        "recall": 0.1739,
+        "precision": 1.0,
+        "semantic_recall": 0.7236
+      },
+      {
+        "id": "E10",
+        "question_type": "causal",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7214
+      },
+      {
+        "id": "E11",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.6,
+        "semantic_recall": 0.6988
+      },
+      {
+        "id": "E12",
+        "question_type": "temporal",
+        "recall": 0.1154,
+        "precision": 1.0,
+        "semantic_recall": 0.7403
+      },
+      {
+        "id": "E13",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 1.0,
+        "semantic_recall": 0.6622
+      },
+      {
+        "id": "A05",
+        "question_type": "factual",
+        "recall": 0.1154,
+        "precision": 0.4,
+        "semantic_recall": 0.6573
+      },
+      {
+        "id": "A06",
+        "question_type": "factual",
+        "recall": 0.0417,
+        "precision": 0.4,
+        "semantic_recall": 0.6604
+      },
+      {
+        "id": "A07",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6727
+      },
+      {
+        "id": "S03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.6515
+      },
+      {
+        "id": "S04",
+        "question_type": "temporal",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.6635
+      },
+      {
+        "id": "R01",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.8,
+        "semantic_recall": 0.7318
+      },
+      {
+        "id": "R02",
+        "question_type": "causal",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6857
+      },
+      {
+        "id": "R03",
+        "question_type": "factual",
+        "recall": 0.2083,
+        "precision": 1.0,
+        "semantic_recall": 0.7336
+      },
+      {
+        "id": "D09",
+        "question_type": "temporal",
+        "recall": 0.1034,
+        "precision": 1.0,
+        "semantic_recall": 0.6897
+      },
+      {
+        "id": "D10",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.7013
+      },
+      {
+        "id": "D11",
+        "question_type": "causal",
+        "recall": 0.0769,
+        "precision": 0.4,
+        "semantic_recall": 0.6814
+      },
+      {
+        "id": "MH01",
+        "question_type": "multi_hop",
+        "recall": 0.0417,
+        "precision": 1.0,
+        "semantic_recall": 0.6732
+      },
+      {
+        "id": "MH02",
+        "question_type": "multi_hop",
+        "recall": 0.3077,
+        "precision": 1.0,
+        "semantic_recall": 0.7027
+      },
+      {
+        "id": "MH03",
+        "question_type": "multi_hop",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6665
+      },
+      {
+        "id": "MH04",
+        "question_type": "multi_hop",
+        "recall": 0.08,
+        "precision": 0.4,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "MH05",
+        "question_type": "multi_hop",
+        "recall": 0.1176,
+        "precision": 0.6,
+        "semantic_recall": 0.6775
+      },
+      {
+        "id": "T06",
+        "question_type": "factual",
+        "recall": 0.087,
+        "precision": 0.6,
+        "semantic_recall": 0.6359
+      },
+      {
+        "id": "T07",
+        "question_type": "character_state",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6644
+      },
+      {
+        "id": "T08",
+        "question_type": "character_state",
+        "recall": 0.3846,
+        "precision": 1.0,
+        "semantic_recall": 0.706
+      },
+      {
+        "id": "TM01",
+        "question_type": "temporal",
+        "recall": 0.2083,
+        "precision": 1.0,
+        "semantic_recall": 0.7103
+      },
+      {
+        "id": "TM02",
+        "question_type": "temporal",
+        "recall": 0.1818,
+        "precision": 1.0,
+        "semantic_recall": 0.7457
+      },
+      {
+        "id": "TM03",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6877
+      },
+      {
+        "id": "TM04",
+        "question_type": "character_state",
+        "recall": 0.16,
+        "precision": 0.8,
+        "semantic_recall": 0.7051
+      }
+    ]
+  },
+  {
+    "config_id": "C6",
+    "config_name": "+ Semantic Deduplication",
+    "memory_count": 387,
+    "build_time_sec": 29.7,
+    "keyword_recall": 0.2029,
+    "precision_at_5": 0.7764,
+    "semantic_recall": 0.6982,
+    "per_question": [
+      {
+        "id": "P01",
+        "question_type": "factual",
+        "recall": 0.1875,
+        "precision": 0.6,
+        "semantic_recall": 0.6388
+      },
+      {
+        "id": "P02",
+        "question_type": "factual",
+        "recall": 0.2308,
+        "precision": 0.4,
+        "semantic_recall": 0.5811
+      },
+      {
+        "id": "P03",
+        "question_type": "factual",
+        "recall": 0.0909,
+        "precision": 0.2,
+        "semantic_recall": 0.6645
+      },
+      {
+        "id": "P04",
+        "question_type": "temporal",
+        "recall": 0.3846,
+        "precision": 0.6,
+        "semantic_recall": 0.699
+      },
+      {
+        "id": "P05",
+        "question_type": "character_state",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.732
+      },
+      {
+        "id": "P06",
+        "question_type": "character_state",
+        "recall": 0.2778,
+        "precision": 0.8,
+        "semantic_recall": 0.7668
+      },
+      {
+        "id": "P07",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.6694
+      },
+      {
+        "id": "P08",
+        "question_type": "factual",
+        "recall": 0.2941,
+        "precision": 1.0,
+        "semantic_recall": 0.6757
+      },
+      {
+        "id": "P09",
+        "question_type": "causal",
+        "recall": 0.1875,
+        "precision": 1.0,
+        "semantic_recall": 0.7472
+      },
+      {
+        "id": "P10",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.6,
+        "semantic_recall": 0.6808
+      },
+      {
+        "id": "P11",
+        "question_type": "causal",
+        "recall": 0.1667,
+        "precision": 0.6,
+        "semantic_recall": 0.7103
+      },
+      {
+        "id": "P12",
+        "question_type": "factual",
+        "recall": 0.0667,
+        "precision": 0.2,
+        "semantic_recall": 0.6823
+      },
+      {
+        "id": "P13",
+        "question_type": "character_state",
+        "recall": 0.3636,
+        "precision": 1.0,
+        "semantic_recall": 0.7657
+      },
+      {
+        "id": "P14",
+        "question_type": "factual",
+        "recall": 0.4118,
+        "precision": 1.0,
+        "semantic_recall": 0.7742
+      },
+      {
+        "id": "P15",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.4,
+        "semantic_recall": 0.6837
+      },
+      {
+        "id": "P16",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 0.6,
+        "semantic_recall": 0.7371
+      },
+      {
+        "id": "P17",
+        "question_type": "temporal",
+        "recall": 0.1176,
+        "precision": 0.4,
+        "semantic_recall": 0.6954
+      },
+      {
+        "id": "P18",
+        "question_type": "causal",
+        "recall": 0.16,
+        "precision": 0.6,
+        "semantic_recall": 0.6818
+      },
+      {
+        "id": "P19",
+        "question_type": "factual",
+        "recall": 0.1538,
+        "precision": 0.6,
+        "semantic_recall": 0.6677
+      },
+      {
+        "id": "P20",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 0.2,
+        "semantic_recall": 0.6799
+      },
+      {
+        "id": "B01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.6,
+        "semantic_recall": 0.7235
+      },
+      {
+        "id": "B02",
+        "question_type": "factual",
+        "recall": 0.2917,
+        "precision": 1.0,
+        "semantic_recall": 0.7267
+      },
+      {
+        "id": "B03",
+        "question_type": "causal",
+        "recall": 0.48,
+        "precision": 1.0,
+        "semantic_recall": 0.821
+      },
+      {
+        "id": "B04",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 0.4,
+        "semantic_recall": 0.7596
+      },
+      {
+        "id": "B05",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.7903
+      },
+      {
+        "id": "B06",
+        "question_type": "factual",
+        "recall": 0.3333,
+        "precision": 1.0,
+        "semantic_recall": 0.6892
+      },
+      {
+        "id": "B07",
+        "question_type": "character_state",
+        "recall": 0.381,
+        "precision": 1.0,
+        "semantic_recall": 0.7609
+      },
+      {
+        "id": "B08",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 1.0,
+        "semantic_recall": 0.7292
+      },
+      {
+        "id": "B09",
+        "question_type": "multi_hop",
+        "recall": 0.1429,
+        "precision": 0.8,
+        "semantic_recall": 0.7425
+      },
+      {
+        "id": "B10",
+        "question_type": "factual",
+        "recall": 0.2692,
+        "precision": 0.8,
+        "semantic_recall": 0.7482
+      },
+      {
+        "id": "C01",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 0.8,
+        "semantic_recall": 0.6799
+      },
+      {
+        "id": "C02",
+        "question_type": "character_state",
+        "recall": 0.3043,
+        "precision": 1.0,
+        "semantic_recall": 0.7384
+      },
+      {
+        "id": "C03",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.6941
+      },
+      {
+        "id": "C04",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.7309
+      },
+      {
+        "id": "D01",
+        "question_type": "character_state",
+        "recall": 0.35,
+        "precision": 0.8,
+        "semantic_recall": 0.7433
+      },
+      {
+        "id": "D02",
+        "question_type": "causal",
+        "recall": 0.4211,
+        "precision": 1.0,
+        "semantic_recall": 0.7242
+      },
+      {
+        "id": "D03",
+        "question_type": "character_state",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7436
+      },
+      {
+        "id": "D04",
+        "question_type": "factual",
+        "recall": 0.2381,
+        "precision": 1.0,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "D05",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.8,
+        "semantic_recall": 0.681
+      },
+      {
+        "id": "D06",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7077
+      },
+      {
+        "id": "E01",
+        "question_type": "causal",
+        "recall": 0.4,
+        "precision": 0.8,
+        "semantic_recall": 0.7227
+      },
+      {
+        "id": "E02",
+        "question_type": "character_state",
+        "recall": 0.619,
+        "precision": 1.0,
+        "semantic_recall": 0.7783
+      },
+      {
+        "id": "E03",
+        "question_type": "factual",
+        "recall": 0.1053,
+        "precision": 0.6,
+        "semantic_recall": 0.6475
+      },
+      {
+        "id": "E04",
+        "question_type": "factual",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7089
+      },
+      {
+        "id": "E05",
+        "question_type": "causal",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.7083
+      },
+      {
+        "id": "J01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.8,
+        "semantic_recall": 0.6553
+      },
+      {
+        "id": "J02",
+        "question_type": "factual",
+        "recall": 0.15,
+        "precision": 0.8,
+        "semantic_recall": 0.6882
+      },
+      {
+        "id": "J03",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6268
+      },
+      {
+        "id": "J04",
+        "question_type": "causal",
+        "recall": 0.381,
+        "precision": 1.0,
+        "semantic_recall": 0.6728
+      },
+      {
+        "id": "J05",
+        "question_type": "character_state",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.6939
+      },
+      {
+        "id": "C05",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 1.0,
+        "semantic_recall": 0.725
+      },
+      {
+        "id": "C06",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.7161
+      },
+      {
+        "id": "C07",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 0.8,
+        "semantic_recall": 0.7234
+      },
+      {
+        "id": "C08",
+        "question_type": "factual",
+        "recall": 0.08,
+        "precision": 1.0,
+        "semantic_recall": 0.6854
+      },
+      {
+        "id": "C09",
+        "question_type": "causal",
+        "recall": 0.1364,
+        "precision": 0.2,
+        "semantic_recall": 0.748
+      },
+      {
+        "id": "A01",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.6,
+        "semantic_recall": 0.6709
+      },
+      {
+        "id": "A02",
+        "question_type": "causal",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.6203
+      },
+      {
+        "id": "A03",
+        "question_type": "causal",
+        "recall": 0.1304,
+        "precision": 0.8,
+        "semantic_recall": 0.6829
+      },
+      {
+        "id": "A04",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.6398
+      },
+      {
+        "id": "B11",
+        "question_type": "character_state",
+        "recall": 0.1905,
+        "precision": 1.0,
+        "semantic_recall": 0.7136
+      },
+      {
+        "id": "B12",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 1.0,
+        "semantic_recall": 0.6789
+      },
+      {
+        "id": "B13",
+        "question_type": "causal",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7235
+      },
+      {
+        "id": "T01",
+        "question_type": "causal",
+        "recall": 0.28,
+        "precision": 1.0,
+        "semantic_recall": 0.6783
+      },
+      {
+        "id": "T02",
+        "question_type": "factual",
+        "recall": 0.2273,
+        "precision": 0.6,
+        "semantic_recall": 0.7008
+      },
+      {
+        "id": "T03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.6326
+      },
+      {
+        "id": "S01",
+        "question_type": "character_state",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.6756
+      },
+      {
+        "id": "S02",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.6,
+        "semantic_recall": 0.6831
+      },
+      {
+        "id": "M01",
+        "question_type": "factual",
+        "recall": 0.2083,
+        "precision": 0.6,
+        "semantic_recall": 0.6258
+      },
+      {
+        "id": "M02",
+        "question_type": "factual",
+        "recall": 0.4545,
+        "precision": 1.0,
+        "semantic_recall": 0.6885
+      },
+      {
+        "id": "M03",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7337
+      },
+      {
+        "id": "M04",
+        "question_type": "factual",
+        "recall": 0.1852,
+        "precision": 0.4,
+        "semantic_recall": 0.6668
+      },
+      {
+        "id": "M05",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 0.8,
+        "semantic_recall": 0.6895
+      },
+      {
+        "id": "T04",
+        "question_type": "multi_hop",
+        "recall": 0.1364,
+        "precision": 0.6,
+        "semantic_recall": 0.6938
+      },
+      {
+        "id": "T05",
+        "question_type": "factual",
+        "recall": 0.1923,
+        "precision": 0.6,
+        "semantic_recall": 0.6717
+      },
+      {
+        "id": "E06",
+        "question_type": "causal",
+        "recall": 0.2609,
+        "precision": 0.6,
+        "semantic_recall": 0.757
+      },
+      {
+        "id": "E07",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 0.8,
+        "semantic_recall": 0.7049
+      },
+      {
+        "id": "J06",
+        "question_type": "character_state",
+        "recall": 0.0333,
+        "precision": 0.6,
+        "semantic_recall": 0.6225
+      },
+      {
+        "id": "J07",
+        "question_type": "character_state",
+        "recall": 0.2174,
+        "precision": 1.0,
+        "semantic_recall": 0.6455
+      },
+      {
+        "id": "J08",
+        "question_type": "character_state",
+        "recall": 0.1739,
+        "precision": 0.4,
+        "semantic_recall": 0.6449
+      },
+      {
+        "id": "D07",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7364
+      },
+      {
+        "id": "D08",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7207
+      },
+      {
+        "id": "E08",
+        "question_type": "multi_hop",
+        "recall": 0.1852,
+        "precision": 1.0,
+        "semantic_recall": 0.6908
+      },
+      {
+        "id": "E09",
+        "question_type": "multi_hop",
+        "recall": 0.1739,
+        "precision": 1.0,
+        "semantic_recall": 0.7236
+      },
+      {
+        "id": "E10",
+        "question_type": "causal",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7214
+      },
+      {
+        "id": "E11",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.6,
+        "semantic_recall": 0.6988
+      },
+      {
+        "id": "E12",
+        "question_type": "temporal",
+        "recall": 0.1154,
+        "precision": 1.0,
+        "semantic_recall": 0.7403
+      },
+      {
+        "id": "E13",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 1.0,
+        "semantic_recall": 0.6622
+      },
+      {
+        "id": "A05",
+        "question_type": "factual",
+        "recall": 0.1154,
+        "precision": 0.4,
+        "semantic_recall": 0.6573
+      },
+      {
+        "id": "A06",
+        "question_type": "factual",
+        "recall": 0.0417,
+        "precision": 0.4,
+        "semantic_recall": 0.6604
+      },
+      {
+        "id": "A07",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6727
+      },
+      {
+        "id": "S03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.6515
+      },
+      {
+        "id": "S04",
+        "question_type": "temporal",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.6635
+      },
+      {
+        "id": "R01",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.8,
+        "semantic_recall": 0.7318
+      },
+      {
+        "id": "R02",
+        "question_type": "causal",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6857
+      },
+      {
+        "id": "R03",
+        "question_type": "factual",
+        "recall": 0.2083,
+        "precision": 1.0,
+        "semantic_recall": 0.7336
+      },
+      {
+        "id": "D09",
+        "question_type": "temporal",
+        "recall": 0.1034,
+        "precision": 1.0,
+        "semantic_recall": 0.6897
+      },
+      {
+        "id": "D10",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.7013
+      },
+      {
+        "id": "D11",
+        "question_type": "causal",
+        "recall": 0.0769,
+        "precision": 0.4,
+        "semantic_recall": 0.6814
+      },
+      {
+        "id": "MH01",
+        "question_type": "multi_hop",
+        "recall": 0.0417,
+        "precision": 1.0,
+        "semantic_recall": 0.6732
+      },
+      {
+        "id": "MH02",
+        "question_type": "multi_hop",
+        "recall": 0.3077,
+        "precision": 1.0,
+        "semantic_recall": 0.7027
+      },
+      {
+        "id": "MH03",
+        "question_type": "multi_hop",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6665
+      },
+      {
+        "id": "MH04",
+        "question_type": "multi_hop",
+        "recall": 0.08,
+        "precision": 0.4,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "MH05",
+        "question_type": "multi_hop",
+        "recall": 0.1176,
+        "precision": 0.6,
+        "semantic_recall": 0.6775
+      },
+      {
+        "id": "T06",
+        "question_type": "factual",
+        "recall": 0.087,
+        "precision": 0.6,
+        "semantic_recall": 0.6359
+      },
+      {
+        "id": "T07",
+        "question_type": "character_state",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6644
+      },
+      {
+        "id": "T08",
+        "question_type": "character_state",
+        "recall": 0.3846,
+        "precision": 1.0,
+        "semantic_recall": 0.706
+      },
+      {
+        "id": "TM01",
+        "question_type": "temporal",
+        "recall": 0.2083,
+        "precision": 1.0,
+        "semantic_recall": 0.7103
+      },
+      {
+        "id": "TM02",
+        "question_type": "temporal",
+        "recall": 0.1818,
+        "precision": 1.0,
+        "semantic_recall": 0.7457
+      },
+      {
+        "id": "TM03",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6877
+      },
+      {
+        "id": "TM04",
+        "question_type": "character_state",
+        "recall": 0.16,
+        "precision": 0.8,
+        "semantic_recall": 0.7051
+      }
+    ]
+  },
+  {
+    "config_id": "C7",
+    "config_name": "Full Chronos-RAG",
+    "memory_count": 387,
+    "build_time_sec": 0.23,
+    "keyword_recall": 0.2029,
+    "precision_at_5": 0.7764,
+    "semantic_recall": 0.6982,
+    "per_question": [
+      {
+        "id": "P01",
+        "question_type": "factual",
+        "recall": 0.1875,
+        "precision": 0.6,
+        "semantic_recall": 0.6388
+      },
+      {
+        "id": "P02",
+        "question_type": "factual",
+        "recall": 0.2308,
+        "precision": 0.4,
+        "semantic_recall": 0.5811
+      },
+      {
+        "id": "P03",
+        "question_type": "factual",
+        "recall": 0.0909,
+        "precision": 0.2,
+        "semantic_recall": 0.6645
+      },
+      {
+        "id": "P04",
+        "question_type": "temporal",
+        "recall": 0.3846,
+        "precision": 0.6,
+        "semantic_recall": 0.699
+      },
+      {
+        "id": "P05",
+        "question_type": "character_state",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.732
+      },
+      {
+        "id": "P06",
+        "question_type": "character_state",
+        "recall": 0.2778,
+        "precision": 0.8,
+        "semantic_recall": 0.7668
+      },
+      {
+        "id": "P07",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.6694
+      },
+      {
+        "id": "P08",
+        "question_type": "factual",
+        "recall": 0.2941,
+        "precision": 1.0,
+        "semantic_recall": 0.6757
+      },
+      {
+        "id": "P09",
+        "question_type": "causal",
+        "recall": 0.1875,
+        "precision": 1.0,
+        "semantic_recall": 0.7472
+      },
+      {
+        "id": "P10",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.6,
+        "semantic_recall": 0.6808
+      },
+      {
+        "id": "P11",
+        "question_type": "causal",
+        "recall": 0.1667,
+        "precision": 0.6,
+        "semantic_recall": 0.7103
+      },
+      {
+        "id": "P12",
+        "question_type": "factual",
+        "recall": 0.0667,
+        "precision": 0.2,
+        "semantic_recall": 0.6823
+      },
+      {
+        "id": "P13",
+        "question_type": "character_state",
+        "recall": 0.3636,
+        "precision": 1.0,
+        "semantic_recall": 0.7657
+      },
+      {
+        "id": "P14",
+        "question_type": "factual",
+        "recall": 0.4118,
+        "precision": 1.0,
+        "semantic_recall": 0.7742
+      },
+      {
+        "id": "P15",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.4,
+        "semantic_recall": 0.6837
+      },
+      {
+        "id": "P16",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 0.6,
+        "semantic_recall": 0.7371
+      },
+      {
+        "id": "P17",
+        "question_type": "temporal",
+        "recall": 0.1176,
+        "precision": 0.4,
+        "semantic_recall": 0.6954
+      },
+      {
+        "id": "P18",
+        "question_type": "causal",
+        "recall": 0.16,
+        "precision": 0.6,
+        "semantic_recall": 0.6818
+      },
+      {
+        "id": "P19",
+        "question_type": "factual",
+        "recall": 0.1538,
+        "precision": 0.6,
+        "semantic_recall": 0.6677
+      },
+      {
+        "id": "P20",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 0.2,
+        "semantic_recall": 0.6799
+      },
+      {
+        "id": "B01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.6,
+        "semantic_recall": 0.7235
+      },
+      {
+        "id": "B02",
+        "question_type": "factual",
+        "recall": 0.2917,
+        "precision": 1.0,
+        "semantic_recall": 0.7267
+      },
+      {
+        "id": "B03",
+        "question_type": "causal",
+        "recall": 0.48,
+        "precision": 1.0,
+        "semantic_recall": 0.821
+      },
+      {
+        "id": "B04",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 0.4,
+        "semantic_recall": 0.7596
+      },
+      {
+        "id": "B05",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.7903
+      },
+      {
+        "id": "B06",
+        "question_type": "factual",
+        "recall": 0.3333,
+        "precision": 1.0,
+        "semantic_recall": 0.6892
+      },
+      {
+        "id": "B07",
+        "question_type": "character_state",
+        "recall": 0.381,
+        "precision": 1.0,
+        "semantic_recall": 0.7609
+      },
+      {
+        "id": "B08",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 1.0,
+        "semantic_recall": 0.7292
+      },
+      {
+        "id": "B09",
+        "question_type": "multi_hop",
+        "recall": 0.1429,
+        "precision": 0.8,
+        "semantic_recall": 0.7425
+      },
+      {
+        "id": "B10",
+        "question_type": "factual",
+        "recall": 0.2692,
+        "precision": 0.8,
+        "semantic_recall": 0.7482
+      },
+      {
+        "id": "C01",
+        "question_type": "factual",
+        "recall": 0.3158,
+        "precision": 0.8,
+        "semantic_recall": 0.6799
+      },
+      {
+        "id": "C02",
+        "question_type": "character_state",
+        "recall": 0.3043,
+        "precision": 1.0,
+        "semantic_recall": 0.7384
+      },
+      {
+        "id": "C03",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.6941
+      },
+      {
+        "id": "C04",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.7309
+      },
+      {
+        "id": "D01",
+        "question_type": "character_state",
+        "recall": 0.35,
+        "precision": 0.8,
+        "semantic_recall": 0.7433
+      },
+      {
+        "id": "D02",
+        "question_type": "causal",
+        "recall": 0.4211,
+        "precision": 1.0,
+        "semantic_recall": 0.7242
+      },
+      {
+        "id": "D03",
+        "question_type": "character_state",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7436
+      },
+      {
+        "id": "D04",
+        "question_type": "factual",
+        "recall": 0.2381,
+        "precision": 1.0,
+        "semantic_recall": 0.6949
+      },
+      {
+        "id": "D05",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.8,
+        "semantic_recall": 0.681
+      },
+      {
+        "id": "D06",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7077
+      },
+      {
+        "id": "E01",
+        "question_type": "causal",
+        "recall": 0.4,
+        "precision": 0.8,
+        "semantic_recall": 0.7227
+      },
+      {
+        "id": "E02",
+        "question_type": "character_state",
+        "recall": 0.619,
+        "precision": 1.0,
+        "semantic_recall": 0.7783
+      },
+      {
+        "id": "E03",
+        "question_type": "factual",
+        "recall": 0.1053,
+        "precision": 0.6,
+        "semantic_recall": 0.6475
+      },
+      {
+        "id": "E04",
+        "question_type": "factual",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.7089
+      },
+      {
+        "id": "E05",
+        "question_type": "causal",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.7083
+      },
+      {
+        "id": "J01",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 0.8,
+        "semantic_recall": 0.6553
+      },
+      {
+        "id": "J02",
+        "question_type": "factual",
+        "recall": 0.15,
+        "precision": 0.8,
+        "semantic_recall": 0.6882
+      },
+      {
+        "id": "J03",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6268
+      },
+      {
+        "id": "J04",
+        "question_type": "causal",
+        "recall": 0.381,
+        "precision": 1.0,
+        "semantic_recall": 0.6728
+      },
+      {
+        "id": "J05",
+        "question_type": "character_state",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.6939
+      },
+      {
+        "id": "C05",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 1.0,
+        "semantic_recall": 0.725
+      },
+      {
+        "id": "C06",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.7161
+      },
+      {
+        "id": "C07",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 0.8,
+        "semantic_recall": 0.7234
+      },
+      {
+        "id": "C08",
+        "question_type": "factual",
+        "recall": 0.08,
+        "precision": 1.0,
+        "semantic_recall": 0.6854
+      },
+      {
+        "id": "C09",
+        "question_type": "causal",
+        "recall": 0.1364,
+        "precision": 0.2,
+        "semantic_recall": 0.748
+      },
+      {
+        "id": "A01",
+        "question_type": "factual",
+        "recall": 0.1739,
+        "precision": 0.6,
+        "semantic_recall": 0.6709
+      },
+      {
+        "id": "A02",
+        "question_type": "causal",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.6203
+      },
+      {
+        "id": "A03",
+        "question_type": "causal",
+        "recall": 0.1304,
+        "precision": 0.8,
+        "semantic_recall": 0.6829
+      },
+      {
+        "id": "A04",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.4,
+        "semantic_recall": 0.6398
+      },
+      {
+        "id": "B11",
+        "question_type": "character_state",
+        "recall": 0.1905,
+        "precision": 1.0,
+        "semantic_recall": 0.7136
+      },
+      {
+        "id": "B12",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 1.0,
+        "semantic_recall": 0.6789
+      },
+      {
+        "id": "B13",
+        "question_type": "causal",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7235
+      },
+      {
+        "id": "T01",
+        "question_type": "causal",
+        "recall": 0.28,
+        "precision": 1.0,
+        "semantic_recall": 0.6783
+      },
+      {
+        "id": "T02",
+        "question_type": "factual",
+        "recall": 0.2273,
+        "precision": 0.6,
+        "semantic_recall": 0.7008
+      },
+      {
+        "id": "T03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.6326
+      },
+      {
+        "id": "S01",
+        "question_type": "character_state",
+        "recall": 0.2273,
+        "precision": 1.0,
+        "semantic_recall": 0.6756
+      },
+      {
+        "id": "S02",
+        "question_type": "character_state",
+        "recall": 0.1,
+        "precision": 0.6,
+        "semantic_recall": 0.6831
+      },
+      {
+        "id": "M01",
+        "question_type": "factual",
+        "recall": 0.2083,
+        "precision": 0.6,
+        "semantic_recall": 0.6258
+      },
+      {
+        "id": "M02",
+        "question_type": "factual",
+        "recall": 0.4545,
+        "precision": 1.0,
+        "semantic_recall": 0.6885
+      },
+      {
+        "id": "M03",
+        "question_type": "character_state",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.7337
+      },
+      {
+        "id": "M04",
+        "question_type": "factual",
+        "recall": 0.1852,
+        "precision": 0.4,
+        "semantic_recall": 0.6668
+      },
+      {
+        "id": "M05",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 0.8,
+        "semantic_recall": 0.6895
+      },
+      {
+        "id": "T04",
+        "question_type": "multi_hop",
+        "recall": 0.1364,
+        "precision": 0.6,
+        "semantic_recall": 0.6938
+      },
+      {
+        "id": "T05",
+        "question_type": "factual",
+        "recall": 0.1923,
+        "precision": 0.6,
+        "semantic_recall": 0.6717
+      },
+      {
+        "id": "E06",
+        "question_type": "causal",
+        "recall": 0.2609,
+        "precision": 0.6,
+        "semantic_recall": 0.757
+      },
+      {
+        "id": "E07",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 0.8,
+        "semantic_recall": 0.7049
+      },
+      {
+        "id": "J06",
+        "question_type": "character_state",
+        "recall": 0.0333,
+        "precision": 0.6,
+        "semantic_recall": 0.6225
+      },
+      {
+        "id": "J07",
+        "question_type": "character_state",
+        "recall": 0.2174,
+        "precision": 1.0,
+        "semantic_recall": 0.6455
+      },
+      {
+        "id": "J08",
+        "question_type": "character_state",
+        "recall": 0.1739,
+        "precision": 0.4,
+        "semantic_recall": 0.6449
+      },
+      {
+        "id": "D07",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7364
+      },
+      {
+        "id": "D08",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7207
+      },
+      {
+        "id": "E08",
+        "question_type": "multi_hop",
+        "recall": 0.1852,
+        "precision": 1.0,
+        "semantic_recall": 0.6908
+      },
+      {
+        "id": "E09",
+        "question_type": "multi_hop",
+        "recall": 0.1739,
+        "precision": 1.0,
+        "semantic_recall": 0.7236
+      },
+      {
+        "id": "E10",
+        "question_type": "causal",
+        "recall": 0.1429,
+        "precision": 1.0,
+        "semantic_recall": 0.7214
+      },
+      {
+        "id": "E11",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.6,
+        "semantic_recall": 0.6988
+      },
+      {
+        "id": "E12",
+        "question_type": "temporal",
+        "recall": 0.1154,
+        "precision": 1.0,
+        "semantic_recall": 0.7403
+      },
+      {
+        "id": "E13",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 1.0,
+        "semantic_recall": 0.6622
+      },
+      {
+        "id": "A05",
+        "question_type": "factual",
+        "recall": 0.1154,
+        "precision": 0.4,
+        "semantic_recall": 0.6573
+      },
+      {
+        "id": "A06",
+        "question_type": "factual",
+        "recall": 0.0417,
+        "precision": 0.4,
+        "semantic_recall": 0.6604
+      },
+      {
+        "id": "A07",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6727
+      },
+      {
+        "id": "S03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.6515
+      },
+      {
+        "id": "S04",
+        "question_type": "temporal",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.6635
+      },
+      {
+        "id": "R01",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.8,
+        "semantic_recall": 0.7318
+      },
+      {
+        "id": "R02",
+        "question_type": "causal",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6857
+      },
+      {
+        "id": "R03",
+        "question_type": "factual",
+        "recall": 0.2083,
+        "precision": 1.0,
+        "semantic_recall": 0.7336
+      },
+      {
+        "id": "D09",
+        "question_type": "temporal",
+        "recall": 0.1034,
+        "precision": 1.0,
+        "semantic_recall": 0.6897
+      },
+      {
+        "id": "D10",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 0.8,
+        "semantic_recall": 0.7013
+      },
+      {
+        "id": "D11",
+        "question_type": "causal",
+        "recall": 0.0769,
+        "precision": 0.4,
+        "semantic_recall": 0.6814
+      },
+      {
+        "id": "MH01",
+        "question_type": "multi_hop",
+        "recall": 0.0417,
+        "precision": 1.0,
+        "semantic_recall": 0.6732
+      },
+      {
+        "id": "MH02",
+        "question_type": "multi_hop",
+        "recall": 0.3077,
+        "precision": 1.0,
+        "semantic_recall": 0.7027
+      },
+      {
+        "id": "MH03",
+        "question_type": "multi_hop",
+        "recall": 0.1111,
+        "precision": 0.8,
+        "semantic_recall": 0.6665
+      },
+      {
+        "id": "MH04",
+        "question_type": "multi_hop",
+        "recall": 0.08,
+        "precision": 0.4,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "MH05",
+        "question_type": "multi_hop",
+        "recall": 0.1176,
+        "precision": 0.6,
+        "semantic_recall": 0.6775
+      },
+      {
+        "id": "T06",
+        "question_type": "factual",
+        "recall": 0.087,
+        "precision": 0.6,
+        "semantic_recall": 0.6359
+      },
+      {
+        "id": "T07",
+        "question_type": "character_state",
+        "recall": 0.0,
+        "precision": 0.0,
+        "semantic_recall": 0.6644
+      },
+      {
+        "id": "T08",
+        "question_type": "character_state",
+        "recall": 0.3846,
+        "precision": 1.0,
+        "semantic_recall": 0.706
+      },
+      {
+        "id": "TM01",
+        "question_type": "temporal",
+        "recall": 0.2083,
+        "precision": 1.0,
+        "semantic_recall": 0.7103
+      },
+      {
+        "id": "TM02",
+        "question_type": "temporal",
+        "recall": 0.1818,
+        "precision": 1.0,
+        "semantic_recall": 0.7457
+      },
+      {
+        "id": "TM03",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6877
+      },
+      {
+        "id": "TM04",
+        "question_type": "character_state",
+        "recall": 0.16,
+        "precision": 0.8,
+        "semantic_recall": 0.7051
+      }
+    ]
+  },
+  {
+    "config_id": "C8",
+    "config_name": "+ Hybrid Search (BM25 + RRF)",
+    "memory_count": 387,
+    "build_time_sec": 0.23,
+    "keyword_recall": 0.2111,
+    "precision_at_5": 0.7964,
+    "semantic_recall": 0.6944,
+    "per_question": [
+      {
+        "id": "P01",
+        "question_type": "factual",
+        "recall": 0.1875,
+        "precision": 0.6,
+        "semantic_recall": 0.6388
+      },
+      {
+        "id": "P02",
+        "question_type": "factual",
+        "recall": 0.2308,
+        "precision": 0.6,
+        "semantic_recall": 0.5901
+      },
+      {
+        "id": "P03",
+        "question_type": "factual",
+        "recall": 0.0909,
+        "precision": 0.2,
+        "semantic_recall": 0.6794
+      },
+      {
+        "id": "P04",
+        "question_type": "temporal",
+        "recall": 0.0769,
+        "precision": 0.4,
+        "semantic_recall": 0.6537
+      },
+      {
+        "id": "P05",
+        "question_type": "character_state",
+        "recall": 0.25,
+        "precision": 0.6,
+        "semantic_recall": 0.732
+      },
+      {
+        "id": "P06",
+        "question_type": "character_state",
+        "recall": 0.3333,
+        "precision": 1.0,
+        "semantic_recall": 0.7668
+      },
+      {
+        "id": "P07",
+        "question_type": "factual",
+        "recall": 0.2222,
+        "precision": 1.0,
+        "semantic_recall": 0.6694
+      },
+      {
+        "id": "P08",
+        "question_type": "factual",
+        "recall": 0.2941,
+        "precision": 0.8,
+        "semantic_recall": 0.6418
+      },
+      {
+        "id": "P09",
+        "question_type": "causal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7472
+      },
+      {
+        "id": "P10",
+        "question_type": "factual",
+        "recall": 0.1429,
+        "precision": 0.2,
+        "semantic_recall": 0.6808
+      },
+      {
+        "id": "P11",
+        "question_type": "causal",
+        "recall": 0.1667,
+        "precision": 0.6,
+        "semantic_recall": 0.6678
+      },
+      {
+        "id": "P12",
+        "question_type": "factual",
+        "recall": 0.2,
+        "precision": 0.4,
+        "semantic_recall": 0.6775
+      },
+      {
+        "id": "P13",
+        "question_type": "character_state",
+        "recall": 0.3182,
+        "precision": 1.0,
+        "semantic_recall": 0.7657
+      },
+      {
+        "id": "P14",
+        "question_type": "factual",
+        "recall": 0.4118,
+        "precision": 1.0,
+        "semantic_recall": 0.7742
+      },
+      {
+        "id": "P15",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.6,
+        "semantic_recall": 0.6675
+      },
+      {
+        "id": "P16",
+        "question_type": "factual",
+        "recall": 0.0625,
+        "precision": 0.2,
+        "semantic_recall": 0.7371
+      },
+      {
+        "id": "P17",
+        "question_type": "temporal",
+        "recall": 0.1765,
+        "precision": 0.6,
+        "semantic_recall": 0.7104
+      },
+      {
+        "id": "P18",
+        "question_type": "causal",
+        "recall": 0.08,
+        "precision": 0.4,
+        "semantic_recall": 0.6555
+      },
+      {
+        "id": "P19",
+        "question_type": "factual",
+        "recall": 0.0769,
+        "precision": 0.4,
+        "semantic_recall": 0.6677
+      },
+      {
+        "id": "P20",
+        "question_type": "multi_hop",
+        "recall": 0.05,
+        "precision": 0.2,
+        "semantic_recall": 0.6777
+      },
+      {
+        "id": "B01",
+        "question_type": "factual",
+        "recall": 0.3333,
+        "precision": 0.8,
+        "semantic_recall": 0.7235
+      },
+      {
+        "id": "B02",
+        "question_type": "factual",
+        "recall": 0.375,
+        "precision": 1.0,
+        "semantic_recall": 0.7267
+      },
+      {
+        "id": "B03",
+        "question_type": "causal",
+        "recall": 0.4,
+        "precision": 0.8,
+        "semantic_recall": 0.821
+      },
+      {
+        "id": "B04",
+        "question_type": "causal",
+        "recall": 0.3571,
+        "precision": 1.0,
+        "semantic_recall": 0.6972
+      },
+      {
+        "id": "B05",
+        "question_type": "factual",
+        "recall": 0.5789,
+        "precision": 1.0,
+        "semantic_recall": 0.7903
+      },
+      {
+        "id": "B06",
+        "question_type": "factual",
+        "recall": 0.619,
+        "precision": 1.0,
+        "semantic_recall": 0.7712
+      },
+      {
+        "id": "B07",
+        "question_type": "character_state",
+        "recall": 0.1905,
+        "precision": 1.0,
+        "semantic_recall": 0.7632
+      },
+      {
+        "id": "B08",
+        "question_type": "factual",
+        "recall": 0.1364,
+        "precision": 1.0,
+        "semantic_recall": 0.7292
+      },
+      {
+        "id": "B09",
+        "question_type": "multi_hop",
+        "recall": 0.1429,
+        "precision": 0.8,
+        "semantic_recall": 0.7764
+      },
+      {
+        "id": "B10",
+        "question_type": "factual",
+        "recall": 0.3462,
+        "precision": 0.8,
+        "semantic_recall": 0.6946
+      },
+      {
+        "id": "C01",
+        "question_type": "factual",
+        "recall": 0.5263,
+        "precision": 1.0,
+        "semantic_recall": 0.7012
+      },
+      {
+        "id": "C02",
+        "question_type": "character_state",
+        "recall": 0.2609,
+        "precision": 1.0,
+        "semantic_recall": 0.7384
+      },
+      {
+        "id": "C03",
+        "question_type": "causal",
+        "recall": 0.2857,
+        "precision": 1.0,
+        "semantic_recall": 0.6941
+      },
+      {
+        "id": "C04",
+        "question_type": "factual",
+        "recall": 0.3684,
+        "precision": 1.0,
+        "semantic_recall": 0.7235
+      },
+      {
+        "id": "D01",
+        "question_type": "character_state",
+        "recall": 0.35,
+        "precision": 1.0,
+        "semantic_recall": 0.7433
+      },
+      {
+        "id": "D02",
+        "question_type": "causal",
+        "recall": 0.3158,
+        "precision": 1.0,
+        "semantic_recall": 0.7091
+      },
+      {
+        "id": "D03",
+        "question_type": "character_state",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7239
+      },
+      {
+        "id": "D04",
+        "question_type": "factual",
+        "recall": 0.381,
+        "precision": 1.0,
+        "semantic_recall": 0.6999
+      },
+      {
+        "id": "D05",
+        "question_type": "factual",
+        "recall": 0.2143,
+        "precision": 0.8,
+        "semantic_recall": 0.681
+      },
+      {
+        "id": "D06",
+        "question_type": "factual",
+        "recall": 0.2381,
+        "precision": 1.0,
+        "semantic_recall": 0.7077
+      },
+      {
+        "id": "E01",
+        "question_type": "causal",
+        "recall": 0.4,
+        "precision": 1.0,
+        "semantic_recall": 0.7227
+      },
+      {
+        "id": "E02",
+        "question_type": "character_state",
+        "recall": 0.5238,
+        "precision": 0.8,
+        "semantic_recall": 0.7783
+      },
+      {
+        "id": "E03",
+        "question_type": "factual",
+        "recall": 0.2105,
+        "precision": 0.8,
+        "semantic_recall": 0.6529
+      },
+      {
+        "id": "E04",
+        "question_type": "factual",
+        "recall": 0.2,
+        "precision": 0.8,
+        "semantic_recall": 0.6594
+      },
+      {
+        "id": "E05",
+        "question_type": "causal",
+        "recall": 0.2632,
+        "precision": 1.0,
+        "semantic_recall": 0.7083
+      },
+      {
+        "id": "J01",
+        "question_type": "factual",
+        "recall": 0.2778,
+        "precision": 0.6,
+        "semantic_recall": 0.6604
+      },
+      {
+        "id": "J02",
+        "question_type": "factual",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.6882
+      },
+      {
+        "id": "J03",
+        "question_type": "factual",
+        "recall": 0.1111,
+        "precision": 1.0,
+        "semantic_recall": 0.6268
+      },
+      {
+        "id": "J04",
+        "question_type": "causal",
+        "recall": 0.3333,
+        "precision": 1.0,
+        "semantic_recall": 0.7145
+      },
+      {
+        "id": "J05",
+        "question_type": "character_state",
+        "recall": 0.3158,
+        "precision": 1.0,
+        "semantic_recall": 0.6979
+      },
+      {
+        "id": "C05",
+        "question_type": "factual",
+        "recall": 0.0556,
+        "precision": 1.0,
+        "semantic_recall": 0.6894
+      },
+      {
+        "id": "C06",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.7161
+      },
+      {
+        "id": "C07",
+        "question_type": "character_state",
+        "recall": 0.15,
+        "precision": 0.8,
+        "semantic_recall": 0.7234
+      },
+      {
+        "id": "C08",
+        "question_type": "factual",
+        "recall": 0.04,
+        "precision": 1.0,
+        "semantic_recall": 0.6956
+      },
+      {
+        "id": "C09",
+        "question_type": "causal",
+        "recall": 0.1364,
+        "precision": 0.2,
+        "semantic_recall": 0.748
+      },
+      {
+        "id": "A01",
+        "question_type": "factual",
+        "recall": 0.2174,
+        "precision": 0.8,
+        "semantic_recall": 0.6707
+      },
+      {
+        "id": "A02",
+        "question_type": "causal",
+        "recall": 0.15,
+        "precision": 0.4,
+        "semantic_recall": 0.6654
+      },
+      {
+        "id": "A03",
+        "question_type": "causal",
+        "recall": 0.3043,
+        "precision": 0.8,
+        "semantic_recall": 0.6684
+      },
+      {
+        "id": "A04",
+        "question_type": "character_state",
+        "recall": 0.15,
+        "precision": 0.6,
+        "semantic_recall": 0.6721
+      },
+      {
+        "id": "B11",
+        "question_type": "character_state",
+        "recall": 0.0952,
+        "precision": 1.0,
+        "semantic_recall": 0.7136
+      },
+      {
+        "id": "B12",
+        "question_type": "multi_hop",
+        "recall": 0.0833,
+        "precision": 1.0,
+        "semantic_recall": 0.666
+      },
+      {
+        "id": "B13",
+        "question_type": "causal",
+        "recall": 0.125,
+        "precision": 1.0,
+        "semantic_recall": 0.7235
+      },
+      {
+        "id": "T01",
+        "question_type": "causal",
+        "recall": 0.2,
+        "precision": 1.0,
+        "semantic_recall": 0.6783
+      },
+      {
+        "id": "T02",
+        "question_type": "factual",
+        "recall": 0.1818,
+        "precision": 0.4,
+        "semantic_recall": 0.7008
+      },
+      {
+        "id": "T03",
+        "question_type": "character_state",
+        "recall": 0.1364,
+        "precision": 0.8,
+        "semantic_recall": 0.6326
+      },
+      {
+        "id": "S01",
+        "question_type": "character_state",
+        "recall": 0.1818,
+        "precision": 1.0,
+        "semantic_recall": 0.6756
+      },
+      {
+        "id": "S02",
+        "question_type": "character_state",
+        "recall": 0.05,
+        "precision": 0.4,
+        "semantic_recall": 0.6831
+      },
+      {
+        "id": "M01",
+        "question_type": "factual",
+        "recall": 0.0833,
+        "precision": 0.6,
+        "semantic_recall": 0.6258
+      },
+      {
+        "id": "M02",
+        "question_type": "factual",
+        "recall": 0.3636,
+        "precision": 1.0,
+        "semantic_recall": 0.6844
+      },
+      {
+        "id": "M03",
+        "question_type": "character_state",
+        "recall": 0.3333,
+        "precision": 1.0,
+        "semantic_recall": 0.7337
+      },
+      {
+        "id": "M04",
+        "question_type": "factual",
+        "recall": 0.1481,
+        "precision": 0.4,
+        "semantic_recall": 0.6687
+      },
+      {
+        "id": "M05",
+        "question_type": "factual",
+        "recall": 0.4091,
+        "precision": 1.0,
+        "semantic_recall": 0.7063
+      },
+      {
+        "id": "T04",
+        "question_type": "multi_hop",
+        "recall": 0.1364,
+        "precision": 1.0,
+        "semantic_recall": 0.6478
+      },
+      {
+        "id": "T05",
+        "question_type": "factual",
+        "recall": 0.2692,
+        "precision": 0.8,
+        "semantic_recall": 0.6717
+      },
+      {
+        "id": "E06",
+        "question_type": "causal",
+        "recall": 0.3043,
+        "precision": 0.8,
+        "semantic_recall": 0.757
+      },
+      {
+        "id": "E07",
+        "question_type": "multi_hop",
+        "recall": 0.2083,
+        "precision": 0.8,
+        "semantic_recall": 0.7049
+      },
+      {
+        "id": "J06",
+        "question_type": "character_state",
+        "recall": 0.0333,
+        "precision": 1.0,
+        "semantic_recall": 0.6255
+      },
+      {
+        "id": "J07",
+        "question_type": "character_state",
+        "recall": 0.1739,
+        "precision": 1.0,
+        "semantic_recall": 0.6455
+      },
+      {
+        "id": "J08",
+        "question_type": "character_state",
+        "recall": 0.1739,
+        "precision": 0.6,
+        "semantic_recall": 0.6375
+      },
+      {
+        "id": "D07",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7164
+      },
+      {
+        "id": "D08",
+        "question_type": "factual",
+        "recall": 0.2083,
+        "precision": 1.0,
+        "semantic_recall": 0.7207
+      },
+      {
+        "id": "E08",
+        "question_type": "multi_hop",
+        "recall": 0.1481,
+        "precision": 1.0,
+        "semantic_recall": 0.6356
+      },
+      {
+        "id": "E09",
+        "question_type": "multi_hop",
+        "recall": 0.2609,
+        "precision": 1.0,
+        "semantic_recall": 0.7236
+      },
+      {
+        "id": "E10",
+        "question_type": "causal",
+        "recall": 0.1905,
+        "precision": 1.0,
+        "semantic_recall": 0.7345
+      },
+      {
+        "id": "E11",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 0.8,
+        "semantic_recall": 0.7129
+      },
+      {
+        "id": "E12",
+        "question_type": "temporal",
+        "recall": 0.1538,
+        "precision": 1.0,
+        "semantic_recall": 0.6899
+      },
+      {
+        "id": "E13",
+        "question_type": "multi_hop",
+        "recall": 0.1,
+        "precision": 1.0,
+        "semantic_recall": 0.6764
+      },
+      {
+        "id": "A05",
+        "question_type": "factual",
+        "recall": 0.0769,
+        "precision": 0.2,
+        "semantic_recall": 0.6245
+      },
+      {
+        "id": "A06",
+        "question_type": "factual",
+        "recall": 0.125,
+        "precision": 0.6,
+        "semantic_recall": 0.6002
+      },
+      {
+        "id": "A07",
+        "question_type": "factual",
+        "recall": 0.1786,
+        "precision": 0.6,
+        "semantic_recall": 0.6727
+      },
+      {
+        "id": "S03",
+        "question_type": "character_state",
+        "recall": 0.0909,
+        "precision": 0.8,
+        "semantic_recall": 0.6672
+      },
+      {
+        "id": "S04",
+        "question_type": "temporal",
+        "recall": 0.2963,
+        "precision": 1.0,
+        "semantic_recall": 0.6635
+      },
+      {
+        "id": "R01",
+        "question_type": "factual",
+        "recall": 0.0476,
+        "precision": 1.0,
+        "semantic_recall": 0.6607
+      },
+      {
+        "id": "R02",
+        "question_type": "causal",
+        "recall": 0.0417,
+        "precision": 0.2,
+        "semantic_recall": 0.676
+      },
+      {
+        "id": "R03",
+        "question_type": "factual",
+        "recall": 0.1667,
+        "precision": 1.0,
+        "semantic_recall": 0.6627
+      },
+      {
+        "id": "D09",
+        "question_type": "temporal",
+        "recall": 0.1034,
+        "precision": 1.0,
+        "semantic_recall": 0.6897
+      },
+      {
+        "id": "D10",
+        "question_type": "factual",
+        "recall": 0.0833,
+        "precision": 0.4,
+        "semantic_recall": 0.7013
+      },
+      {
+        "id": "D11",
+        "question_type": "causal",
+        "recall": 0.1923,
+        "precision": 0.8,
+        "semantic_recall": 0.6814
+      },
+      {
+        "id": "MH01",
+        "question_type": "multi_hop",
+        "recall": 0.0417,
+        "precision": 0.8,
+        "semantic_recall": 0.666
+      },
+      {
+        "id": "MH02",
+        "question_type": "multi_hop",
+        "recall": 0.3077,
+        "precision": 1.0,
+        "semantic_recall": 0.7027
+      },
+      {
+        "id": "MH03",
+        "question_type": "multi_hop",
+        "recall": 0.0741,
+        "precision": 0.8,
+        "semantic_recall": 0.7168
+      },
+      {
+        "id": "MH04",
+        "question_type": "multi_hop",
+        "recall": 0.04,
+        "precision": 0.2,
+        "semantic_recall": 0.6915
+      },
+      {
+        "id": "MH05",
+        "question_type": "multi_hop",
+        "recall": 0.1176,
+        "precision": 0.8,
+        "semantic_recall": 0.6889
+      },
+      {
+        "id": "T06",
+        "question_type": "factual",
+        "recall": 0.1304,
+        "precision": 0.8,
+        "semantic_recall": 0.6335
+      },
+      {
+        "id": "T07",
+        "question_type": "character_state",
+        "recall": 0.1739,
+        "precision": 0.4,
+        "semantic_recall": 0.6478
+      },
+      {
+        "id": "T08",
+        "question_type": "character_state",
+        "recall": 0.1538,
+        "precision": 1.0,
+        "semantic_recall": 0.706
+      },
+      {
+        "id": "TM01",
+        "question_type": "temporal",
+        "recall": 0.25,
+        "precision": 1.0,
+        "semantic_recall": 0.7103
+      },
+      {
+        "id": "TM02",
+        "question_type": "temporal",
+        "recall": 0.1818,
+        "precision": 0.8,
+        "semantic_recall": 0.7457
+      },
+      {
+        "id": "TM03",
+        "question_type": "temporal",
+        "recall": 0.3333,
+        "precision": 1.0,
+        "semantic_recall": 0.7024
+      },
+      {
+        "id": "TM04",
+        "question_type": "character_state",
+        "recall": 0.2,
+        "precision": 0.6,
+        "semantic_recall": 0.7051
+      }
+    ]
+  }
+]

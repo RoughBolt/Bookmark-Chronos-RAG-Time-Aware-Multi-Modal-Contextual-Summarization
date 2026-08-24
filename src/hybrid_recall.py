@@ -26,7 +26,8 @@ def generate_hybrid_context(recalled_results, knowledge_file_path="data/knowledg
     statuses = []
     for char in local_chars:
         # Cross reference the global knowledge graph
-        status = global_kg["statuses"].get(char, "UNKNOWN")
+        status_info = global_kg["statuses"].get(char, {"status": "UNKNOWN"})
+        status = status_info if isinstance(status_info, str) else status_info.get("status", "UNKNOWN")
         statuses.append(f"{char} [{status}]")
 
     # 3. Format into a Roster Preamble

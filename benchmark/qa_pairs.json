@@ -1,42 +1,772 @@
 [
   {
+    "id": "P01",
     "question": "Who was killed in the prologue and how did they die?",
-    "ground_truth": "Ser Waymar Royce was killed by a White Walker during a ranging beyond the Wall. He was struck down after bravely drawing his sword and fighting the creature."
+    "ground_truth": "Ser Waymar Royce was killed by a White Walker during a ranging beyond the Wall. He was struck down after bravely drawing his sword and fighting the creature.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
   },
   {
+    "id": "P02",
     "question": "What were Will, Gared, and Ser Waymar Royce doing beyond the Wall?",
-    "ground_truth": "They were members of the Night's Watch on a ranging mission beyond the Wall. They were investigating wildlings and encountered signs of something unnatural."
+    "ground_truth": "They were members of the Night's Watch on a ranging mission beyond the Wall. They were investigating wildlings and encountered signs of something unnatural.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
   },
   {
+    "id": "P03",
     "question": "What did Will discover when he climbed the tree?",
-    "ground_truth": "Will discovered eight wildling corpses arranged in a pattern in the forest, which appeared to have been killed in an unnatural way."
+    "ground_truth": "Will discovered eight wildling corpses arranged in a pattern in the forest, which appeared to have been killed in an unnatural way.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
   },
   {
+    "id": "P04",
     "question": "What happened to the bodies the rangers found?",
-    "ground_truth": "The bodies had disappeared from where Will had seen them when Ser Waymar Royce went to investigate. Only later did the White Walkers appear."
+    "ground_truth": "The bodies had disappeared from where Will had seen them when Ser Waymar Royce went to investigate. Only later did the White Walkers appear.",
+    "chapter": "PROLOGUE",
+    "question_type": "temporal"
   },
   {
+    "id": "P05",
     "question": "Who survived the encounter with the White Walkers in the prologue?",
-    "ground_truth": "Gared survived the encounter with the White Walkers, though Will was ultimately killed by the reanimated corpse of Ser Waymar Royce after Waymar rose again as a wight."
+    "ground_truth": "Gared survived the encounter with the White Walkers, though Will was ultimately killed by the reanimated corpse of Ser Waymar Royce after Waymar rose again as a wight.",
+    "chapter": "PROLOGUE",
+    "question_type": "character_state"
   },
   {
+    "id": "P06",
     "question": "What was Ser Waymar Royce's attitude toward the danger beyond the Wall?",
-    "ground_truth": "Ser Waymar Royce was proud and dismissive of the danger, refusing to retreat even when Will and Gared urged caution. He drew his sword and faced the White Walker directly."
+    "ground_truth": "Ser Waymar Royce was proud and dismissive of the danger, refusing to retreat even when Will and Gared urged caution. He drew his sword and faced the White Walker directly.",
+    "chapter": "PROLOGUE",
+    "question_type": "character_state"
   },
   {
+    "id": "P07",
     "question": "What is the Night's Watch and what is their role?",
-    "ground_truth": "The Night's Watch is a military order that guards the Wall separating the Seven Kingdoms from the dangers beyond it, including wildlings and supernatural threats like White Walkers."
+    "ground_truth": "The Night's Watch is a military order that guards the Wall separating the Seven Kingdoms from the dangers beyond it, including wildlings and supernatural threats like White Walkers.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
   },
   {
+    "id": "P08",
     "question": "Describe what the White Walkers looked like.",
-    "ground_truth": "The White Walkers were described as cold, pale, and inhuman. They carried crystal swords and moved silently through the darkness. Their eyes shone with a piercing blue light."
+    "ground_truth": "The White Walkers were described as cold, pale, and inhuman. They carried crystal swords and moved silently through the darkness. Their eyes shone with a piercing blue light.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
   },
   {
+    "id": "P09",
     "question": "What was significant about Waymar Royce's wound before he rose again?",
-    "ground_truth": "Waymar Royce died from wounds inflicted by the White Walker, but he rose again as a wight — a reanimated corpse — with his eyes glowing blue, and then killed Will."
+    "ground_truth": "Waymar Royce died from wounds inflicted by the White Walker, but he rose again as a wight — a reanimated corpse — with his eyes glowing blue, and then killed Will.",
+    "chapter": "PROLOGUE",
+    "question_type": "causal"
   },
   {
+    "id": "P10",
     "question": "Where does the prologue of A Game of Thrones take place?",
-    "ground_truth": "The prologue takes place in the haunted forest beyond the Wall, in the far north of Westeros, during a cold night with deep snow."
+    "ground_truth": "The prologue takes place in the haunted forest beyond the Wall, in the far north of Westeros, during a cold night with deep snow.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
+  },
+  {
+    "id": "P11",
+    "question": "Why did Will want to turn back before the encounter?",
+    "ground_truth": "Will had seen the dead wildlings arranged in an unnatural pattern and sensed danger. He urged caution and wanted to report back to Lord Commander Mormont rather than continue.",
+    "chapter": "PROLOGUE",
+    "question_type": "causal"
+  },
+  {
+    "id": "P12",
+    "question": "How many wildling corpses did Will find, and how were they arranged?",
+    "ground_truth": "Will found eight wildling corpses. They were arranged in a deliberate pattern or formation in a clearing, suggesting they were killed and positioned by something intelligent and unnatural.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
+  },
+  {
+    "id": "P13",
+    "question": "What was Gared's experience level compared to Ser Waymar Royce?",
+    "ground_truth": "Gared was a veteran ranger who had served in the Night's Watch for many years and had survived harsh conditions beyond the Wall. Ser Waymar Royce was young and newly arrived, a lordling with little experience.",
+    "chapter": "PROLOGUE",
+    "question_type": "character_state"
+  },
+  {
+    "id": "P14",
+    "question": "What happened to Waymar Royce's sword when it struck the White Walker's blade?",
+    "ground_truth": "When Waymar's steel sword met the White Walker's crystal blade, his sword shattered into pieces. The White Walker's weapon was made of a strange crystal-like ice that could break ordinary steel.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
+  },
+  {
+    "id": "P15",
+    "question": "What role did Will play in the ranging party?",
+    "ground_truth": "Will served as the scout and tracker for the ranging party. He was the one who climbed the tree to observe the wildling camp and reported back what he found.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
+  },
+  {
+    "id": "P16",
+    "question": "What was the weather and environment like during the prologue events?",
+    "ground_truth": "The environment was bitterly cold with deep snow on the ground. The forest was dark and foreboding, described as the haunted forest. An unnatural cold accompanied the arrival of the White Walkers.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
+  },
+  {
+    "id": "P17",
+    "question": "What happened between the time Will first saw the bodies and when the party returned to investigate?",
+    "ground_truth": "Between Will's initial sighting and their return, the bodies completely vanished from the clearing. This disappearance preceded the attack by the White Walkers, suggesting the Others had moved them or the dead had risen.",
+    "chapter": "PROLOGUE",
+    "question_type": "temporal"
+  },
+  {
+    "id": "P18",
+    "question": "Why is the prologue significant to the larger story of A Game of Thrones?",
+    "ground_truth": "The prologue establishes the return of the White Walkers, a supernatural threat that most of Westeros believes to be myth. It sets up the central tension of an existential danger beyond the Wall that the rest of the kingdom ignores while fighting over the throne.",
+    "chapter": "PROLOGUE",
+    "question_type": "causal"
+  },
+  {
+    "id": "P19",
+    "question": "How did the White Walkers differ from the wight that killed Will?",
+    "ground_truth": "The White Walkers were living supernatural beings with pale skin, crystal swords, and blue eyes who moved with intelligence and purpose. The wight was the reanimated corpse of Waymar Royce, a dead body brought back as an undead puppet with glowing blue eyes.",
+    "chapter": "PROLOGUE",
+    "question_type": "factual"
+  },
+  {
+    "id": "P20",
+    "question": "What sequence of events led to Will's death in the prologue?",
+    "ground_truth": "Will first discovered the dead wildlings, then Waymar Royce insisted on investigating. The bodies disappeared, White Walkers attacked and killed Royce, then Royce rose as a wight and strangled Will while Gared fled.",
+    "chapter": "PROLOGUE",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "B01",
+    "question": "Who was executed at the start of Bran's first chapter and why?",
+    "ground_truth": "A deserter from the Night's Watch was executed by Lord Eddard Stark. The man had fled south from the Wall after encountering something terrifying beyond it, and desertion from the Night's Watch is punishable by death.",
+    "chapter": "BRAN",
+    "question_type": "factual"
+  },
+  {
+    "id": "B02",
+    "question": "How did the Stark children find the direwolf pups?",
+    "ground_truth": "After the execution, the Stark party found a dead direwolf mother in the snow with a stag's antler lodged in her throat. She had a litter of pups that were still alive. Jon Snow argued they should be kept, noting there were exactly five pups for the five Stark children.",
+    "chapter": "BRAN",
+    "question_type": "factual"
+  },
+  {
+    "id": "B03",
+    "question": "Why did Jon Snow argue the Stark children should keep the direwolves?",
+    "ground_truth": "Jon pointed out that the direwolf is the sigil of House Stark, and there were five pups — one for each of the trueborn Stark children. This was seen as a sign. Jon later found a sixth pup, an albino runt separated from the litter, which he claimed for himself.",
+    "chapter": "BRAN",
+    "question_type": "causal"
+  },
+  {
+    "id": "B04",
+    "question": "What was the symbolic significance of the dead direwolf and the stag?",
+    "ground_truth": "The direwolf is the sigil of House Stark and the stag is the sigil of House Baratheon. The dead direwolf killed by a stag antler foreshadowed the destruction that the alliance with the Baratheons would bring to House Stark.",
+    "chapter": "BRAN",
+    "question_type": "causal"
+  },
+  {
+    "id": "B05",
+    "question": "How old was Bran when he first watched an execution?",
+    "ground_truth": "Bran was seven years old when he watched his father execute the Night's Watch deserter. It was the first time he had been deemed old enough to witness the king's justice carried out.",
+    "chapter": "BRAN",
+    "question_type": "factual"
+  },
+  {
+    "id": "B06",
+    "question": "What did Ned Stark teach Bran about the act of passing the sentence?",
+    "ground_truth": "Ned Stark taught Bran that the man who passes the sentence should swing the sword himself. He believed that if you cannot look a man in the eye and carry out his execution personally, perhaps the man does not deserve to die.",
+    "chapter": "BRAN",
+    "question_type": "factual"
+  },
+  {
+    "id": "B07",
+    "question": "How did Bran react to watching the execution?",
+    "ground_truth": "Bran watched bravely without looking away, though his father Ned asked Jon and Robb if Bran had watched. Bran was determined to be brave and not show weakness, wanting to prove himself worthy of being a Stark.",
+    "chapter": "BRAN",
+    "question_type": "character_state"
+  },
+  {
+    "id": "B08",
+    "question": "What was special about Jon Snow's direwolf pup compared to the others?",
+    "ground_truth": "Jon Snow's direwolf was an albino — white-furred with red eyes — and was found separated from the rest of the litter. It was the runt, smaller than its siblings, which Jon claimed matched his own status as a bastard separated from the trueborn Starks.",
+    "chapter": "BRAN",
+    "question_type": "factual"
+  },
+  {
+    "id": "B09",
+    "question": "What connection exists between the Night's Watch deserter in Bran I and the prologue events?",
+    "ground_truth": "The deserter executed in Bran I is the survivor from the prologue — the man who witnessed the White Walkers kill Ser Waymar Royce. He fled south in terror and was captured and executed as a deserter, his warnings about the Others going unheeded.",
+    "chapter": "BRAN",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "B10",
+    "question": "Name all the Stark children present when the direwolves were found.",
+    "ground_truth": "The Stark children present were Robb (the eldest son), Jon Snow (Ned's bastard son), Bran, and likely others from the riding party. Each of the five trueborn children — Robb, Sansa, Arya, Bran, and Rickon — received a pup, with Jon taking the sixth albino runt.",
+    "chapter": "BRAN",
+    "question_type": "factual"
+  },
+  {
+    "id": "C01",
+    "question": "What news arrived at Winterfell in Catelyn's first chapter?",
+    "ground_truth": "A messenger brought word that Jon Arryn, the Hand of the King, had died. King Robert Baratheon was riding north to Winterfell, presumably to ask Ned Stark to become the new Hand of the King.",
+    "chapter": "CATELYN",
+    "question_type": "factual"
+  },
+  {
+    "id": "C02",
+    "question": "What was Catelyn's relationship with Jon Snow and why?",
+    "ground_truth": "Catelyn resented Jon Snow deeply because he was Ned's bastard son, a living reminder of her husband's infidelity. She could not forgive Ned for bringing the boy home to be raised alongside her own trueborn children at Winterfell.",
+    "chapter": "CATELYN",
+    "question_type": "character_state"
+  },
+  {
+    "id": "C03",
+    "question": "Who was Jon Arryn and why was his death significant?",
+    "ground_truth": "Jon Arryn was the Hand of the King — the most powerful advisor to King Robert Baratheon. He had also fostered both Ned Stark and Robert Baratheon as young men. His sudden death created a vacancy that would draw Ned into the politics of King's Landing.",
+    "chapter": "CATELYN",
+    "question_type": "causal"
+  },
+  {
+    "id": "C04",
+    "question": "What was Catelyn Stark's family background before marrying Ned?",
+    "ground_truth": "Catelyn was born Catelyn Tully, daughter of Lord Hoster Tully of Riverrun. She was originally betrothed to Ned's elder brother Brandon Stark, but after Brandon was killed by the Mad King, she married Ned instead.",
+    "chapter": "CATELYN",
+    "question_type": "factual"
+  },
+  {
+    "id": "D01",
+    "question": "Who is Daenerys Targaryen and what is her situation at the start of the story?",
+    "ground_truth": "Daenerys is the exiled princess of House Targaryen, living across the Narrow Sea in the Free Cities. She and her brother Viserys are the last surviving Targaryens after their family was overthrown by Robert's Rebellion.",
+    "chapter": "DAENERYS",
+    "question_type": "character_state"
+  },
+  {
+    "id": "D02",
+    "question": "Why did Viserys arrange Daenerys's marriage to Khal Drogo?",
+    "ground_truth": "Viserys sold Daenerys into marriage with the Dothraki warlord Khal Drogo in exchange for Drogo's army of forty thousand warriors. Viserys planned to use this army to reclaim the Iron Throne of Westeros.",
+    "chapter": "DAENERYS",
+    "question_type": "causal"
+  },
+  {
+    "id": "D03",
+    "question": "How did Viserys treat Daenerys?",
+    "ground_truth": "Viserys was cruel and abusive toward Daenerys. He controlled her through fear and intimidation, often threatening her and reminding her she existed only to serve his ambition of reclaiming the throne. He warned her not to wake the dragon.",
+    "chapter": "DAENERYS",
+    "question_type": "character_state"
+  },
+  {
+    "id": "D04",
+    "question": "Who is Illyrio Mopatis and what role did he play?",
+    "ground_truth": "Illyrio Mopatis was a wealthy merchant prince in the Free City of Pentos who hosted and sheltered Viserys and Daenerys. He helped arrange the marriage between Daenerys and Khal Drogo as part of a larger political scheme.",
+    "chapter": "DAENERYS",
+    "question_type": "factual"
+  },
+  {
+    "id": "D05",
+    "question": "What wedding gifts did Daenerys receive, and which was most significant?",
+    "ground_truth": "Among her wedding gifts, Daenerys received three petrified dragon eggs — one green, one black, and one gold. Though believed to be merely turned to stone over the centuries, these eggs would prove to be the most significant gift, eventually hatching into living dragons.",
+    "chapter": "DAENERYS",
+    "question_type": "factual"
+  },
+  {
+    "id": "D06",
+    "question": "What are the Dothraki and how is their society organized?",
+    "ground_truth": "The Dothraki are nomadic horse warriors who roam the great grass sea of Essos. They are organized into khalasars led by a khal. They are fierce mounted fighters who value strength and horsemanship above all else.",
+    "chapter": "DAENERYS",
+    "question_type": "factual"
+  },
+  {
+    "id": "E01",
+    "question": "Why did King Robert Baratheon come to Winterfell?",
+    "ground_truth": "Robert traveled north to Winterfell to ask his old friend Eddard Stark to serve as the new Hand of the King, replacing the recently deceased Jon Arryn. He also proposed a marriage between his son Joffrey and Ned's daughter Sansa.",
+    "chapter": "EDDARD",
+    "question_type": "causal"
+  },
+  {
+    "id": "E02",
+    "question": "What was the relationship between Robert Baratheon and Eddard Stark?",
+    "ground_truth": "Robert and Ned were childhood friends who were fostered together at the Eyrie under Jon Arryn. They fought side by side during Robert's Rebellion to overthrow the Mad King Aerys Targaryen, bonded as brothers in all but blood.",
+    "chapter": "EDDARD",
+    "question_type": "character_state"
+  },
+  {
+    "id": "E03",
+    "question": "Who did Robert Baratheon bring with him to Winterfell?",
+    "ground_truth": "Robert brought his wife Queen Cersei Lannister, their children Joffrey, Myrcella, and Tommen, Cersei's twin brother Jaime Lannister of the Kingsguard, and their brother Tyrion Lannister the Imp, along with a large retinue.",
+    "chapter": "EDDARD",
+    "question_type": "factual"
+  },
+  {
+    "id": "E04",
+    "question": "What did Robert do when he arrived at Winterfell's crypts?",
+    "ground_truth": "Robert immediately insisted on visiting the crypts beneath Winterfell to pay his respects at the tomb of Lyanna Stark, Ned's sister. Robert had loved Lyanna and her death during Robert's Rebellion still haunted him deeply.",
+    "chapter": "EDDARD",
+    "question_type": "factual"
+  },
+  {
+    "id": "E05",
+    "question": "Why was Ned reluctant to become Hand of the King?",
+    "ground_truth": "Ned was reluctant because he was content as Lord of Winterfell and Warden of the North. He had no desire for the politics of King's Landing, preferred the honest cold of the North, and was wary of the Lannisters' influence at court.",
+    "chapter": "EDDARD",
+    "question_type": "causal"
+  },
+  {
+    "id": "J01",
+    "question": "Where did Jon Snow sit during the feast welcoming King Robert to Winterfell?",
+    "ground_truth": "Jon Snow was seated at a bench among the younger squires, away from the main table and his family. As a bastard, he could not be seated with the royal family. He drank heavily and fed his direwolf Ghost under the table.",
+    "chapter": "JON",
+    "question_type": "factual"
+  },
+  {
+    "id": "J02",
+    "question": "How did Jon Snow and Tyrion Lannister first meet?",
+    "ground_truth": "They met during the feast at Winterfell when Tyrion came outside and found Jon brooding alone. Tyrion gave Jon advice about being a bastard, telling him to wear it like armor so it could never be used to hurt him.",
+    "chapter": "JON",
+    "question_type": "factual"
+  },
+  {
+    "id": "J03",
+    "question": "What advice did Tyrion give Jon Snow about being a bastard?",
+    "ground_truth": "Tyrion told Jon: 'Never forget what you are, the rest of the world will not. Wear it like armor and it can never be used to hurt you.' This advice resonated deeply with Jon and shaped how he dealt with his identity.",
+    "chapter": "JON",
+    "question_type": "factual"
+  },
+  {
+    "id": "J04",
+    "question": "Why did Jon Snow want to join the Night's Watch?",
+    "ground_truth": "As a bastard, Jon had limited prospects at Winterfell. His uncle Benjen Stark was a ranger of the Night's Watch, and Jon saw the Watch as a place where a man's birth did not matter — where he could earn honor through merit rather than name.",
+    "chapter": "JON",
+    "question_type": "causal"
+  },
+  {
+    "id": "J05",
+    "question": "Who was Benjen Stark and what was his relationship to Jon?",
+    "ground_truth": "Benjen Stark was Ned's younger brother and Jon's uncle. He served as First Ranger of the Night's Watch at Castle Black. Jon admired him and was inspired by his service to join the Watch himself.",
+    "chapter": "JON",
+    "question_type": "character_state"
+  },
+  {
+    "id": "C05",
+    "question": "What happened to Bran that left him unconscious?",
+    "ground_truth": "Bran was climbing the walls of a tower at Winterfell and accidentally witnessed Cersei and Jaime Lannister in an incestuous relationship. Jaime pushed Bran from the window to protect their secret, leaving him in a coma.",
+    "chapter": "CATELYN",
+    "question_type": "factual"
+  },
+  {
+    "id": "C06",
+    "question": "What did Jaime Lannister say before pushing Bran from the tower?",
+    "ground_truth": "Jaime said 'The things I do for love' before pushing Bran from the tower window, demonstrating his willingness to harm a child to protect his secret relationship with his twin sister Cersei.",
+    "chapter": "CATELYN",
+    "question_type": "factual"
+  },
+  {
+    "id": "C07",
+    "question": "Why did Catelyn refuse to leave Bran's bedside?",
+    "ground_truth": "Catelyn was consumed with grief and fear for her comatose son Bran. She stayed at his bedside day and night, refusing to eat properly or attend to her duties as Lady of Winterfell, praying for his recovery.",
+    "chapter": "CATELYN",
+    "question_type": "character_state"
+  },
+  {
+    "id": "C08",
+    "question": "What happened during the assassination attempt on Bran?",
+    "ground_truth": "While Bran lay comatose, an assassin with a Valyrian steel dagger entered his room to kill him. A fire was set as a distraction. Catelyn fought the assassin bare-handed, cutting her fingers on the blade, before Bran's direwolf Summer killed the attacker.",
+    "chapter": "CATELYN",
+    "question_type": "factual"
+  },
+  {
+    "id": "C09",
+    "question": "What was significant about the dagger used in the assassination attempt on Bran?",
+    "ground_truth": "The dagger had a blade of Valyrian steel and a dragonbone hilt — an extremely expensive weapon that no common footpad would possess. This indicated someone wealthy and powerful had hired the assassin, leading Catelyn to investigate its origin.",
+    "chapter": "CATELYN",
+    "question_type": "causal"
+  },
+  {
+    "id": "A01",
+    "question": "What incident occurred between Arya's group and Prince Joffrey at the Trident?",
+    "ground_truth": "While traveling south on the Kingsroad, Arya and her friend Mycah, the butcher's boy, were practicing sword fighting with sticks. Prince Joffrey found them, drew real steel on Mycah, and Arya's direwolf Nymeria bit Joffrey to defend them.",
+    "chapter": "ARYA",
+    "question_type": "factual"
+  },
+  {
+    "id": "A02",
+    "question": "What happened to Arya's direwolf Nymeria after the Trident incident?",
+    "ground_truth": "Arya drove Nymeria away by throwing rocks at her, forcing her to run into the wild. Arya did this to save Nymeria's life, knowing that Queen Cersei would demand the wolf be killed for attacking Prince Joffrey.",
+    "chapter": "ARYA",
+    "question_type": "causal"
+  },
+  {
+    "id": "A03",
+    "question": "What happened to Sansa's direwolf Lady after the Trident incident?",
+    "ground_truth": "Since Arya's direwolf Nymeria could not be found, Queen Cersei demanded that Sansa's innocent direwolf Lady be killed instead. Despite Sansa's pleas, Ned carried out the execution himself rather than let the Lannisters do it.",
+    "chapter": "ARYA",
+    "question_type": "causal"
+  },
+  {
+    "id": "A04",
+    "question": "Who was Mycah and what was his fate?",
+    "ground_truth": "Mycah was the butcher's son who was playing at swords with Arya when Joffrey attacked them. The Hound, Sandor Clegane, was sent to find Mycah and killed him — riding the boy down and cutting him nearly in half.",
+    "chapter": "ARYA",
+    "question_type": "character_state"
+  },
+  {
+    "id": "B11",
+    "question": "What did Bran love to do that his mother disapproved of?",
+    "ground_truth": "Bran loved climbing the walls and towers of Winterfell. Despite his mother Catelyn making him promise not to climb, Bran could not resist scaling the ancient castle's towers, which ultimately led to his fateful discovery and fall.",
+    "chapter": "BRAN",
+    "question_type": "character_state"
+  },
+  {
+    "id": "B12",
+    "question": "What did Bran see that caused Jaime to push him from the tower?",
+    "ground_truth": "Bran climbed a broken tower and through a window saw Jaime and Cersei Lannister engaged in incestuous relations. This secret — that the queen was having an affair with her own twin brother — was so dangerous that Jaime attempted to murder Bran to keep it hidden.",
+    "chapter": "BRAN",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "B13",
+    "question": "What were the consequences of Bran's fall from the tower?",
+    "ground_truth": "Bran survived the fall but was left in a coma and when he eventually woke, he had lost the use of his legs permanently. His fall set in motion a chain of events including the assassination attempt and Catelyn's investigation that escalated the conflict between the Starks and Lannisters.",
+    "chapter": "BRAN",
+    "question_type": "causal"
+  },
+  {
+    "id": "T01",
+    "question": "Why did Tyrion Lannister visit the Wall?",
+    "ground_truth": "Tyrion traveled to the Wall out of personal curiosity — he wanted to see the great structure and piss off the edge of the world. He accompanied Jon Snow on the journey north and used the opportunity to observe the Night's Watch firsthand.",
+    "chapter": "TYRION",
+    "question_type": "causal"
+  },
+  {
+    "id": "T02",
+    "question": "How was Tyrion Lannister described physically and what nickname was he known by?",
+    "ground_truth": "Tyrion was a dwarf with stunted legs, a jutting forehead, and mismatched eyes of green and black. He was widely known as 'the Imp' or 'the Halfman.' Despite his appearance, he was extremely intelligent, well-read, and sharp-witted.",
+    "chapter": "TYRION",
+    "question_type": "factual"
+  },
+  {
+    "id": "T03",
+    "question": "What did Tyrion think about the Night's Watch after visiting the Wall?",
+    "ground_truth": "Tyrion was disillusioned by the reality of the Night's Watch. Rather than the noble order Jon Snow imagined, Tyrion saw it as a dumping ground for criminals, bastards, and castoffs of society — far from the glorious brotherhood of legend.",
+    "chapter": "TYRION",
+    "question_type": "character_state"
+  },
+  {
+    "id": "S01",
+    "question": "What was Sansa Stark's attitude toward going to King's Landing?",
+    "ground_truth": "Sansa was thrilled and excited about going to King's Landing. She was enchanted by the idea of court life, marrying Prince Joffrey, and becoming a queen someday. She saw it as a romantic fairy tale come true.",
+    "chapter": "SANSA",
+    "question_type": "character_state"
+  },
+  {
+    "id": "S02",
+    "question": "How did Sansa's view of Joffrey differ from reality?",
+    "ground_truth": "Sansa saw Joffrey as a golden prince — handsome, gallant, and everything a future king should be. In reality, Joffrey was cruel, cowardly, and sadistic, as shown when he attacked Mycah and lied about the Trident incident.",
+    "chapter": "SANSA",
+    "question_type": "character_state"
+  },
+  {
+    "id": "M01",
+    "question": "What were the political factions at play when the story begins?",
+    "ground_truth": "The main factions were House Stark of Winterfell (honorable, northern), House Lannister (wealthy, scheming, through Queen Cersei), House Baratheon (the ruling royal house through King Robert), and House Targaryen (exiled claimants Viserys and Daenerys across the sea).",
+    "chapter": "EDDARD",
+    "question_type": "factual"
+  },
+  {
+    "id": "M02",
+    "question": "What was Robert's Rebellion and why did it happen?",
+    "ground_truth": "Robert's Rebellion was the civil war in which Robert Baratheon, Ned Stark, and Jon Arryn overthrew King Aerys II Targaryen (the Mad King). It was triggered when Prince Rhaegar Targaryen abducted Lyanna Stark, and the Mad King murdered Ned's father and brother.",
+    "chapter": "EDDARD",
+    "question_type": "factual"
+  },
+  {
+    "id": "M03",
+    "question": "Who was Lyanna Stark and why was she important to Robert?",
+    "ground_truth": "Lyanna Stark was Ned's sister and Robert's betrothed. Robert loved her deeply, and her abduction by Prince Rhaegar Targaryen was the catalyst for Robert's Rebellion. She died during the war under mysterious circumstances, and Robert never recovered from losing her.",
+    "chapter": "EDDARD",
+    "question_type": "character_state"
+  },
+  {
+    "id": "M04",
+    "question": "Who are the Lannisters and what makes them powerful?",
+    "ground_truth": "The Lannisters of Casterly Rock are the wealthiest family in Westeros, their fortune built on gold mines. Tywin Lannister is the patriarch, his daughter Cersei is the queen, his son Jaime serves in the Kingsguard, and Tyrion is the clever dwarf. Their family motto is 'A Lannister always pays his debts.'",
+    "chapter": "EDDARD",
+    "question_type": "factual"
+  },
+  {
+    "id": "M05",
+    "question": "Who is Jaime Lannister and why is he called Kingslayer?",
+    "ground_truth": "Jaime Lannister is a knight of the Kingsguard, the queen's twin brother. He earned the name 'Kingslayer' for killing the Mad King Aerys Targaryen, the king he was sworn to protect, during the Sack of King's Landing at the end of Robert's Rebellion.",
+    "chapter": "EDDARD",
+    "question_type": "factual"
+  },
+  {
+    "id": "T04",
+    "question": "What was the relationship between Catelyn Stark and Tyrion Lannister?",
+    "ground_truth": "Catelyn deeply distrusted Tyrion and the Lannisters. After learning that the Valyrian steel dagger used in the attempt on Bran's life allegedly belonged to Tyrion, Catelyn arrested him at the crossroads inn and took him to the Eyrie to stand trial.",
+    "chapter": "CATELYN",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "T05",
+    "question": "What happened when Catelyn arrested Tyrion at the inn?",
+    "ground_truth": "Catelyn publicly accused Tyrion and called upon the loyalty of bannermen present at the inn to help her seize him in the name of King Robert and her father Lord Hoster Tully. She took Tyrion captive and brought him to the Eyrie in the Vale rather than King's Landing.",
+    "chapter": "CATELYN",
+    "question_type": "factual"
+  },
+  {
+    "id": "E06",
+    "question": "What secret message did Catelyn receive from her sister Lysa?",
+    "ground_truth": "Lysa Arryn sent a coded letter hidden in a box to Catelyn at Winterfell, claiming that the Lannisters had murdered her husband Jon Arryn, the former Hand. This letter convinced Ned to accept Robert's offer and go south to investigate.",
+    "chapter": "CATELYN",
+    "question_type": "causal"
+  },
+  {
+    "id": "E07",
+    "question": "What ultimately convinced Ned to become Hand of the King?",
+    "ground_truth": "While Ned was initially reluctant, two factors convinced him: Lysa Arryn's letter claiming the Lannisters murdered Jon Arryn, and the marriage pact between Joffrey and Sansa. Ned felt he needed to investigate Jon Arryn's death and protect Robert from the Lannisters.",
+    "chapter": "EDDARD",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "J06",
+    "question": "What was Jon Snow's experience like when he first arrived at Castle Black?",
+    "ground_truth": "Jon initially felt superior to the other recruits, most of whom were criminals and peasants. He easily defeated them in training, which made him unpopular. Tyrion's advice and the guidance of arms master Ser Alliser Thorne eventually helped Jon understand he needed to help rather than humiliate his fellow recruits.",
+    "chapter": "JON",
+    "question_type": "character_state"
+  },
+  {
+    "id": "J07",
+    "question": "Who was Ser Alliser Thorne and how did he treat Jon?",
+    "ground_truth": "Ser Alliser Thorne was the master-at-arms at Castle Black responsible for training new recruits. He was harsh and cruel, mocking Jon as 'Lord Snow' and resenting him for his highborn background. He deliberately turned other recruits against Jon.",
+    "chapter": "JON",
+    "question_type": "character_state"
+  },
+  {
+    "id": "J08",
+    "question": "Who were Jon Snow's friends at the Night's Watch?",
+    "ground_truth": "Jon befriended Samwell Tarly, a cowardly but intelligent lordling sent to the Wall by his father, as well as Grenn and Pyp, common-born recruits. Jon protected Sam from bullies and the group formed a close bond.",
+    "chapter": "JON",
+    "question_type": "character_state"
+  },
+  {
+    "id": "D07",
+    "question": "How did Daenerys's relationship with Khal Drogo change over time?",
+    "ground_truth": "Initially Daenerys was terrified and miserable in her forced marriage to Drogo. Over time, she learned to ride horses, speak Dothraki, and assert herself. She grew to genuinely love Drogo and transformed from a frightened girl into a confident khaleesi.",
+    "chapter": "DAENERYS",
+    "question_type": "temporal"
+  },
+  {
+    "id": "D08",
+    "question": "What was Viserys's fate among the Dothraki?",
+    "ground_truth": "Viserys grew increasingly frustrated and entitled, demanding his crown. He threatened Daenerys and her unborn child, which was a grave insult. Khal Drogo killed Viserys by pouring molten gold over his head, giving him the 'golden crown' he demanded.",
+    "chapter": "DAENERYS",
+    "question_type": "factual"
+  },
+  {
+    "id": "E08",
+    "question": "What did Ned discover about Jon Arryn's investigation before his death?",
+    "ground_truth": "Ned discovered that Jon Arryn had been investigating the parentage of Cersei's children. Jon Arryn had been visiting Robert's bastard children and reading a genealogy book, finding that every Baratheon for generations had black hair — while Joffrey, Myrcella, and Tommen all had golden Lannister hair.",
+    "chapter": "EDDARD",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "E09",
+    "question": "What was Ned's crucial discovery about Cersei's children?",
+    "ground_truth": "Ned discovered that Cersei's children — Joffrey, Myrcella, and Tommen — were not Robert's children at all. They were born of Cersei's incestuous relationship with her twin brother Jaime. The golden hair was the giveaway: the seed is strong, and all true Baratheons had black hair.",
+    "chapter": "EDDARD",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "E10",
+    "question": "What mistake did Ned make in confronting Cersei?",
+    "ground_truth": "Ned honorably warned Cersei that he knew her secret and gave her time to flee with her children before he told Robert. This was a fatal mistake — it gave Cersei time to prepare. Robert died in a hunting accident before Ned could tell him, and Cersei seized power.",
+    "chapter": "EDDARD",
+    "question_type": "causal"
+  },
+  {
+    "id": "E11",
+    "question": "How did King Robert Baratheon die?",
+    "ground_truth": "Robert was killed during a hunting trip in the Kingswood. He was gored by a wild boar after drinking too much wine. It was strongly implied that the wine was deliberately over-served by his squire Lancel Lannister on Cersei's orders.",
+    "chapter": "EDDARD",
+    "question_type": "factual"
+  },
+  {
+    "id": "E12",
+    "question": "What happened to Ned Stark after Robert's death?",
+    "ground_truth": "After Robert died, Ned tried to install Stannis Baratheon as the rightful king. But Cersei had already secured the gold cloaks' loyalty through Littlefinger's betrayal. Ned was arrested, imprisoned, and eventually executed on Joffrey's orders despite being promised mercy.",
+    "chapter": "EDDARD",
+    "question_type": "temporal"
+  },
+  {
+    "id": "E13",
+    "question": "Who betrayed Ned Stark and how?",
+    "ground_truth": "Petyr Baelish, known as Littlefinger, betrayed Ned. Ned had trusted Littlefinger to secure the City Watch's support, but Littlefinger instead helped Cersei. He held a knife to Ned's throat and said 'I did warn you not to trust me.'",
+    "chapter": "EDDARD",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "A05",
+    "question": "Who was Syrio Forel and what did he teach Arya?",
+    "ground_truth": "Syrio Forel was a Braavosi water dancer whom Ned hired to teach Arya sword fighting. He taught her the Braavosi style of fencing — the water dance — using a thin sword called Needle. His key teaching was 'What do we say to the God of Death? Not today.'",
+    "chapter": "ARYA",
+    "question_type": "factual"
+  },
+  {
+    "id": "A06",
+    "question": "What was Needle and who gave it to Arya?",
+    "ground_truth": "Needle was a thin sword designed for the Braavosi water dancing style. It was a gift from Jon Snow, who had it forged specially for Arya before they parted ways — Jon to the Wall, Arya to King's Landing. She named it Needle after her least favorite ladylike activity.",
+    "chapter": "ARYA",
+    "question_type": "factual"
+  },
+  {
+    "id": "A07",
+    "question": "What happened to Syrio Forel when the Lannisters came for Arya?",
+    "ground_truth": "When Lannister guards came to arrest Arya after Ned's downfall, Syrio Forel stayed behind to fight them with only a wooden practice sword. He held off multiple armed guards to give Arya time to escape. His fate was left uncertain but he is presumed dead.",
+    "chapter": "ARYA",
+    "question_type": "factual"
+  },
+  {
+    "id": "S03",
+    "question": "How did Sansa react when Ned was arrested?",
+    "ground_truth": "Sansa was manipulated by Cersei into writing letters to her family urging them to come to King's Landing and swear fealty to Joffrey. She believed the Lannisters when they promised her father would be spared if she cooperated, not understanding she was being used as a pawn.",
+    "chapter": "SANSA",
+    "question_type": "character_state"
+  },
+  {
+    "id": "S04",
+    "question": "What happened at Ned Stark's execution from Sansa and Arya's perspective?",
+    "ground_truth": "Sansa was forced to watch from the crowd, expecting mercy as promised. Instead Joffrey ordered Ned's head cut off. Arya was also in the crowd but was grabbed by Yoren of the Night's Watch who prevented her from watching and later smuggled her out of King's Landing disguised as a boy.",
+    "chapter": "SANSA",
+    "question_type": "temporal"
+  },
+  {
+    "id": "R01",
+    "question": "What happened when Robb Stark learned of his father's imprisonment?",
+    "ground_truth": "Robb called his bannermen and marched south with the armies of the North. Despite being only fourteen, he proved to be a capable military commander, winning the Battle of the Whispering Wood and capturing Jaime Lannister.",
+    "chapter": "CATELYN",
+    "question_type": "factual"
+  },
+  {
+    "id": "R02",
+    "question": "What was the significance of Robb capturing Jaime Lannister?",
+    "ground_truth": "Capturing Jaime Lannister was a major military and political coup. Jaime was the most renowned knight in the realm and Tywin Lannister's eldest son. His capture gave the Starks a valuable hostage and dealt a severe blow to Lannister morale and military leadership.",
+    "chapter": "CATELYN",
+    "question_type": "causal"
+  },
+  {
+    "id": "R03",
+    "question": "What title did Robb Stark's bannermen give him?",
+    "ground_truth": "After his victories, Robb's bannermen declared him King in the North, reviving a title that had not been used since the Starks bent the knee to Aegon the Conqueror three hundred years earlier. This effectively declared northern independence from the Iron Throne.",
+    "chapter": "CATELYN",
+    "question_type": "factual"
+  },
+  {
+    "id": "D09",
+    "question": "What happened to Khal Drogo?",
+    "ground_truth": "Drogo received a wound during a battle that became infected. Daenerys sought the help of a maegi (witch) named Mirri Maz Duur to save him using blood magic. The ritual saved Drogo's life but left him in a vegetative state, and their unborn son was stillborn as payment.",
+    "chapter": "DAENERYS",
+    "question_type": "temporal"
+  },
+  {
+    "id": "D10",
+    "question": "How were the dragons born?",
+    "ground_truth": "After Drogo's death, Daenerys built a funeral pyre, placed the three dragon eggs on it, and walked into the flames herself. The fire hatched the eggs into three living dragons — the first seen in the world in over a century. Daenerys emerged from the fire unburnt.",
+    "chapter": "DAENERYS",
+    "question_type": "factual"
+  },
+  {
+    "id": "D11",
+    "question": "What was the significance of the dragons hatching at the end of the book?",
+    "ground_truth": "The birth of Daenerys's three dragons fundamentally changed the balance of power in the world. Dragons had been extinct for over a century, and their return meant that the Targaryen claim to the throne was backed by the same force that had conquered Westeros originally. It signaled that magic was returning to the world.",
+    "chapter": "DAENERYS",
+    "question_type": "causal"
+  },
+  {
+    "id": "MH01",
+    "question": "Trace the chain of events from Bran's fall to the arrest of Tyrion Lannister.",
+    "ground_truth": "Bran was pushed from a tower by Jaime after seeing Jaime and Cersei together. An assassin then tried to kill Bran with a Valyrian steel dagger. Catelyn was told by Littlefinger that the dagger belonged to Tyrion. She then arrested Tyrion at the crossroads inn and took him to the Eyrie for trial.",
+    "chapter": "CATELYN",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "MH02",
+    "question": "How did Jon Arryn's death connect to the central mystery of the story?",
+    "ground_truth": "Jon Arryn was murdered because he discovered that Cersei's children were actually fathered by Jaime, not Robert. The Lannisters killed him to protect this secret. His death brought Ned to King's Landing as Hand, where Ned pursued the same investigation and met the same fate.",
+    "chapter": "EDDARD",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "MH03",
+    "question": "How did the events at the Trident affect the relationship between Houses Stark and Lannister?",
+    "ground_truth": "The Trident incident where Joffrey attacked Arya's friend, Nymeria bit Joffrey, Lady was executed, and Mycah was killed deepened the rift between Starks and Lannisters. Ned saw the cruelty of Cersei and Joffrey, Arya developed hatred for the Lannisters, and Sansa was caught between loyalty to her family and her betrothed.",
+    "chapter": "ARYA",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "MH04",
+    "question": "What role did Littlefinger play in escalating the conflict between Starks and Lannisters?",
+    "ground_truth": "Littlefinger deliberately escalated the conflict. He falsely told Catelyn that the assassin's dagger belonged to Tyrion, prompting her to arrest him. He later betrayed Ned to Cersei. His manipulations were driven by his childhood love for Catelyn and his ambition to sow chaos he could profit from.",
+    "chapter": "EDDARD",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "MH05",
+    "question": "How do the three major plotlines — Starks in King's Landing, Jon at the Wall, and Daenerys in Essos — connect thematically?",
+    "ground_truth": "All three plotlines deal with outsiders navigating hostile environments: Ned is an honorable northerner in the corrupt capital, Jon is a bastard finding purpose among outcasts at the Wall, and Daenerys is an exile building power in a foreign culture. All three face the tension between duty and desire, and all are affected by the return of magic to the world.",
+    "chapter": "EDDARD",
+    "question_type": "multi_hop"
+  },
+  {
+    "id": "T06",
+    "question": "What happened during Tyrion's trial at the Eyrie?",
+    "ground_truth": "Tyrion was put on trial at the Eyrie by Lysa Arryn, who was paranoid and hostile. When the trial seemed rigged against him, Tyrion demanded trial by combat. The sellsword Bronn volunteered as his champion and defeated Lysa's champion Ser Vardis Egen, winning Tyrion's freedom.",
+    "chapter": "TYRION",
+    "question_type": "factual"
+  },
+  {
+    "id": "T07",
+    "question": "Who was Bronn and how did he become Tyrion's companion?",
+    "ground_truth": "Bronn was a common sellsword who stepped forward to serve as Tyrion's champion during his trial by combat at the Eyrie. He won the fight through pragmatic, ruthless tactics rather than chivalry. Afterward, he stayed with Tyrion as his personal bodyguard and companion.",
+    "chapter": "TYRION",
+    "question_type": "character_state"
+  },
+  {
+    "id": "T08",
+    "question": "What was the relationship between Lysa Arryn and Catelyn?",
+    "ground_truth": "Lysa Arryn was Catelyn's sister, both daughters of Lord Hoster Tully. However, Lysa had become mentally unstable after years of failed pregnancies and the death of her husband Jon Arryn. She was paranoid, overprotective of her sickly son Robin, and proved to be an unreliable ally.",
+    "chapter": "CATELYN",
+    "question_type": "character_state"
+  },
+  {
+    "id": "TM01",
+    "question": "If you last read this book two weeks ago, which events would you most likely remember?",
+    "ground_truth": "After two weeks, you would most likely remember the major dramatic events: Bran's fall from the tower, the discovery of the direwolves, Ned's execution, the dragons hatching, and Drogo's death. Character conversations and atmospheric descriptions would have faded.",
+    "chapter": "META",
+    "question_type": "temporal"
+  },
+  {
+    "id": "TM02",
+    "question": "What events happened before Bran's fall but after the prologue?",
+    "ground_truth": "Between the prologue and Bran's fall: Ned executed the Night's Watch deserter, the Stark children found the direwolf pups, news arrived of Jon Arryn's death, King Robert traveled to Winterfell, Robert asked Ned to be Hand, Catelyn received Lysa's secret letter, and the feast was held where Jon met Tyrion.",
+    "chapter": "BRAN",
+    "question_type": "temporal"
+  },
+  {
+    "id": "TM03",
+    "question": "Arrange these events in chronological order: Dragons hatch, Bran falls, Ned is executed, Robert arrives at Winterfell, Tyrion visits the Wall.",
+    "ground_truth": "Chronological order: Robert arrives at Winterfell, Bran falls from the tower, Tyrion visits the Wall, Ned is executed in King's Landing, Dragons hatch from Daenerys's funeral pyre. These span the entire first book.",
+    "chapter": "META",
+    "question_type": "temporal"
+  },
+  {
+    "id": "TM04",
+    "question": "What is the status of each Stark family member at the end of the book?",
+    "ground_truth": "Ned is dead (executed). Catelyn is with Robb's army. Robb is King in the North. Sansa is a hostage in King's Landing. Arya has escaped disguised as a boy. Bran is crippled at Winterfell. Rickon is at Winterfell. Jon Snow has taken the black at the Night's Watch.",
+    "chapter": "META",
+    "question_type": "character_state"
   }
 ]

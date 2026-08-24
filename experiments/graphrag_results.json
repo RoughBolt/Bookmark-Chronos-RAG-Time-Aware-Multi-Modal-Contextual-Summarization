@@ -1,0 +1,13 @@
+{
+  "model": "graphrag-gpt4o",
+  "local": {
+    "relevance": 0.730,
+    "faithfulness": 0.650,
+    "samples": 20
+  },
+  "narrativeqa": {
+    "relevance": 3.4,
+    "faithfulness": 3.2,
+    "samples": 5
+  }
+}

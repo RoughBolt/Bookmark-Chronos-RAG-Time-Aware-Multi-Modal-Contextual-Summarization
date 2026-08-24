@@ -19,7 +19,7 @@ def build_global_knowledge_graph(all_events, output_path="data/knowledge.json"):
     # Default anyone not marked dead to ALIVE if they interacted
     for char in global_state["interactions"].keys():
         if char not in global_state["statuses"]:
-            global_state["statuses"][char] = "ALIVE"
+            global_state["statuses"][char] = {"status": "ALIVE", "confidence": 1.0, "verified": True}
             
     # Serialize to disk
     os.makedirs(os.path.dirname(output_path), exist_ok=True)

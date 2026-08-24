@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "average_relevance": 1.9,
+    "average_faithfulness": 3.3,
+    "samples": 10
+  },
+  "results": [
+    {
+      "id": "E08",
+      "question": "What did Ned discover about Jon Arryn's investigation before his death?",
+      "ground_truth": "Ned discovered that Jon Arryn had been investigating the parentage of Cersei's children. Jon Arryn had been visiting Robert's bastard children and reading a genealogy book, finding that every Baratheon for generations had black hair \u2014 while Joffrey, Myrcella, and Tommen all had golden Lannister hair.",
+      "generated": "I don't know. The provided context does not contain any information about Ned discovering something about Jon Arryn's investigation before his death.",
+      "relevance": 1,
+      "faithfulness": 5
+    },
+    {
+      "id": "P15",
+      "question": "What role did Will play in the ranging party?",
+      "ground_truth": "Will served as the scout and tracker for the ranging party. He was the one who climbed the tree to observe the wildling camp and reported back what he found.",
+      "generated": "Based on the provided context, it can be inferred that Will was a member of the ranging party. He rode with Ser Waymar and was present when Ser Waymar looked him over with open disapproval, indicating that Will was part of the group. Additionally, Will had been a hunter before joining the Night's Watch, suggesting that he may have brought his hunting skills to the ranging party.",
+      "relevance": 4,
+      "faithfulness": 5
+    },
+    {
+      "id": "P04",
+      "question": "What happened to the bodies the rangers found?",
+      "ground_truth": "The bodies had disappeared from where Will had seen them when Ser Waymar Royce went to investigate. Only later did the White Walkers appear.",
+      "generated": "According to the context, all the bodies were gone.",
+      "relevance": 5,
+      "faithfulness": 5
+    },
+    {
+      "id": "R03",
+      "question": "What title did Robb Stark's bannermen give him?",
+      "ground_truth": "After his victories, Robb's bannermen declared him King in the North, reviving a title that had not been used since the Starks bent the knee to Aegon the Conqueror three hundred years earlier. This effectively declared northern independence from the Iron Throne.",
+      "generated": "I don't know. The provided context does not contain information about what title Robb Stark's bannermen gave him.",
+      "relevance": 1,
+      "faithfulness": 1
+    },
+    {
+      "id": "D02",
+      "question": "Why did Viserys arrange Daenerys's marriage to Khal Drogo?",
+      "ground_truth": "Viserys sold Daenerys into marriage with the Dothraki warlord Khal Drogo in exchange for Drogo's army of forty thousand warriors. Viserys planned to use this army to reclaim the Iron Throne of Westeros.",
+      "generated": "I don't know. The context does not provide information about why Viserys arranged Daenerys' marriage to Khal Drogo.",
+      "relevance": 2,
+      "faithfulness": 1
+    },
+    {
+      "id": "C02",
+      "question": "What was Catelyn's relationship with Jon Snow and why?",
+      "ground_truth": "Catelyn resented Jon Snow deeply because he was Ned's bastard son, a living reminder of her husband's infidelity. She could not forgive Ned for bringing the boy home to be raised alongside her own trueborn children at Winterfell.",
+      "generated": "Based on the provided context, it appears that Catelyn had a familial relationship with Jon Snow. Specifically, she referred to him as her nephew, stating that her uncle Brynden waits in the Vale for her and Jon named him Knight of the Gate. This suggests that Jon is her nephew through marriage or bloodline.",
+      "relevance": 2,
+      "faithfulness": 4
+    },
+    {
+      "id": "B09",
+      "question": "What connection exists between the Night's Watch deserter in Bran I and the prologue events?",
+      "ground_truth": "The deserter executed in Bran I is the survivor from the prologue \u2014 the man who witnessed the White Walkers kill Ser Waymar Royce. He fled south in terror and was captured and executed as a deserter, his warnings about the Others going unheeded.",
+      "generated": "I don't know. The provided context does not contain any information that directly connects the Night's Watch deserter in Bran I to the prologue events.",
+      "relevance": 1,
+      "faithfulness": 1
+    },
+    {
+      "id": "P18",
+      "question": "Why is the prologue significant to the larger story of A Game of Thrones?",
+      "ground_truth": "The prologue establishes the return of the White Walkers, a supernatural threat that most of Westeros believes to be myth. It sets up the central tension of an existential danger beyond the Wall that the rest of the kingdom ignores while fighting over the throne.",
+      "generated": "I don't know. The provided context does not contain information about the significance of the prologue to the larger story of A Game of Thrones.",
+      "relevance": 1,
+      "faithfulness": 1
+    },
+    {
+      "id": "P14",
+      "question": "What happened to Waymar Royce's sword when it struck the White Walker's blade?",
+      "ground_truth": "When Waymar's steel sword met the White Walker's crystal blade, his sword shattered into pieces. The White Walker's weapon was made of a strange crystal-like ice that could break ordinary steel.",
+      "generated": "I don't know. The context does not contain information about what happened to Waymar Royce's sword when it struck the White Walker's blade.",
+      "relevance": 1,
+      "faithfulness": 5
+    },
+    {
+      "id": "E13",
+      "question": "Who betrayed Ned Stark and how?",
+      "ground_truth": "Petyr Baelish, known as Littlefinger, betrayed Ned. Ned had trusted Littlefinger to secure the City Watch's support, but Littlefinger instead helped Cersei. He held a knife to Ned's throat and said 'I did warn you not to trust me.'",
+      "generated": "I don't know. The provided context does not contain information about who betrayed Ned Stark or how they did it.",
+      "relevance": 1,
+      "faithfulness": 5
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "baseline_id": "B0",
+    "name": "Naive RAG (fixed chunks)",
+    "chunk_count": 203,
+    "build_time_sec": 0.0,
+    "keyword_recall": 0.2534,
+    "semantic_recall": 0.7003,
+    "precision_at_5": 0.73,
+    "per_question_type": {
+      "factual": {
+        "recall": 0.2614,
+        "precision": 0.7455,
+        "semantic_recall": 0.6796,
+        "count": 11
+      },
+      "temporal": {
+        "recall": 0.233,
+        "precision": 0.7,
+        "semantic_recall": 0.7234,
+        "count": 2
+      },
+      "character_state": {
+        "recall": 0.2649,
+        "precision": 0.8,
+        "semantic_recall": 0.7443,
+        "count": 3
+      },
+      "causal": {
+        "recall": 0.2437,
+        "precision": 0.6667,
+        "semantic_recall": 0.7078,
+        "count": 3
+      },
+      "multi_hop": {
+        "recall": 0.2,
+        "precision": 0.6,
+        "semantic_recall": 0.7274,
+        "count": 1
+      }
+    }
+  },
+  {
+    "baseline_id": "CR",
+    "name": "Chronos-RAG (full pipeline)",
+    "chunk_count": 156,
+    "build_time_sec": 1.73,
+    "keyword_recall": 0.1779,
+    "semantic_recall": 0.6727,
+    "precision_at_5": 0.56,
+    "per_question_type": {
+      "factual": {
+        "recall": 0.21,
+        "precision": 0.5455,
+        "semantic_recall": 0.6541,
+        "count": 11
+      },
+      "temporal": {
+        "recall": 0.0973,
+        "precision": 0.3,
+        "semantic_recall": 0.664,
+        "count": 2
+      },
+      "character_state": {
+        "recall": 0.21,
+        "precision": 0.7333,
+        "semantic_recall": 0.7415,
+        "count": 3
+      },
+      "causal": {
+        "recall": 0.1077,
+        "precision": 0.6,
+        "semantic_recall": 0.674,
+        "count": 3
+      },
+      "multi_hop": {
+        "recall": 0.1,
+        "precision": 0.6,
+        "semantic_recall": 0.6842,
+        "count": 1
+      }
+    }
+  }
+]

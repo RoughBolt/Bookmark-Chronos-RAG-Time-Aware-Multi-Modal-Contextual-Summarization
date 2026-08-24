@@ -1,0 +1,33 @@
+{
+    "statuses": {
+        "Gared": {
+            "status": "ALIVE",
+            "confidence": 1.0,
+            "verified": true
+        },
+        "Will": {
+            "status": "ALIVE",
+            "confidence": 1.0,
+            "verified": true
+        },
+        "Waymar Royce": {
+            "status": "ALIVE",
+            "confidence": 1.0,
+            "verified": true
+        }
+    },
+    "interactions": {
+        "Gared": {
+            "Will": 6,
+            "Waymar Royce": 6
+        },
+        "Will": {
+            "Gared": 6,
+            "Waymar Royce": 6
+        },
+        "Waymar Royce": {
+            "Will": 6,
+            "Gared": 6
+        }
+    }
+}
